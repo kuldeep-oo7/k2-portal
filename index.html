@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>K² · Range Desk</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :root {
+    --paper: #FFFFFF;
+    --raise: #FBFCFE;
+    --ground: #EEF2F8;
+    --line: #D3DBE8;
+    --ink: #10141C;
+    --muted: #5A667A;
+    --brass: #B07A10;
+    --brass-lift: #FDF3DC;
+    --long: #10715A;
+    --long-lift: #DDF2EB;
+    --short: #A93A32;
+    --short-lift: #FCE6E3;
+    --display: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+    --body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, "Cascadia Mono", "SF Mono", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #171D28; --raise: #1D2532; --ground: #0F131B; --line: #2E3949;
+      --ink: #EEF2F9; --muted: #9BA8BD; --brass: #E8B košt;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brass: #E8B44C; --brass-lift: #33280F;
+      --long: #55C79A; --long-lift: #123529;
+      --short: #EC7C72; --short-lift: #3B1B18;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #171D28; --raise: #1D2532; --ground: #0F131B; --line: #2E3949;
+    --ink: #EEF2F9; --muted: #9BA8BD;
+    --brass: #E8B44C; --brass-lift: #33280F;
+    --long: #55C79A; --long-lift: #123529;
+    --short: #EC7C72; --short-lift: #3B1B18;
+  }
+  :root[data-theme="light"] {
+    --paper: #FFFFFF; --raise: #FBFCFE; --ground: #EEF2F8; --line: #D3DBE8;
+    --ink: #10141C; --muted: #5A667A;
+    --brass: #B07A10; --brass-lift: #FDF3DC;
+    --long: #10715A; --long-lift: #DDF2EB;
+    --short: #A93A32; --short-lift: #FCE6E3;
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: var(--body); line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  .shell { max-width: 1160px; margin: 0 auto; padding: clamp(18px, 3.5vw, 44px) clamp(14px, 3vw, 28px) 64px; }
+  .masthead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; padding-bottom: 20px; border-bottom: 2px solid var(--ink); margin-bottom: 28px; }
+  .wordmark { font-family: var(--display); font-size: clamp(30px, 5vw, 44px); line-height: 1; margin: 0; letter-spacing: -.015em; }
+  .wordmark span { color: var(--brass); }
+  .stamp { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); text-align: right; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(132px, 1fr)); gap: 10px; margin-bottom: 30px; }
+  .tile { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+  .tile b { display: block; font-family: var(--mono); font-size: 23px; font-variant-numeric: tabular-nums; font-weight: 500; letter-spacing: -.02em; }
+  .tile span { font-size: 12px; color: var(--muted); }
+  .tile.gold b { color: var(--brass); }
+  .neg { color: var(--short); }
+  .pos { color: var(--long); }
+
+  section { margin-bottom: 40px; }
+  h2 { font-family: var(--display); font-weight: 400; font-size: clamp(20px, 2.4vw, 26px); margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0 0 16px; max-width: 66ch; }
+
+  .row-tools { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
+  button { font: inherit; font-size: 13px; color: var(--muted); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+  button:hover { color: var(--ink); border-color: var(--muted); }
+  button[aria-pressed="true"] { color: var(--brass); border-color: var(--brass); background: var(--brass-lift); }
+  button:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+
+  .scroll { overflow-x: auto; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; }
+  table { width: 100%; border-collapse: collapse; min-width: 720px; }
+  thead th { text-align: left; font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 400; padding: 10px 13px; background: var(--raise); border-bottom: 1px solid var(--line); white-space: nowrap; }
+  tbody tr { border-bottom: 1px solid var(--line); }
+  tbody tr:last-child { border-bottom: 0; }
+  td, tbody th { padding: 10px 13px; font-size: 14px; text-align: left; font-weight: 400; vertical-align: middle; }
+  tbody th { display: flex; gap: 8px; align-items: center; }
+  .tkr { font-family: var(--mono); font-size: 13px; }
+  .n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .n.big { font-size: 15px; }
+  .chip { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; padding: 2px 6px; border-radius: 3px; }
+  .chip-long { color: var(--long); background: var(--long-lift); }
+  .chip-short { color: var(--short); background: var(--short-lift); }
+  .bar { display: inline-block; width: 54px; height: 4px; background: var(--line); border-radius: 999px; overflow: hidden; vertical-align: middle; margin-right: 8px; }
+  .bar i { display: block; height: 100%; background: var(--brass); }
+  .rungs { display: flex; gap: 6px; flex-wrap: wrap; }
+  .rung { font-family: var(--mono); font-size: 11px; padding: 3px 8px; border: 1px solid var(--line); border-radius: 3px; background: var(--ground); white-space: nowrap; }
+  .rung em { font-style: normal; color: var(--muted); margin-left: 6px; }
+  .verdict { font-size: 11px; padding: 2px 7px; border-radius: 3px; white-space: nowrap; }
+  .v-good { color: var(--long); background: var(--long-lift); }
+  .v-bad { color: var(--short); background: var(--short-lift); }
+  .v-warn { color: var(--brass); background: var(--brass-lift); }
+
+  .lock { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: clamp(20px, 4vw, 34px); max-width: 460px; }
+  .lock h3 { font-family: var(--display); font-weight: 400; font-size: 20px; margin: 0 0 6px; }
+  .lock p { color: var(--muted); font-size: 13px; margin: 0 0 16px; }
+  .lock form { display: flex; gap: 8px; flex-wrap: wrap; }
+  input[type="password"] { font: inherit; font-family: var(--mono); flex: 1 1 200px; min-width: 0; padding: 9px 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--ground); color: var(--ink); }
+  input[type="password"]:focus-visible { outline: 2px solid var(--brass); outline-offset: 1px; }
+  .lock button { background: var(--ink); color: var(--paper); border-color: var(--ink); padding: 9px 20px; }
+  .lock button:hover { color: var(--paper); opacity: .88; }
+  .err { color: var(--short); font-size: 13px; margin: 12px 0 0; min-height: 1.2em; }
+  [hidden] { display: none !important; }
+  footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--muted); font-size: 12px; }
+  footer p { margin: 0 0 6px; max-width: 74ch; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="masthead">
+    <h1 class="wordmark">K<span>²</span> Range Desk</h1>
+    <div class="stamp">
+      NSE futures · weekly ladder<br>
+      built 2026-08-13 19:43 UTC
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="tile"><b>500</b><span>names measured</span></div>
+    <div class="tile gold"><b>63</b><span>cleared every test</span></div>
+    <div class="tile"><b>52</b><span>buy ladders</span></div>
+    <div class="tile"><b>8</b><span>sell ladders</span></div>
+    <div class="tile"><b>2.22%</b><span>best expected week</span></div>
+  </div>
+
+  <section id="book-section">
+    <h2>The book</h2>
+    <p class="sub">Your positions are encrypted in this page. The passphrase never leaves your browser, and the server only ever stores ciphertext.</p>
+    
+    <div class="lock" id="lock">
+      <h3>Unlock the book</h3>
+      <p>49 positions, read from GM 2026-08-13 19:22 UTC.</p>
+      <form id="unlock-form">
+        <label for="pass" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Passphrase</label>
+        <input type="password" id="pass" autocomplete="current-password" placeholder="passphrase" required>
+        <button type="submit">Unlock</button>
+      </form>
+      <p class="err" id="err" role="alert"></p>
+    </div>
+    <div id="book" hidden></div>
+  </section>
+
+  <section>
+    <h2>Qualified ladders · week of 2026-08-17</h2>
+    <p class="sub">Rungs are distance from Monday's open, with the measured hit rate and the number of historical fills behind it. Prices are set from that open each week.</p>
+    <div class="row-tools">
+      <button type="button" data-filter="all" aria-pressed="true">All 60</button>
+      <button type="button" data-filter="long" aria-pressed="false">Buy 52</button>
+      <button type="button" data-filter="short" aria-pressed="false">Sell 8</button>
+      <button type="button" data-sort="expected" aria-pressed="true">Expected</button>
+      <button type="button" data-sort="conviction" aria-pressed="false">Conviction</button>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th scope="col">Instrument</th><th scope="col">Expected week</th><th scope="col">Conviction</th><th scope="col">Rungs from Monday's open</th><th scope="col">Size</th></tr></thead>
+        <tbody id="plan-rows">
+        <tr data-side="long" data-expected="2.221" data-conviction="60.37">
+          <th scope="row"><span class="tkr">GABRIEL</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">2.22%</td>
+          <td class="n"><span class="bar"><i style="width:60.37%"></i></span>60</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>70% · 169</em></span>
+            <span class="rung">−4%<em>76% · 93</em></span>
+            <span class="rung">−6%<em>91% · 43</em></span></td>
+          <td class="n">×0.90</td>
+        </tr>
+        <tr data-side="long" data-expected="1.593" data-conviction="35.41">
+          <th scope="row"><span class="tkr">ENRIN</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">1.59%</td>
+          <td class="n"><span class="bar"><i style="width:35.41%"></i></span>35</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>78% · 18</em></span></td>
+          <td class="n">×0.63</td>
+        </tr>
+        <tr data-side="long" data-expected="1.301" data-conviction="52.13">
+          <th scope="row"><span class="tkr">LTFOODS</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">1.30%</td>
+          <td class="n"><span class="bar"><i style="width:52.13%"></i></span>52</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>69% · 106</em></span>
+            <span class="rung">−6%<em>83% · 53</em></span></td>
+          <td class="n">×0.81</td>
+        </tr>
+        <tr data-side="short" data-expected="1.228" data-conviction="46.32">
+          <th scope="row"><span class="tkr">SUPREMEIND</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">1.23%</td>
+          <td class="n"><span class="bar"><i style="width:46.32%"></i></span>46</td>
+          <td class="rungs">
+            <span class="rung">+8%<em>84% · 25</em></span></td>
+          <td class="n">×0.75</td>
+        </tr>
+        <tr data-side="long" data-expected="1.083" data-conviction="44.41">
+          <th scope="row"><span class="tkr">CHALET</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">1.08%</td>
+          <td class="n"><span class="bar"><i style="width:44.41%"></i></span>44</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>69% · 163</em></span>
+            <span class="rung">−6%<em>75% · 36</em></span></td>
+          <td class="n">×0.73</td>
+        </tr>
+        <tr data-side="short" data-expected="1.064" data-conviction="32.32">
+          <th scope="row"><span class="tkr">FIRSTCRY</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">1.06%</td>
+          <td class="n"><span class="bar"><i style="width:32.32%"></i></span>32</td>
+          <td class="rungs">
+            <span class="rung">+6%<em>88% · 25</em></span></td>
+          <td class="n">×0.60</td>
+        </tr>
+        <tr data-side="long" data-expected="1.056" data-conviction="39.16">
+          <th scope="row"><span class="tkr">TATACOMM</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">1.06%</td>
+          <td class="n"><span class="bar"><i style="width:39.16%"></i></span>39</td>
+          <td class="rungs">
+            <span class="rung">−8%<em>86% · 14</em></span></td>
+          <td class="n">×0.67</td>
+        </tr>
+        <tr data-side="long" data-expected="1.018" data-conviction="45.24">
+          <th scope="row"><span class="tkr">ENDURANCE</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">1.02%</td>
+          <td class="n"><span class="bar"><i style="width:45.24%"></i></span>45</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>67% · 159</em></span>
+            <span class="rung">−4%<em>69% · 71</em></span></td>
+          <td class="n">×0.73</td>
+        </tr>
+        <tr data-side="long" data-expected="0.962" data-conviction="30.61">
+          <th scope="row"><span class="tkr">COROMANDEL</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.96%</td>
+          <td class="n"><span class="bar"><i style="width:30.61%"></i></span>31</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>70% · 141</em></span>
+            <span class="rung">−4%<em>69% · 55</em></span></td>
+          <td class="n">×0.58</td>
+        </tr>
+        <tr data-side="short" data-expected="0.894" data-conviction="35.58">
+          <th scope="row"><span class="tkr">LTTS</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">0.89%</td>
+          <td class="n"><span class="bar"><i style="width:35.58%"></i></span>36</td>
+          <td class="rungs">
+            <span class="rung">+8%<em>83% · 12</em></span></td>
+          <td class="n">×0.63</td>
+        </tr>
+        <tr data-side="long" data-expected="0.878" data-conviction="36.45">
+          <th scope="row"><span class="tkr">SHYAMMETL</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.88%</td>
+          <td class="n"><span class="bar"><i style="width:36.45%"></i></span>36</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>69% · 74</em></span>
+            <span class="rung">−6%<em>80% · 35</em></span>
+            <span class="rung">−8%<em>93% · 14</em></span></td>
+          <td class="n">×0.64</td>
+        </tr>
+        <tr data-side="long" data-expected="0.867" data-conviction="27.91">
+          <th scope="row"><span class="tkr">ASAHIINDIA</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.87%</td>
+          <td class="n"><span class="bar"><i style="width:27.91%"></i></span>28</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>69% · 166</em></span>
+            <span class="rung">−4%<em>73% · 86</em></span>
+            <span class="rung">−6%<em>84% · 37</em></span>
+            <span class="rung">−8%<em>92% · 12</em></span></td>
+          <td class="n">×0.55</td>
+        </tr>
+        <tr data-side="short" data-expected="0.858" data-conviction="20.73">
+          <th scope="row"><span class="tkr">GODIGIT</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">0.86%</td>
+          <td class="n"><span class="bar"><i style="width:20.73%"></i></span>21</td>
+          <td class="rungs">
+            <span class="rung">+4%<em>74% · 42</em></span>
+            <span class="rung">+6%<em>77% · 26</em></span>
+            <span class="rung">+8%<em>93% · 15</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="short" data-expected="0.847" data-conviction="17.48">
+          <th scope="row"><span class="tkr">HEXT</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">0.85%</td>
+          <td class="n"><span class="bar"><i style="width:17.48%"></i></span>17</td>
+          <td class="rungs">
+            <span class="rung">+8%<em>89% · 9</em></span></td>
+          <td class="n">×0.44</td>
+        </tr>
+        <tr data-side="long" data-expected="0.769" data-conviction="28.74">
+          <th scope="row"><span class="tkr">TBOTEK</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.77%</td>
+          <td class="n"><span class="bar"><i style="width:28.74%"></i></span>29</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>76% · 59</em></span></td>
+          <td class="n">×0.56</td>
+        </tr>
+        <tr data-side="long" data-expected="0.743" data-conviction="27.71">
+          <th scope="row"><span class="tkr">KPIL</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.74%</td>
+          <td class="n"><span class="bar"><i style="width:27.71%"></i></span>28</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>81% · 36</em></span></td>
+          <td class="n">×0.55</td>
+        </tr>
+        <tr data-side="long" data-expected="0.723" data-conviction="29.81">
+          <th scope="row"><span class="tkr">AJANTPHARM</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.72%</td>
+          <td class="n"><span class="bar"><i style="width:29.81%"></i></span>30</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>72% · 156</em></span>
+            <span class="rung">−4%<em>77% · 52</em></span>
+            <span class="rung">−6%<em>75% · 16</em></span></td>
+          <td class="n">×0.57</td>
+        </tr>
+        <tr data-side="long" data-expected="0.673" data-conviction="40.46">
+          <th scope="row"><span class="tkr">JINDALSAW</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.67%</td>
+          <td class="n"><span class="bar"><i style="width:40.46%"></i></span>40</td>
+          <td class="rungs">
+            <span class="rung">−10%<em>90% · 20</em></span></td>
+          <td class="n">×0.68</td>
+        </tr>
+        <tr data-side="long" data-expected="0.627" data-conviction="20.81">
+          <th scope="row"><span class="tkr">ABCAPITAL</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.63%</td>
+          <td class="n"><span class="bar"><i style="width:20.81%"></i></span>21</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>70% · 73</em></span>
+            <span class="rung">−8%<em>91% · 11</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="long" data-expected="0.588" data-conviction="19.55">
+          <th scope="row"><span class="tkr">RAINBOW</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.59%</td>
+          <td class="n"><span class="bar"><i style="width:19.55%"></i></span>20</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>72% · 32</em></span>
+            <span class="rung">−8%<em>86% · 14</em></span></td>
+          <td class="n">×0.46</td>
+        </tr>
+        <tr data-side="long" data-expected="0.585" data-conviction="22.95">
+          <th scope="row"><span class="tkr">AADHARHFC</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.58%</td>
+          <td class="n"><span class="bar"><i style="width:22.95%"></i></span>23</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>79% · 33</em></span>
+            <span class="rung">−6%<em>93% · 15</em></span></td>
+          <td class="n">×0.50</td>
+        </tr>
+        <tr data-side="long" data-expected="0.576" data-conviction="45.92">
+          <th scope="row"><span class="tkr">SARDAEN</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.58%</td>
+          <td class="n"><span class="bar"><i style="width:45.92%"></i></span>46</td>
+          <td class="rungs">
+            <span class="rung">−8%<em>90% · 31</em></span></td>
+          <td class="n">×0.74</td>
+        </tr>
+        <tr data-side="long" data-expected="0.573" data-conviction="21">
+          <th scope="row"><span class="tkr">BELRISE</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.57%</td>
+          <td class="n"><span class="bar"><i style="width:21%"></i></span>21</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>72% · 36</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="long" data-expected="0.559" data-conviction="30.2">
+          <th scope="row"><span class="tkr">IRB</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.56%</td>
+          <td class="n"><span class="bar"><i style="width:30.2%"></i></span>30</td>
+          <td class="rungs">
+            <span class="rung">−10%<em>80% · 15</em></span></td>
+          <td class="n">×0.57</td>
+        </tr>
+        <tr data-side="long" data-expected="0.548" data-conviction="16.22">
+          <th scope="row"><span class="tkr">AFCONS</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.55%</td>
+          <td class="n"><span class="bar"><i style="width:16.22%"></i></span>16</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>89% · 9</em></span></td>
+          <td class="n">×0.42</td>
+        </tr>
+        <tr data-side="long" data-expected="0.518" data-conviction="23.83">
+          <th scope="row"><span class="tkr">MAZDOCK</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.52%</td>
+          <td class="n"><span class="bar"><i style="width:23.83%"></i></span>24</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>74% · 57</em></span>
+            <span class="rung">−8%<em>93% · 30</em></span></td>
+          <td class="n">×0.51</td>
+        </tr>
+        <tr data-side="long" data-expected="0.504" data-conviction="30.56">
+          <th scope="row"><span class="tkr">JUBLPHARMA</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.50%</td>
+          <td class="n"><span class="bar"><i style="width:30.56%"></i></span>31</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>70% · 89</em></span>
+            <span class="rung">−6%<em>78% · 37</em></span>
+            <span class="rung">−8%<em>87% · 15</em></span></td>
+          <td class="n">×0.58</td>
+        </tr>
+        <tr data-side="long" data-expected="0.496" data-conviction="18.29">
+          <th scope="row"><span class="tkr">ERIS</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.50%</td>
+          <td class="n"><span class="bar"><i style="width:18.29%"></i></span>18</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>63% · 150</em></span>
+            <span class="rung">−4%<em>75% · 67</em></span>
+            <span class="rung">−6%<em>80% · 25</em></span></td>
+          <td class="n">×0.45</td>
+        </tr>
+        <tr data-side="long" data-expected="0.495" data-conviction="27.89">
+          <th scope="row"><span class="tkr">UNOMINDA</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.49%</td>
+          <td class="n"><span class="bar"><i style="width:27.89%"></i></span>28</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>64% · 80</em></span></td>
+          <td class="n">×0.55</td>
+        </tr>
+        <tr data-side="short" data-expected="0.46" data-conviction="12.78">
+          <th scope="row"><span class="tkr">SAILIFE</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">0.46%</td>
+          <td class="n"><span class="bar"><i style="width:12.78%"></i></span>13</td>
+          <td class="rungs">
+            <span class="rung">+8%<em>85% · 13</em></span></td>
+          <td class="n">×0.39</td>
+        </tr>
+        <tr data-side="long" data-expected="0.435" data-conviction="30.18">
+          <th scope="row"><span class="tkr">LINDEINDIA</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.43%</td>
+          <td class="n"><span class="bar"><i style="width:30.18%"></i></span>30</td>
+          <td class="rungs">
+            <span class="rung">−8%<em>87% · 15</em></span></td>
+          <td class="n">×0.57</td>
+        </tr>
+        <tr data-side="long" data-expected="0.424" data-conviction="20.99">
+          <th scope="row"><span class="tkr">MINDACORP</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.42%</td>
+          <td class="n"><span class="bar"><i style="width:20.99%"></i></span>21</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>69% · 88</em></span>
+            <span class="rung">−6%<em>77% · 44</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="long" data-expected="0.404" data-conviction="19.01">
+          <th scope="row"><span class="tkr">CREDITACC</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.40%</td>
+          <td class="n"><span class="bar"><i style="width:19.01%"></i></span>19</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>68% · 87</em></span>
+            <span class="rung">−6%<em>82% · 44</em></span>
+            <span class="rung">−8%<em>85% · 20</em></span></td>
+          <td class="n">×0.45</td>
+        </tr>
+        <tr data-side="long" data-expected="0.392" data-conviction="36.98">
+          <th scope="row"><span class="tkr">ITI</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.39%</td>
+          <td class="n"><span class="bar"><i style="width:36.98%"></i></span>37</td>
+          <td class="rungs">
+            <span class="rung">−10%<em>88% · 17</em></span></td>
+          <td class="n">×0.65</td>
+        </tr>
+        <tr data-side="long" data-expected="0.384" data-conviction="25.21">
+          <th scope="row"><span class="tkr">MAHABANK</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.38%</td>
+          <td class="n"><span class="bar"><i style="width:25.21%"></i></span>25</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>72% · 39</em></span></td>
+          <td class="n">×0.52</td>
+        </tr>
+        <tr data-side="long" data-expected="0.384" data-conviction="16.77">
+          <th scope="row"><span class="tkr">VMM</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.38%</td>
+          <td class="n"><span class="bar"><i style="width:16.77%"></i></span>17</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>74% · 27</em></span>
+            <span class="rung">−6%<em>90% · 10</em></span></td>
+          <td class="n">×0.43</td>
+        </tr>
+        <tr data-side="long" data-expected="0.351" data-conviction="28.34">
+          <th scope="row"><span class="tkr">SHRIRAMFIN</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.35%</td>
+          <td class="n"><span class="bar"><i style="width:28.34%"></i></span>28</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>68% · 151</em></span></td>
+          <td class="n">×0.55</td>
+        </tr>
+        <tr data-side="long" data-expected="0.346" data-conviction="23.05">
+          <th scope="row"><span class="tkr">PHOENIXLTD</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.35%</td>
+          <td class="n"><span class="bar"><i style="width:23.05%"></i></span>23</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>74% · 86</em></span>
+            <span class="rung">−6%<em>73% · 40</em></span>
+            <span class="rung">−8%<em>78% · 18</em></span></td>
+          <td class="n">×0.50</td>
+        </tr>
+        <tr data-side="long" data-expected="0.33" data-conviction="18.6">
+          <th scope="row"><span class="tkr">CGPOWER</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.33%</td>
+          <td class="n"><span class="bar"><i style="width:18.6%"></i></span>19</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>74% · 35</em></span>
+            <span class="rung">−8%<em>89% · 18</em></span></td>
+          <td class="n">×0.45</td>
+        </tr>
+        <tr data-side="long" data-expected="0.325" data-conviction="40.83">
+          <th scope="row"><span class="tkr">USHAMART</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.33%</td>
+          <td class="n"><span class="bar"><i style="width:40.83%"></i></span>41</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>83% · 53</em></span>
+            <span class="rung">−8%<em>93% · 27</em></span></td>
+          <td class="n">×0.69</td>
+        </tr>
+        <tr data-side="long" data-expected="0.319" data-conviction="24.73">
+          <th scope="row"><span class="tkr">SAREGAMA</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.32%</td>
+          <td class="n"><span class="bar"><i style="width:24.73%"></i></span>25</td>
+          <td class="rungs">
+            <span class="rung">−10%<em>92% · 12</em></span></td>
+          <td class="n">×0.52</td>
+        </tr>
+        <tr data-side="long" data-expected="0.317" data-conviction="20">
+          <th scope="row"><span class="tkr">APLAPOLLO</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.32%</td>
+          <td class="n"><span class="bar"><i style="width:20%"></i></span>20</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>77% · 39</em></span></td>
+          <td class="n">×0.46</td>
+        </tr>
+        <tr data-side="long" data-expected="0.312" data-conviction="14.49">
+          <th scope="row"><span class="tkr">AUBANK</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.31%</td>
+          <td class="n"><span class="bar"><i style="width:14.49%"></i></span>14</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>64% · 61</em></span>
+            <span class="rung">−6%<em>74% · 27</em></span></td>
+          <td class="n">×0.41</td>
+        </tr>
+        <tr data-side="long" data-expected="0.31" data-conviction="29.35">
+          <th scope="row"><span class="tkr">CHOLAFIN</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.31%</td>
+          <td class="n"><span class="bar"><i style="width:29.35%"></i></span>29</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>65% · 147</em></span>
+            <span class="rung">−4%<em>74% · 72</em></span></td>
+          <td class="n">×0.56</td>
+        </tr>
+        <tr data-side="long" data-expected="0.304" data-conviction="20.3">
+          <th scope="row"><span class="tkr">CGCL</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.30%</td>
+          <td class="n"><span class="bar"><i style="width:20.3%"></i></span>20</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>72% · 147</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="long" data-expected="0.303" data-conviction="23.82">
+          <th scope="row"><span class="tkr">ENGINERSIN</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.30%</td>
+          <td class="n"><span class="bar"><i style="width:23.82%"></i></span>24</td>
+          <td class="rungs">
+            <span class="rung">−8%<em>83% · 23</em></span>
+            <span class="rung">−10%<em>82% · 11</em></span></td>
+          <td class="n">×0.51</td>
+        </tr>
+        <tr data-side="long" data-expected="0.289" data-conviction="17.99">
+          <th scope="row"><span class="tkr">NSLNISP</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.29%</td>
+          <td class="n"><span class="bar"><i style="width:17.99%"></i></span>18</td>
+          <td class="rungs">
+            <span class="rung">−8%<em>83% · 18</em></span></td>
+          <td class="n">×0.44</td>
+        </tr>
+        <tr data-side="long" data-expected="0.289" data-conviction="13.97">
+          <th scope="row"><span class="tkr">3MINDIA</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.29%</td>
+          <td class="n"><span class="bar"><i style="width:13.97%"></i></span>14</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>61% · 137</em></span></td>
+          <td class="n">×0.40</td>
+        </tr>
+        <tr data-side="long" data-expected="0.288" data-conviction="26.44">
+          <th scope="row"><span class="tkr">NEULANDLAB</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.29%</td>
+          <td class="n"><span class="bar"><i style="width:26.44%"></i></span>26</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>81% · 73</em></span></td>
+          <td class="n">×0.53</td>
+        </tr>
+        <tr data-side="long" data-expected="0.268" data-conviction="23.77">
+          <th scope="row"><span class="tkr">CHOICEIN</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.27%</td>
+          <td class="n"><span class="bar"><i style="width:23.77%"></i></span>24</td>
+          <td class="rungs">
+            <span class="rung">−6%<em>78% · 27</em></span>
+            <span class="rung">−8%<em>89% · 9</em></span></td>
+          <td class="n">×0.51</td>
+        </tr>
+        <tr data-side="long" data-expected="0.235" data-conviction="20.51">
+          <th scope="row"><span class="tkr">LLOYDSME</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.23%</td>
+          <td class="n"><span class="bar"><i style="width:20.51%"></i></span>21</td>
+          <td class="rungs">
+            <span class="rung">−8%<em>88% · 17</em></span>
+            <span class="rung">−10%<em>90% · 10</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="long" data-expected="0.183" data-conviction="11.05">
+          <th scope="row"><span class="tkr">CAMS</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.18%</td>
+          <td class="n"><span class="bar"><i style="width:11.05%"></i></span>11</td>
+          <td class="rungs">
+            <span class="rung">−8%<em>75% · 16</em></span>
+            <span class="rung">−10%<em>88% · 8</em></span></td>
+          <td class="n">×0.37</td>
+        </tr>
+        <tr data-side="long" data-expected="0.171" data-conviction="20.26">
+          <th scope="row"><span class="tkr">TIMKEN</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.17%</td>
+          <td class="n"><span class="bar"><i style="width:20.26%"></i></span>20</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>69% · 74</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="long" data-expected="0.146" data-conviction="11.16">
+          <th scope="row"><span class="tkr">AIAENG</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.15%</td>
+          <td class="n"><span class="bar"><i style="width:11.16%"></i></span>11</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>60% · 141</em></span></td>
+          <td class="n">×0.37</td>
+        </tr>
+        <tr data-side="long" data-expected="0.142" data-conviction="16.44">
+          <th scope="row"><span class="tkr">GLENMARK</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.14%</td>
+          <td class="n"><span class="bar"><i style="width:16.44%"></i></span>16</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>67% · 136</em></span></td>
+          <td class="n">×0.43</td>
+        </tr>
+        <tr data-side="long" data-expected="0.142" data-conviction="15.45">
+          <th scope="row"><span class="tkr">BHARTIHEXA</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.14%</td>
+          <td class="n"><span class="bar"><i style="width:15.45%"></i></span>15</td>
+          <td class="rungs">
+            <span class="rung">−2%<em>71% · 78</em></span>
+            <span class="rung">−4%<em>74% · 38</em></span></td>
+          <td class="n">×0.42</td>
+        </tr>
+        <tr data-side="long" data-expected="0.108" data-conviction="20.41">
+          <th scope="row"><span class="tkr">GPIL</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.11%</td>
+          <td class="n"><span class="bar"><i style="width:20.41%"></i></span>20</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>74% · 97</em></span></td>
+          <td class="n">×0.47</td>
+        </tr>
+        <tr data-side="long" data-expected="0.101" data-conviction="15.5">
+          <th scope="row"><span class="tkr">APTUS</span><span class="chip chip-long">buy</span></th>
+          <td class="n big">0.10%</td>
+          <td class="n"><span class="bar"><i style="width:15.5%"></i></span>16</td>
+          <td class="rungs">
+            <span class="rung">−4%<em>73% · 80</em></span></td>
+          <td class="n">×0.42</td>
+        </tr>
+        <tr data-side="short" data-expected="0.067" data-conviction="4.79">
+          <th scope="row"><span class="tkr">CYIENT</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">0.07%</td>
+          <td class="n"><span class="bar"><i style="width:4.79%"></i></span>5</td>
+          <td class="rungs">
+            <span class="rung">+8%<em>71% · 24</em></span>
+            <span class="rung">+10%<em>83% · 12</em></span></td>
+          <td class="n">×0.30</td>
+        </tr>
+        <tr data-side="short" data-expected="0.036" data-conviction="5">
+          <th scope="row"><span class="tkr">NCC</span><span class="chip chip-short">sell</span></th>
+          <td class="n big">0.04%</td>
+          <td class="n"><span class="bar"><i style="width:5%"></i></span>5</td>
+          <td class="rungs">
+            <span class="rung">+10%<em>75% · 16</em></span></td>
+          <td class="n">×0.30</td>
+        </tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Rule measured:</strong> the week's first open is the anchor; orders rest 2% apart; a leg exits on the first touch of a 2% gain. Costs charged at 0.06% per round trip. Hit rates carry 95% Wilson bounds and each rung clears a t-statistic hurdle raised for testing five rungs. Reported weeks are out of sample.</p>
+    <p><strong>Gates:</strong> a 12-month trend running against the ladder is refused outright, as is a results date inside the trading week. A measured edge is not a promise.</p>
+  </footer>
+</div>
+
+<script id="sealed" type="application/json">{"algorithm":"AES-256-GCM","keyDerivation":"PBKDF2-HMAC-SHA256/210000","iterations":210000,"salt":"Ljd9IZUtH55R2nElPLzRzA==","iv":"1EB2CnFse7Ms45XC","ciphertext":"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"}</script>
+<script>
+(function () {
+  var rows = Array.prototype.slice.call(document.querySelectorAll("#plan-rows tr"));
+  var body = document.getElementById("plan-rows");
+  var filter = "all", sort = "expected";
+  function press(group, value) {
+    document.querySelectorAll("[data-" + group + "]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset[group] === value)); });
+  }
+  function apply() {
+    rows.slice().sort(function (a, b) { return Number(b.dataset[sort]) - Number(a.dataset[sort]); })
+      .forEach(function (n) { body.appendChild(n); });
+    rows.forEach(function (n) { n.style.display = filter === "all" || n.dataset.side === filter ? "" : "none"; });
+  }
+  document.querySelectorAll("[data-filter]").forEach(function (b) {
+    b.addEventListener("click", function () { filter = b.dataset.filter; press("filter", filter); apply(); });
+  });
+  document.querySelectorAll("[data-sort]").forEach(function (b) {
+    b.addEventListener("click", function () { sort = b.dataset.sort; press("sort", sort); apply(); });
+  });
+  apply();
+
+  var sealedNode = document.getElementById("sealed");
+  var sealed = null;
+  try { sealed = JSON.parse(sealedNode.textContent); } catch (e) { sealed = null; }
+  var form = document.getElementById("unlock-form");
+  if (!sealed || !form) return;
+
+  var b64 = function (value) {
+    var raw = atob(value), out = new Uint8Array(raw.length);
+    for (var i = 0; i < raw.length; i++) out[i] = raw.charCodeAt(i);
+    return out;
+  };
+  var money = function (value) {
+    if (typeof value !== "number" || !isFinite(value)) return "\u2014";
+    return (value < 0 ? "\u2212" : "") + "\u20B9" + Math.abs(Math.round(value)).toLocaleString("en-IN");
+  };
+  var num = function (value, digits) {
+    return typeof value === "number" && isFinite(value) ? value.toFixed(digits === undefined ? 2 : digits) : "\u2014";
+  };
+
+  function render(book) {
+    var rowsHtml = book.positions.map(function (p) {
+      var short = p.position === "short";
+      var v = p.verdict || { label: "not measured", tone: "none" };
+      var cls = v.tone === "good" ? "v-good" : v.tone === "bad" ? "v-bad" : v.tone === "warn" ? "v-warn" : "";
+      return '<tr>'
+        + '<th scope="row"><span class="tkr">' + p.symbol + '</span><span class="chip chip-' + (short ? "short" : "long") + '">' + (short ? "short" : "long") + '</span></th>'
+        + '<td class="n">' + p.quantity.toLocaleString("en-IN") + '</td>'
+        + '<td class="n">' + num(p.average) + '</td>'
+        + '<td class="n">' + num(p.mark) + '</td>'
+        + '<td class="n ' + (p.mtm < 0 ? "neg" : "pos") + '">' + money(p.mtm) + '</td>'
+        + '<td class="n">' + num(p.target) + '</td>'
+        + '<td class="n">' + (p.toTargetPct <= 0 ? "reached" : num(p.toTargetPct) + "%") + '</td>'
+        + '<td><span class="verdict ' + cls + '">' + v.label + '</span></td>'
+        + '</tr>';
+    }).join("");
+
+    document.getElementById("book").innerHTML =
+      '<div class="grid">'
+      + '<div class="tile"><b>' + book.positions.length + '</b><span>open positions</span></div>'
+      + '<div class="tile"><b class="' + (book.totalMtm < 0 ? "neg" : "pos") + '">' + money(book.totalMtm) + '</b><span>mark to market</span></div>'
+      + '<div class="tile"><b>' + book.inProfit + ' / ' + book.positions.length + '</b><span>in profit</span></div>'
+      + '<div class="tile"><b>' + book.confirmed + '</b><span>edge confirmed</span></div>'
+      + '<div class="tile"><b class="neg">' + book.noEdge + '</b><span>no measured edge</span></div>'
+      + '<div class="tile"><b class="neg">' + book.trendBlocked + '</b><span>against the trend</span></div>'
+      + '</div>'
+      + '<div class="scroll"><table><thead><tr>'
+      + '<th scope="col">Instrument</th><th scope="col">Qty</th><th scope="col">Your average</th><th scope="col">Mark</th>'
+      + '<th scope="col">MTM</th><th scope="col">2% target</th><th scope="col">To target</th><th scope="col">Measurement</th>'
+      + '</tr></thead><tbody>' + rowsHtml + '</tbody></table></div>';
+    document.getElementById("book").hidden = false;
+    document.getElementById("lock").hidden = true;
+  }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    var err = document.getElementById("err");
+    var pass = document.getElementById("pass").value;
+    err.textContent = "Opening\u2026";
+    crypto.subtle.importKey("raw", new TextEncoder().encode(pass), "PBKDF2", false, ["deriveKey"])
+      .then(function (material) {
+        return crypto.subtle.deriveKey(
+          { name: "PBKDF2", salt: b64(sealed.salt), iterations: sealed.iterations, hash: "SHA-256" },
+          material, { name: "AES-GCM", length: 256 }, false, ["decrypt"]
+        );
+      })
+      .then(function (key) {
+        return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(sealed.iv) }, key, b64(sealed.ciphertext));
+      })
+      .then(function (plain) {
+        render(JSON.parse(new TextDecoder().decode(plain)));
+      })
+      .catch(function () {
+        err.textContent = "That passphrase did not open the book. Check it and try again.";
+      });
+  });
+}());
+</script>
+</body>
+</html>
