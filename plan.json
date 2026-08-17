@@ -1,286 +1,123 @@
 {
-  "generatedAt": "2026-08-16T18:02:19.535Z",
-  "weekKey": "2026-08-10",
+  "generatedAt": "2026-08-17T03:51:18.593Z",
+  "weekKey": "2026-08-17",
   "universe": 214,
   "failed": 6,
-  "generatedFor": "2026-08-10",
+  "generatedFor": "2026-08-17",
   "considered": 208,
-  "actionable": 10,
+  "actionable": 11,
   "buys": [
     {
-      "symbol": "CHOLAFIN",
+      "symbol": "RADICO",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1875.9,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 4657.8,
+      "sessionsElapsed": 1,
       "levels": [
         1,
-        2
+        2,
+        3,
+        4
       ],
       "entries": [
         {
           "level": 1,
-          "entry": 1838.38,
-          "target": 1875.15,
+          "entry": 4564.64,
+          "target": 4655.94,
           "stepFromAnchorPct": 2,
-          "historicalFills": 147,
-          "hitRatePct": 65.31,
-          "hitRateLowerPct": 57.31,
-          "averageNetPct": 0.452,
+          "historicalFills": 153,
+          "hitRatePct": 67.32,
+          "hitRateLowerPct": 59.54,
+          "averageNetPct": 0.62,
           "medianSessionsHeld": 1
         },
         {
           "level": 2,
-          "entry": 1801.61,
-          "target": 1837.65,
+          "entry": 4473.35,
+          "target": 4562.82,
           "stepFromAnchorPct": 4,
-          "historicalFills": 72,
-          "hitRatePct": 73.61,
-          "hitRateLowerPct": 62.42,
-          "averageNetPct": 0.865,
-          "medianSessionsHeld": 1
-        }
-      ],
-      "convictionPct": 52.58,
-      "expectedWeeklyPct": 0.913,
-      "expectedFromPricePct": 0.774,
-      "expectedFromCarryPct": 0.139,
-      "sizeMultiplier": 0.813,
-      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
-      "reasons": [
-        "Rungs 1, 2 cleared t≥1.89 with 0.53% average out-of-sample week",
-        "Realised weekly edge: 0.53% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 1 hits its 2% target at least 57.31% of the time with 95% confidence",
-        "Trend alignment: 12-month move 30.549%, 0.86 per unit of risk",
-        "Model expectation: boosted trees expect 1.0189% this week",
-        "Model skill: out-of-sample information coefficient 0.2694",
-        "Carry: futures at a discount of -0.219%, worth 0.139% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.15"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.265,
-          "contribution": 5.83,
-          "note": "0.53% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0.2437,
-          "contribution": 3.9,
-          "note": "rung 1 hits its 2% target at least 57.31% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.9085,
-          "contribution": 13.63,
-          "note": "12-month move 30.549%, 0.86 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0.5095,
-          "contribution": 8.15,
-          "note": "boosted trees expect 1.0189% this week"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 1,
-          "contribution": 7,
-          "note": "out-of-sample information coefficient 0.2694"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "no technical composite supplied"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.8475,
-          "contribution": 10.17,
-          "note": "futures at a discount of -0.219%, worth 0.139% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 0.65,
-          "contribution": 3.9,
-          "note": "balance-sheet score 0.15"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-02-10",
-        "modelValidation": {
-          "weeks": 165,
-          "actedWeeks": 116,
-          "informationCoefficient": 0.2694,
-          "meanAbsoluteErrorPct": 2.042,
-          "actedAverageWeeklyPct": 0.692,
-          "actedWinRatePct": 48.06,
-          "allWeeksAverageWeeklyPct": 0.528
-        },
-        "modelTrustworthy": true,
-        "trend": {
-          "returnPct": 30.549,
-          "scaled": 0.8627,
-          "annualisedVolatilityPct": 35.41
-        },
-        "topFeatures": [
-          {
-            "feature": "atr14Pct",
-            "sharePct": 10.2
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 9.35
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.67
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 8.16
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 7.14
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 6.8
-          },
-          {
-            "feature": "smaGap20Pct",
-            "sharePct": 6.46
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 6.29
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.15,
-          "nextEarningsDate": "2026-07-28",
-          "metrics": {
-            "profitMargin": 0.40549,
-            "returnOnEquity": null,
-            "returnOnAssets": null,
-            "operatingMargin": 0.56586,
-            "debtToEquity": 695.283,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 2117722046464,
-            "totalCash": 100159102976,
-            "revenueGrowth": 0.346,
-            "earningsGrowth": 0.437,
-            "forwardPE": 19.294487,
-            "enterpriseValue": 3631662235648,
-            "beta": 0.477,
-            "floatShares": 433133095,
-            "sharesOutstanding": 854065996
-          }
-        }
-      },
-      "symbolBars": 1238,
-      "inJournal": true
-    },
-    {
-      "symbol": "MFSL",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1498.9,
-      "sessionsElapsed": 5,
-      "levels": [
-        1,
-        3
-      ],
-      "entries": [
-        {
-          "level": 1,
-          "entry": 1468.92,
-          "target": 1498.3,
-          "stepFromAnchorPct": 2,
-          "historicalFills": 152,
-          "hitRatePct": 63.16,
-          "hitRateLowerPct": 55.25,
-          "averageNetPct": 0.415,
+          "historicalFills": 76,
+          "hitRatePct": 76.32,
+          "hitRateLowerPct": 65.64,
+          "averageNetPct": 1.089,
           "medianSessionsHeld": 1
         },
         {
           "level": 3,
-          "entry": 1410.75,
-          "target": 1438.97,
+          "entry": 4383.88,
+          "target": 4471.56,
           "stepFromAnchorPct": 6,
-          "historicalFills": 25,
+          "historicalFills": 36,
+          "hitRatePct": 86.11,
+          "hitRateLowerPct": 71.34,
+          "averageNetPct": 1.376,
+          "medianSessionsHeld": 1
+        },
+        {
+          "level": 4,
+          "entry": 4296.21,
+          "target": 4382.13,
+          "stepFromAnchorPct": 8,
+          "historicalFills": 15,
           "hitRatePct": 80,
-          "hitRateLowerPct": 60.87,
-          "averageNetPct": 0.96,
+          "hitRateLowerPct": 54.81,
+          "averageNetPct": 1.277,
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 38.42,
-      "expectedWeeklyPct": 0.628,
-      "expectedFromPricePct": 1.139,
-      "expectedFromCarryPct": -0.511,
-      "sizeMultiplier": 0.662,
+      "convictionPct": 55.04,
+      "expectedWeeklyPct": 0.949,
+      "expectedFromPricePct": 0.846,
+      "expectedFromCarryPct": 0.103,
+      "sizeMultiplier": 0.84,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 1, 3 cleared t≥1.89 with 0.469% average out-of-sample week",
-        "Realised weekly edge: 0.469% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 1 hits its 2% target at least 55.25% of the time with 95% confidence",
-        "Trend alignment: 12-month move 2.206%, 0.09 per unit of risk",
-        "Model expectation: boosted trees expect 1.8091% this week",
-        "Model skill: out-of-sample information coefficient 0.1459",
-        "Balance-sheet asymmetry: balance-sheet score 0.0219"
+        "Rungs 1, 2, 3, 4 cleared t≥1.89 with 1.073% average out-of-sample week",
+        "Realised weekly edge: 1.073% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 1 hits its 2% target at least 59.54% of the time with 95% confidence",
+        "Trend alignment: 12-month move 64.481%, 2.71 per unit of risk",
+        "Model expectation: boosted trees expect 0.6195% this week",
+        "Model skill: out-of-sample information coefficient 0.0495",
+        "Carry: futures at a discount of -0.162%, worth 0.103% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.4391"
       ],
       "vetoes": [],
       "components": [
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.2345,
-          "contribution": 5.16,
-          "note": "0.469% average out-of-sample week over 79 weeks"
+          "score": 0.5365,
+          "contribution": 11.8,
+          "note": "1.073% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
           "weight": 16,
-          "score": 0.175,
-          "contribution": 2.8,
-          "note": "rung 1 hits its 2% target at least 55.25% of the time with 95% confidence"
+          "score": 0.318,
+          "contribution": 5.09,
+          "note": "rung 1 hits its 2% target at least 59.54% of the time with 95% confidence"
         },
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.3904,
-          "contribution": 5.86,
-          "note": "12-month move 2.206%, 0.09 per unit of risk"
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 64.481%, 2.71 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.9046,
-          "contribution": 14.47,
-          "note": "boosted trees expect 1.8091% this week"
+          "score": 0.3098,
+          "contribution": 4.96,
+          "note": "boosted trees expect 0.6195% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 1,
-          "contribution": 7,
-          "note": "out-of-sample information coefficient 0.1459"
+          "score": 0.495,
+          "contribution": 3.47,
+          "note": "out-of-sample information coefficient 0.0495"
         },
         {
           "name": "Technical alignment",
@@ -292,16 +129,16 @@
         {
           "name": "Carry",
           "weight": 12,
-          "score": 0,
-          "contribution": 0,
-          "note": "futures at a premium of 0.804%, worth -0.511% to this side over the week"
+          "score": 0.7575,
+          "contribution": 9.09,
+          "note": "futures at a discount of -0.162%, worth 0.103% to this side over the week"
         },
         {
           "name": "Balance-sheet asymmetry",
           "weight": 6,
-          "score": 0.5219,
-          "contribution": 3.13,
-          "note": "balance-sheet score 0.0219"
+          "score": 0.9391,
+          "contribution": 5.63,
+          "note": "balance-sheet score 0.4391"
         }
       ],
       "evidence": {
@@ -309,73 +146,73 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 93,
-          "informationCoefficient": 0.1459,
-          "meanAbsoluteErrorPct": 1.918,
-          "actedAverageWeeklyPct": 0.79,
-          "actedWinRatePct": 42.6,
-          "allWeeksAverageWeeklyPct": 0.543
+          "actedWeeks": 133,
+          "informationCoefficient": 0.0495,
+          "meanAbsoluteErrorPct": 2.019,
+          "actedAverageWeeklyPct": 1.08,
+          "actedWinRatePct": 50.01,
+          "allWeeksAverageWeeklyPct": 1.049
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": 2.206,
-          "scaled": 0.0856,
-          "annualisedVolatilityPct": 25.77
+          "returnPct": 64.481,
+          "scaled": 2.7097,
+          "annualisedVolatilityPct": 23.8
         },
         "topFeatures": [
           {
-            "feature": "bodyRatio",
-            "sharePct": 11.6
-          },
-          {
-            "feature": "smaGap20Pct",
-            "sharePct": 8.75
+            "feature": "volumeRatio520",
+            "sharePct": 11.51
           },
           {
             "feature": "closeLocation",
-            "sharePct": 8.56
+            "sharePct": 10.25
           },
           {
-            "feature": "rsi14",
-            "sharePct": 8.37
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 7.41
+            "feature": "volRatio2163",
+            "sharePct": 9.71
           },
           {
             "feature": "smaSpread2050Pct",
-            "sharePct": 7.41
+            "sharePct": 8.63
           },
           {
-            "feature": "volumeRatio520",
-            "sharePct": 6.84
+            "feature": "atr14Pct",
+            "sharePct": 7.91
           },
           {
-            "feature": "return63Pct",
-            "sharePct": 6.46
+            "feature": "realisedVol21Pct",
+            "sharePct": 7.73
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 7.55
+          },
+          {
+            "feature": "bodyRatio",
+            "sharePct": 7.01
           }
         ],
         "fundamentals": {
-          "balanceSheetScore": 0.0219,
-          "nextEarningsDate": "2026-10-27",
+          "balanceSheetScore": 0.4391,
+          "nextEarningsDate": "2026-10-28",
           "metrics": {
-            "profitMargin": 0.00221,
+            "profitMargin": 0.08838,
             "returnOnEquity": null,
             "returnOnAssets": null,
-            "operatingMargin": 0.04599,
-            "debtToEquity": 12.673,
+            "operatingMargin": 0.14869,
+            "debtToEquity": 20.939,
             "currentRatio": null,
             "quickRatio": null,
-            "totalDebt": 3572400128,
-            "totalCash": 4491100160,
-            "revenueGrowth": -0.402,
-            "earningsGrowth": null,
-            "forwardPE": 112.01326,
-            "enterpriseValue": 420058562560,
-            "beta": null,
-            "floatShares": 206073900,
-            "sharesOutstanding": 343446614
+            "totalDebt": 6235012096,
+            "totalCash": 539059968,
+            "revenueGrowth": 0.195,
+            "earningsGrowth": 0.621,
+            "forwardPE": 58.264454,
+            "enterpriseValue": 365108363264,
+            "beta": 0.244,
+            "floatShares": 76898725,
+            "sharesOutstanding": 133982398
           }
         }
       },
@@ -383,198 +220,12 @@
       "inJournal": false
     },
     {
-      "symbol": "FORCEMOT",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 18500,
-      "sessionsElapsed": 5,
-      "levels": [
-        4,
-        5
-      ],
-      "entries": [
-        {
-          "level": 4,
-          "entry": 17063.81,
-          "target": 17405.09,
-          "stepFromAnchorPct": 8,
-          "historicalFills": 27,
-          "hitRatePct": 81.48,
-          "hitRateLowerPct": 63.3,
-          "averageNetPct": 1.293,
-          "medianSessionsHeld": 1
-        },
-        {
-          "level": 5,
-          "entry": 16722.53,
-          "target": 17056.99,
-          "stepFromAnchorPct": 10,
-          "historicalFills": 13,
-          "hitRatePct": 92.31,
-          "hitRateLowerPct": 66.69,
-          "averageNetPct": 1.697,
-          "medianSessionsHeld": 1
-        }
-      ],
-      "convictionPct": 26.94,
-      "expectedWeeklyPct": 0.422,
-      "expectedFromPricePct": 0.458,
-      "expectedFromCarryPct": -0.036,
-      "sizeMultiplier": 0.539,
-      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
-      "reasons": [
-        "Rungs 4, 5 cleared t≥1.89 with 0.458% average out-of-sample week",
-        "Realised weekly edge: 0.458% average out-of-sample week over 76 weeks",
-        "Target hit reliability: rung 4 hits its 2% target at least 63.3% of the time with 95% confidence",
-        "Trend alignment: 12-month move 1.47%, 0.04 per unit of risk",
-        "Carry: futures at a premium of 0.056%, worth -0.036% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.2558"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.229,
-          "contribution": 5.04,
-          "note": "0.458% average out-of-sample week over 76 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0.4433,
-          "contribution": 7.09,
-          "note": "rung 4 hits its 2% target at least 63.3% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.3572,
-          "contribution": 5.36,
-          "note": "12-month move 1.47%, 0.04 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "model did not clear its out-of-sample gate"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 0,
-          "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0147"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "no technical composite supplied"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.41,
-          "contribution": 4.92,
-          "note": "futures at a premium of 0.056%, worth -0.036% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 0.7558,
-          "contribution": 4.53,
-          "note": "balance-sheet score 0.2558"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 253,
-        "cycleOutOfSampleFrom": "2025-03-03",
-        "modelValidation": {
-          "weeks": 157,
-          "actedWeeks": 92,
-          "informationCoefficient": -0.0147,
-          "meanAbsoluteErrorPct": 3.189,
-          "actedAverageWeeklyPct": 0.316,
-          "actedWinRatePct": 50.77,
-          "allWeeksAverageWeeklyPct": 0.256
-        },
-        "modelTrustworthy": false,
-        "trend": {
-          "returnPct": 1.47,
-          "scaled": 0.0358,
-          "annualisedVolatilityPct": 41.09
-        },
-        "topFeatures": [
-          {
-            "feature": "atr14Pct",
-            "sharePct": 10.91
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 9.73
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 8.72
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.22
-          },
-          {
-            "feature": "realisedVol21Pct",
-            "sharePct": 7.55
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 7.21
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 6.21
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 6.04
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.2558,
-          "nextEarningsDate": null,
-          "metrics": {
-            "profitMargin": 0.13607,
-            "returnOnEquity": null,
-            "returnOnAssets": null,
-            "operatingMargin": 0.10262,
-            "debtToEquity": null,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 0,
-            "totalCash": 8315899904,
-            "revenueGrowth": 0.062,
-            "earningsGrowth": 0.228,
-            "forwardPE": null,
-            "enterpriseValue": 233632415744,
-            "beta": 0.662,
-            "floatShares": 4664683,
-            "sharesOutstanding": 13176262
-          }
-        }
-      },
-      "symbolBars": 1196,
-      "inJournal": false
-    },
-    {
       "symbol": "CGPOWER",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 880.05,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 893.2,
+      "sessionsElapsed": 1,
       "levels": [
         3,
         4
@@ -582,8 +233,8 @@
       "entries": [
         {
           "level": 3,
-          "entry": 828.3,
-          "target": 844.86,
+          "entry": 840.67,
+          "target": 857.49,
           "stepFromAnchorPct": 6,
           "historicalFills": 35,
           "hitRatePct": 74.29,
@@ -593,8 +244,8 @@
         },
         {
           "level": 4,
-          "entry": 811.73,
-          "target": 827.96,
+          "entry": 823.86,
+          "target": 840.34,
           "stepFromAnchorPct": 8,
           "historicalFills": 18,
           "hitRatePct": 88.89,
@@ -603,19 +254,19 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 41.64,
-      "expectedWeeklyPct": 0.369,
-      "expectedFromPricePct": 0.339,
+      "convictionPct": 52.08,
+      "expectedWeeklyPct": 0.915,
+      "expectedFromPricePct": 0.885,
       "expectedFromCarryPct": 0.03,
-      "sizeMultiplier": 0.696,
+      "sizeMultiplier": 0.808,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
         "Rungs 3, 4 cleared t≥1.89 with 0.33% average out-of-sample week",
         "Realised weekly edge: 0.33% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 3 hits its 2% target at least 57.93% of the time with 95% confidence",
-        "Trend alignment: 12-month move 33.576%, 0.91 per unit of risk",
-        "Model expectation: boosted trees expect 0.3471% this week",
-        "Model skill: out-of-sample information coefficient 0.0585",
+        "Trend alignment: 12-month move 35.153%, 0.98 per unit of risk",
+        "Model expectation: boosted trees expect 1.4399% this week",
+        "Model skill: out-of-sample information coefficient 0.0727",
         "Carry: futures at a flat of -0.047%, worth 0.03% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4784"
       ],
@@ -638,23 +289,23 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.9419,
-          "contribution": 14.13,
-          "note": "12-month move 33.576%, 0.91 per unit of risk"
+          "score": 0.9891,
+          "contribution": 14.84,
+          "note": "12-month move 35.153%, 0.98 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.1736,
-          "contribution": 2.78,
-          "note": "boosted trees expect 0.3471% this week"
+          "score": 0.72,
+          "contribution": 11.52,
+          "note": "boosted trees expect 1.4399% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.585,
-          "contribution": 4.1,
-          "note": "out-of-sample information coefficient 0.0585"
+          "score": 0.727,
+          "contribution": 5.09,
+          "note": "out-of-sample information coefficient 0.0727"
         },
         {
           "name": "Technical alignment",
@@ -684,50 +335,50 @@
         "modelValidation": {
           "weeks": 165,
           "actedWeeks": 97,
-          "informationCoefficient": 0.0585,
-          "meanAbsoluteErrorPct": 2.743,
-          "actedAverageWeeklyPct": 0.336,
-          "actedWinRatePct": 47.19,
+          "informationCoefficient": 0.0727,
+          "meanAbsoluteErrorPct": 2.745,
+          "actedAverageWeeklyPct": 0.396,
+          "actedWinRatePct": 48.28,
           "allWeeksAverageWeeklyPct": 0.416
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": 33.576,
-          "scaled": 0.9128,
-          "annualisedVolatilityPct": 36.78
+          "returnPct": 35.153,
+          "scaled": 0.9836,
+          "annualisedVolatilityPct": 35.74
         },
         "topFeatures": [
           {
+            "feature": "volumeRatio520",
+            "sharePct": 10.43
+          },
+          {
             "feature": "closeLocation",
-            "sharePct": 9.18
+            "sharePct": 9.77
           },
           {
             "feature": "rsi14",
-            "sharePct": 9.02
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 8.51
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 8.18
+            "sharePct": 8.44
           },
           {
             "feature": "return63Pct",
-            "sharePct": 7.51
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.51
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 7.51
+            "sharePct": 7.62
           },
           {
             "feature": "return5Pct",
-            "sharePct": 6.68
+            "sharePct": 7.28
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.12
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 7.12
+          },
+          {
+            "feature": "bodyRatio",
+            "sharePct": 7.12
           }
         ],
         "fundamentals": {
@@ -753,93 +404,96 @@
           }
         }
       },
-      "symbolBars": 1238,
+      "symbolBars": 1239,
       "inJournal": false
     },
     {
-      "symbol": "ABCAPITAL",
+      "symbol": "AUBANK",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 405,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 1080,
+      "sessionsElapsed": 1,
       "levels": [
         2,
-        4
+        3
       ],
       "entries": [
         {
           "level": 2,
-          "entry": 388.96,
-          "target": 396.74,
+          "entry": 1037.23,
+          "target": 1057.98,
           "stepFromAnchorPct": 4,
-          "historicalFills": 73,
-          "hitRatePct": 69.86,
-          "hitRateLowerPct": 58.56,
+          "historicalFills": 61,
+          "hitRatePct": 63.93,
+          "hitRateLowerPct": 51.39,
           "averageNetPct": 0.656,
           "medianSessionsHeld": 1
         },
         {
-          "level": 4,
-          "entry": 373.56,
-          "target": 381.03,
-          "stepFromAnchorPct": 8,
-          "historicalFills": 11,
-          "hitRatePct": 90.91,
-          "hitRateLowerPct": 62.26,
-          "averageNetPct": 1.679,
+          "level": 3,
+          "entry": 1016.49,
+          "target": 1036.82,
+          "stepFromAnchorPct": 6,
+          "historicalFills": 27,
+          "hitRatePct": 74.07,
+          "hitRateLowerPct": 55.32,
+          "averageNetPct": 1.023,
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 30.3,
-      "expectedWeeklyPct": 0.339,
-      "expectedFromPricePct": 0.625,
-      "expectedFromCarryPct": -0.286,
-      "sizeMultiplier": 0.575,
+      "convictionPct": 34.66,
+      "expectedWeeklyPct": 0.354,
+      "expectedFromPricePct": 0.474,
+      "expectedFromCarryPct": -0.12,
+      "sizeMultiplier": 0.621,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 2, 4 cleared t≥1.89 with 0.625% average out-of-sample week",
-        "Realised weekly edge: 0.625% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 2 hits its 2% target at least 58.56% of the time with 95% confidence",
-        "Trend alignment: 12-month move 44.687%, 1.25 per unit of risk",
-        "Balance-sheet asymmetry: balance-sheet score 0.1411"
+        "Rungs 2, 3 cleared t≥1.89 with 0.312% average out-of-sample week",
+        "Realised weekly edge: 0.312% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 2 hits its 2% target at least 51.39% of the time with 95% confidence",
+        "Trend alignment: 12-month move 50.373%, 1.8 per unit of risk",
+        "Model expectation: boosted trees expect 0.6354% this week",
+        "Model skill: out-of-sample information coefficient 0.0416",
+        "Carry: futures at a premium of 0.188%, worth -0.12% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.35"
       ],
       "vetoes": [],
       "components": [
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.3125,
-          "contribution": 6.88,
-          "note": "0.625% average out-of-sample week over 79 weeks"
+          "score": 0.156,
+          "contribution": 3.43,
+          "note": "0.312% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
           "weight": 16,
-          "score": 0.2853,
-          "contribution": 4.57,
-          "note": "rung 2 hits its 2% target at least 58.56% of the time with 95% confidence"
+          "score": 0.0463,
+          "contribution": 0.74,
+          "note": "rung 2 hits its 2% target at least 51.39% of the time with 95% confidence"
         },
         {
           "name": "Trend alignment",
           "weight": 15,
           "score": 1,
           "contribution": 15,
-          "note": "12-month move 44.687%, 1.25 per unit of risk"
+          "note": "12-month move 50.373%, 1.8 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "model did not clear its out-of-sample gate"
+          "score": 0.3177,
+          "contribution": 5.08,
+          "note": "boosted trees expect 0.6354% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0,
-          "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0097"
+          "score": 0.416,
+          "contribution": 2.91,
+          "note": "out-of-sample information coefficient 0.0416"
         },
         {
           "name": "Technical alignment",
@@ -851,16 +505,16 @@
         {
           "name": "Carry",
           "weight": 12,
-          "score": 0,
-          "contribution": 0,
-          "note": "futures at a premium of 0.449%, worth -0.286% to this side over the week"
+          "score": 0.2,
+          "contribution": 2.4,
+          "note": "futures at a premium of 0.188%, worth -0.12% to this side over the week"
         },
         {
           "name": "Balance-sheet asymmetry",
           "weight": 6,
-          "score": 0.6411,
-          "contribution": 3.85,
-          "note": "balance-sheet score 0.1411"
+          "score": 0.85,
+          "contribution": 5.1,
+          "note": "balance-sheet score 0.35"
         }
       ],
       "evidence": {
@@ -868,94 +522,94 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 122,
-          "informationCoefficient": -0.0097,
-          "meanAbsoluteErrorPct": 2.021,
-          "actedAverageWeeklyPct": 0.442,
-          "actedWinRatePct": 40.04,
-          "allWeeksAverageWeeklyPct": 0.506
+          "actedWeeks": 98,
+          "informationCoefficient": 0.0416,
+          "meanAbsoluteErrorPct": 1.769,
+          "actedAverageWeeklyPct": 0.282,
+          "actedWinRatePct": 39.67,
+          "allWeeksAverageWeeklyPct": 0.317
         },
-        "modelTrustworthy": false,
+        "modelTrustworthy": true,
         "trend": {
-          "returnPct": 44.687,
-          "scaled": 1.2484,
-          "annualisedVolatilityPct": 35.8
+          "returnPct": 50.373,
+          "scaled": 1.7956,
+          "annualisedVolatilityPct": 28.05
         },
         "topFeatures": [
           {
-            "feature": "drawdown63Pct",
-            "sharePct": 10.51
+            "feature": "volumeRatio520",
+            "sharePct": 10.72
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 9.12
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 9.12
           },
           {
             "feature": "return21Pct",
-            "sharePct": 9.78
+            "sharePct": 7.2
           },
           {
-            "feature": "volumeRatio520",
-            "sharePct": 9.06
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.25
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 7.25
-          },
-          {
-            "feature": "rsi14",
+            "feature": "return63Pct",
             "sharePct": 6.88
           },
           {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 6.52
+            "feature": "atr14Pct",
+            "sharePct": 6.88
           },
           {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.34
+            "feature": "closeLocation",
+            "sharePct": 6.4
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 6.24
           }
         ],
         "fundamentals": {
-          "balanceSheetScore": 0.1411,
-          "nextEarningsDate": "2026-10-29",
+          "balanceSheetScore": 0.35,
+          "nextEarningsDate": "2026-10-17",
           "metrics": {
-            "profitMargin": 0.119449995,
+            "profitMargin": 0.21372999,
             "returnOnEquity": null,
             "returnOnAssets": null,
-            "operatingMargin": 0.17869,
-            "debtToEquity": 495.936,
+            "operatingMargin": 0.35311002,
+            "debtToEquity": null,
             "currentRatio": null,
             "quickRatio": null,
-            "totalDebt": 1823427919872,
-            "totalCash": 171203493888,
-            "revenueGrowth": 0.314,
-            "earningsGrowth": 0.391,
-            "forwardPE": 15.808992,
-            "enterpriseValue": 2726129303552,
-            "beta": 0.687,
-            "floatShares": 868739969,
-            "sharesOutstanding": 2736160882
+            "totalDebt": 138715447296,
+            "totalCash": 85234098176,
+            "revenueGrowth": 0.298,
+            "earningsGrowth": 0.351,
+            "forwardPE": 17.945562,
+            "enterpriseValue": 863586156544,
+            "beta": null,
+            "floatShares": 188550235,
+            "sharesOutstanding": 749004181
           }
         }
       },
-      "symbolBars": 1236,
-      "inJournal": false
+      "symbolBars": 1239,
+      "inJournal": true
     },
     {
       "symbol": "SHRIRAMFIN",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1115,
-      "sessionsElapsed": 4,
+      "weekKey": "2026-08-17",
+      "anchor": 1116,
+      "sessionsElapsed": 1,
       "levels": [
         1
       ],
       "entries": [
         {
           "level": 1,
-          "entry": 1092.7,
-          "target": 1114.55,
+          "entry": 1093.68,
+          "target": 1115.55,
           "stepFromAnchorPct": 2,
           "historicalFills": 151,
           "hitRatePct": 68.21,
@@ -974,7 +628,7 @@
         "Rungs 1 cleared t≥1.89 with 0.487% average out-of-sample week",
         "Realised weekly edge: 0.487% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 1 hits its 2% target at least 60.41% of the time with 95% confidence",
-        "Trend alignment: 12-month move 85.73%, 2.63 per unit of risk",
+        "Trend alignment: 12-month move 82.873%, 2.54 per unit of risk",
         "Carry: futures at a premium of 0.255%, worth -0.162% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4274"
       ],
@@ -999,7 +653,7 @@
           "weight": 15,
           "score": 1,
           "contribution": 15,
-          "note": "12-month move 85.73%, 2.63 per unit of risk"
+          "note": "12-month move 82.873%, 2.54 per unit of risk"
         },
         {
           "name": "Model expectation",
@@ -1051,9 +705,9 @@
         },
         "modelTrustworthy": false,
         "trend": {
-          "returnPct": 85.73,
-          "scaled": 2.6279,
-          "annualisedVolatilityPct": 32.62
+          "returnPct": 82.873,
+          "scaled": 2.5389,
+          "annualisedVolatilityPct": 32.64
         },
         "topFeatures": [
           {
@@ -1104,24 +758,24 @@
             "totalCash": 104298799104,
             "revenueGrowth": 0.428,
             "earningsGrowth": 0.295,
-            "forwardPE": 15.632664,
+            "forwardPE": 15.597832,
             "enterpriseValue": 4356188143616,
             "beta": 0.606,
             "floatShares": 1767008667,
-            "sharesOutstanding": 2352983543
+            "sharesOutstanding": 2352948439
           }
         }
       },
-      "symbolBars": 1238,
+      "symbolBars": 1239,
       "inJournal": true
     },
     {
       "symbol": "PHOENIXLTD",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1907,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 1891,
+      "sessionsElapsed": 1,
       "levels": [
         2,
         3,
@@ -1130,8 +784,8 @@
       "entries": [
         {
           "level": 2,
-          "entry": 1831.48,
-          "target": 1868.11,
+          "entry": 1816.12,
+          "target": 1852.44,
           "stepFromAnchorPct": 4,
           "historicalFills": 86,
           "hitRatePct": 74.42,
@@ -1141,8 +795,8 @@
         },
         {
           "level": 3,
-          "entry": 1794.85,
-          "target": 1830.75,
+          "entry": 1779.79,
+          "target": 1815.39,
           "stepFromAnchorPct": 6,
           "historicalFills": 39,
           "hitRatePct": 74.36,
@@ -1152,8 +806,8 @@
         },
         {
           "level": 4,
-          "entry": 1758.96,
-          "target": 1794.14,
+          "entry": 1744.2,
+          "target": 1779.08,
           "stepFromAnchorPct": 8,
           "historicalFills": 18,
           "hitRatePct": 77.78,
@@ -1162,17 +816,17 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 36.45,
-      "expectedWeeklyPct": 0.304,
-      "expectedFromPricePct": 0.358,
+      "convictionPct": 36.27,
+      "expectedWeeklyPct": 0.286,
+      "expectedFromPricePct": 0.34,
       "expectedFromCarryPct": -0.054,
-      "sizeMultiplier": 0.641,
+      "sizeMultiplier": 0.639,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 2, 3, 4 cleared t≥1.89 with 0.358% average out-of-sample week",
-        "Realised weekly edge: 0.358% average out-of-sample week over 79 weeks",
+        "Rungs 2, 3, 4 cleared t≥1.89 with 0.34% average out-of-sample week",
+        "Realised weekly edge: 0.34% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 2 hits its 2% target at least 64.29% of the time with 95% confidence",
-        "Trend alignment: 12-month move 28.04%, 1 per unit of risk",
+        "Trend alignment: 12-month move 29.276%, 1.04 per unit of risk",
         "Carry: futures at a premium of 0.086%, worth -0.054% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4222"
       ],
@@ -1181,9 +835,9 @@
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.179,
-          "contribution": 3.94,
-          "note": "0.358% average out-of-sample week over 79 weeks"
+          "score": 0.17,
+          "contribution": 3.74,
+          "note": "0.34% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
@@ -1195,9 +849,9 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.9987,
-          "contribution": 14.98,
-          "note": "12-month move 28.04%, 1 per unit of risk"
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 29.276%, 1.04 per unit of risk"
         },
         {
           "name": "Model expectation",
@@ -1211,7 +865,7 @@
           "weight": 7,
           "score": 0,
           "contribution": 0,
-          "note": "out-of-sample information coefficient -0.1347"
+          "note": "out-of-sample information coefficient -0.132"
         },
         {
           "name": "Technical alignment",
@@ -1241,50 +895,50 @@
         "modelValidation": {
           "weeks": 165,
           "actedWeeks": 111,
-          "informationCoefficient": -0.1347,
-          "meanAbsoluteErrorPct": 2.746,
-          "actedAverageWeeklyPct": 0.133,
+          "informationCoefficient": -0.132,
+          "meanAbsoluteErrorPct": 2.757,
+          "actedAverageWeeklyPct": 0.12,
           "actedWinRatePct": 31.3,
-          "allWeeksAverageWeeklyPct": 0.39
+          "allWeeksAverageWeeklyPct": 0.381
         },
         "modelTrustworthy": false,
         "trend": {
-          "returnPct": 28.04,
-          "scaled": 0.998,
-          "annualisedVolatilityPct": 28.09
+          "returnPct": 29.276,
+          "scaled": 1.0436,
+          "annualisedVolatilityPct": 28.05
         },
         "topFeatures": [
           {
             "feature": "atr14Pct",
-            "sharePct": 10.32
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 9.03
+            "sharePct": 9.88
           },
           {
             "feature": "return63Pct",
-            "sharePct": 8.87
+            "sharePct": 8.9
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 8.4
           },
           {
             "feature": "closeLocation",
-            "sharePct": 8.06
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 6.61
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 6.61
+            "sharePct": 8.07
           },
           {
             "feature": "smaGap20Pct",
-            "sharePct": 6.45
+            "sharePct": 7.91
           },
           {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.45
+            "feature": "volumeRatio520",
+            "sharePct": 7.41
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 6.59
+          },
+          {
+            "feature": "return21Pct",
+            "sharePct": 5.93
           }
         ],
         "fundamentals": {
@@ -1302,7 +956,7 @@
             "totalCash": 8230745088,
             "revenueGrowth": 0.128,
             "earningsGrowth": 0.233,
-            "forwardPE": 37.878036,
+            "forwardPE": 37.75378,
             "enterpriseValue": 754152505344,
             "beta": 0.324,
             "floatShares": 186201245,
@@ -1310,96 +964,95 @@
           }
         }
       },
-      "symbolBars": 1235,
+      "symbolBars": 1236,
       "inJournal": false
     },
     {
-      "symbol": "AUBANK",
+      "symbol": "MFSL",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1068.3,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 1533,
+      "sessionsElapsed": 1,
       "levels": [
-        2,
+        1,
         3
       ],
       "entries": [
         {
-          "level": 2,
-          "entry": 1026,
-          "target": 1046.52,
-          "stepFromAnchorPct": 4,
-          "historicalFills": 61,
-          "hitRatePct": 63.93,
-          "hitRateLowerPct": 51.39,
-          "averageNetPct": 0.656,
+          "level": 1,
+          "entry": 1502.34,
+          "target": 1532.39,
+          "stepFromAnchorPct": 2,
+          "historicalFills": 151,
+          "hitRatePct": 62.91,
+          "hitRateLowerPct": 54.98,
+          "averageNetPct": 0.41,
           "medianSessionsHeld": 1
         },
         {
           "level": 3,
-          "entry": 1005.48,
-          "target": 1025.59,
+          "entry": 1442.85,
+          "target": 1471.7,
           "stepFromAnchorPct": 6,
-          "historicalFills": 27,
-          "hitRatePct": 74.07,
-          "hitRateLowerPct": 55.32,
-          "averageNetPct": 1.023,
+          "historicalFills": 25,
+          "hitRatePct": 80,
+          "hitRateLowerPct": 60.87,
+          "averageNetPct": 0.96,
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 33.33,
-      "expectedWeeklyPct": 0.266,
-      "expectedFromPricePct": 0.386,
-      "expectedFromCarryPct": -0.12,
-      "sizeMultiplier": 0.607,
+      "convictionPct": 31.32,
+      "expectedWeeklyPct": 0.281,
+      "expectedFromPricePct": 0.792,
+      "expectedFromCarryPct": -0.511,
+      "sizeMultiplier": 0.586,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 2, 3 cleared t≥1.89 with 0.312% average out-of-sample week",
-        "Realised weekly edge: 0.312% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 2 hits its 2% target at least 51.39% of the time with 95% confidence",
-        "Trend alignment: 12-month move 46.401%, 1.65 per unit of risk",
-        "Model expectation: boosted trees expect 0.4602% this week",
-        "Model skill: out-of-sample information coefficient 0.0426",
-        "Carry: futures at a premium of 0.188%, worth -0.12% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.35"
+        "Rungs 1, 3 cleared t≥1.89 with 0.479% average out-of-sample week",
+        "Realised weekly edge: 0.479% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 1 hits its 2% target at least 54.98% of the time with 95% confidence",
+        "Trend alignment: 12-month move -1.491%, -0.06 per unit of risk",
+        "Model expectation: boosted trees expect 1.1053% this week",
+        "Model skill: out-of-sample information coefficient 0.1487",
+        "Balance-sheet asymmetry: balance-sheet score 0.0219"
       ],
       "vetoes": [],
       "components": [
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.156,
-          "contribution": 3.43,
-          "note": "0.312% average out-of-sample week over 79 weeks"
+          "score": 0.2395,
+          "contribution": 5.27,
+          "note": "0.479% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
           "weight": 16,
-          "score": 0.0463,
-          "contribution": 0.74,
-          "note": "rung 2 hits its 2% target at least 51.39% of the time with 95% confidence"
+          "score": 0.166,
+          "contribution": 2.66,
+          "note": "rung 1 hits its 2% target at least 54.98% of the time with 95% confidence"
         },
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 1,
-          "contribution": 15,
-          "note": "12-month move 46.401%, 1.65 per unit of risk"
+          "score": 0.2947,
+          "contribution": 4.42,
+          "note": "12-month move -1.491%, -0.06 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.2301,
-          "contribution": 3.68,
-          "note": "boosted trees expect 0.4602% this week"
+          "score": 0.5527,
+          "contribution": 8.84,
+          "note": "boosted trees expect 1.1053% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.426,
-          "contribution": 2.98,
-          "note": "out-of-sample information coefficient 0.0426"
+          "score": 1,
+          "contribution": 7,
+          "note": "out-of-sample information coefficient 0.1487"
         },
         {
           "name": "Technical alignment",
@@ -1411,16 +1064,16 @@
         {
           "name": "Carry",
           "weight": 12,
-          "score": 0.2,
-          "contribution": 2.4,
-          "note": "futures at a premium of 0.188%, worth -0.12% to this side over the week"
+          "score": 0,
+          "contribution": 0,
+          "note": "futures at a premium of 0.804%, worth -0.511% to this side over the week"
         },
         {
           "name": "Balance-sheet asymmetry",
           "weight": 6,
-          "score": 0.85,
-          "contribution": 5.1,
-          "note": "balance-sheet score 0.35"
+          "score": 0.5219,
+          "contribution": 3.13,
+          "note": "balance-sheet score 0.0219"
         }
       ],
       "evidence": {
@@ -1428,94 +1081,94 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 97,
-          "informationCoefficient": 0.0426,
-          "meanAbsoluteErrorPct": 1.766,
-          "actedAverageWeeklyPct": 0.285,
-          "actedWinRatePct": 40.07,
-          "allWeeksAverageWeeklyPct": 0.317
+          "actedWeeks": 93,
+          "informationCoefficient": 0.1487,
+          "meanAbsoluteErrorPct": 1.913,
+          "actedAverageWeeklyPct": 0.798,
+          "actedWinRatePct": 43.41,
+          "allWeeksAverageWeeklyPct": 0.547
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": 46.401,
-          "scaled": 1.6491,
-          "annualisedVolatilityPct": 28.14
+          "returnPct": -1.491,
+          "scaled": -0.058,
+          "annualisedVolatilityPct": 25.69
         },
         "topFeatures": [
           {
-            "feature": "volumeRatio520",
-            "sharePct": 10.56
+            "feature": "bodyRatio",
+            "sharePct": 11.45
           },
           {
-            "feature": "return5Pct",
-            "sharePct": 10.08
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.16
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 7.36
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 7.36
+            "feature": "rsi14",
+            "sharePct": 8.97
           },
           {
             "feature": "closeLocation",
-            "sharePct": 7.04
+            "sharePct": 8.59
           },
           {
-            "feature": "return63Pct",
-            "sharePct": 6.4
+            "feature": "smaGap20Pct",
+            "sharePct": 8.21
           },
           {
-            "feature": "atr14Pct",
-            "sharePct": 6.4
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 8.21
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 7.44
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 7.44
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 6.87
           }
         ],
         "fundamentals": {
-          "balanceSheetScore": 0.35,
-          "nextEarningsDate": "2026-10-17",
+          "balanceSheetScore": 0.0219,
+          "nextEarningsDate": "2026-10-27",
           "metrics": {
-            "profitMargin": 0.21372999,
+            "profitMargin": 0.00221,
             "returnOnEquity": null,
             "returnOnAssets": null,
-            "operatingMargin": 0.35311002,
-            "debtToEquity": null,
+            "operatingMargin": 0.04599,
+            "debtToEquity": 12.673,
             "currentRatio": null,
             "quickRatio": null,
-            "totalDebt": 138715447296,
-            "totalCash": 85234098176,
-            "revenueGrowth": 0.298,
-            "earningsGrowth": 0.351,
-            "forwardPE": 17.813839,
-            "enterpriseValue": 863586156544,
+            "totalDebt": 3572400128,
+            "totalCash": 4491100160,
+            "revenueGrowth": -0.402,
+            "earningsGrowth": null,
+            "forwardPE": 111.67826,
+            "enterpriseValue": 420058562560,
             "beta": null,
-            "floatShares": 188550235,
-            "sharesOutstanding": 749004181
+            "floatShares": 206073900,
+            "sharesOutstanding": 343446614
           }
         }
       },
       "symbolBars": 1238,
-      "inJournal": true
+      "inJournal": false
     },
     {
       "symbol": "GLENMARK",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 2293,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 2329.7,
+      "sessionsElapsed": 1,
       "levels": [
         1
       ],
       "entries": [
         {
           "level": 1,
-          "entry": 2247.14,
-          "target": 2292.08,
+          "entry": 2283.11,
+          "target": 2328.77,
           "stepFromAnchorPct": 2,
           "historicalFills": 136,
           "hitRatePct": 66.91,
@@ -1524,17 +1177,17 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 31,
+      "convictionPct": 31.48,
       "expectedWeeklyPct": 0.252,
       "expectedFromPricePct": 0.142,
       "expectedFromCarryPct": 0.11,
-      "sizeMultiplier": 0.582,
+      "sizeMultiplier": 0.587,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
         "Rungs 1 cleared t≥1.89 with 0.142% average out-of-sample week",
         "Realised weekly edge: 0.142% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 1 hits its 2% target at least 58.63% of the time with 95% confidence",
-        "Trend alignment: 12-month move 12.391%, 0.45 per unit of risk",
+        "Trend alignment: 12-month move 13.37%, 0.5 per unit of risk",
         "Carry: futures at a discount of -0.173%, worth 0.11% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4981"
       ],
@@ -1557,9 +1210,9 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.6366,
-          "contribution": 9.55,
-          "note": "12-month move 12.391%, 0.45 per unit of risk"
+          "score": 0.6684,
+          "contribution": 10.03,
+          "note": "12-month move 13.37%, 0.5 per unit of risk"
         },
         {
           "name": "Model expectation",
@@ -1573,7 +1226,7 @@
           "weight": 7,
           "score": 0,
           "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0401"
+          "note": "out-of-sample information coefficient -0.0417"
         },
         {
           "name": "Technical alignment",
@@ -1602,51 +1255,51 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 119,
-          "informationCoefficient": -0.0401,
-          "meanAbsoluteErrorPct": 1.965,
-          "actedAverageWeeklyPct": 0.22,
-          "actedWinRatePct": 32.87,
+          "actedWeeks": 118,
+          "informationCoefficient": -0.0417,
+          "meanAbsoluteErrorPct": 1.971,
+          "actedAverageWeeklyPct": 0.189,
+          "actedWinRatePct": 32.2,
           "allWeeksAverageWeeklyPct": 0.401
         },
         "modelTrustworthy": false,
         "trend": {
-          "returnPct": 12.391,
-          "scaled": 0.4549,
-          "annualisedVolatilityPct": 27.24
+          "returnPct": 13.37,
+          "scaled": 0.5026,
+          "annualisedVolatilityPct": 26.6
         },
         "topFeatures": [
           {
             "feature": "return5Pct",
-            "sharePct": 13.81
+            "sharePct": 12.38
           },
           {
             "feature": "volRatio2163",
-            "sharePct": 10.7
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.98
+            "sharePct": 12.38
           },
           {
             "feature": "bodyRatio",
-            "sharePct": 7.39
+            "sharePct": 8.06
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.47
           },
           {
             "feature": "zScore20",
-            "sharePct": 6.61
+            "sharePct": 6.88
           },
           {
-            "feature": "drawdown63Pct",
-            "sharePct": 6.23
+            "feature": "closeLocation",
+            "sharePct": 6.88
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 6.68
           },
           {
             "feature": "rangeLocation20",
-            "sharePct": 6.03
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 5.84
+            "sharePct": 6.09
           }
         ],
         "fundamentals": {
@@ -1664,7 +1317,7 @@
             "totalCash": 11762570240,
             "revenueGrowth": 0.231,
             "earningsGrowth": 9.307,
-            "forwardPE": 23.73781,
+            "forwardPE": 23.787981,
             "enterpriseValue": 648530165760,
             "beta": 0.248,
             "floatShares": 141617251,
@@ -1672,8 +1325,544 @@
           }
         }
       },
-      "symbolBars": 1237,
+      "symbolBars": 1238,
       "inJournal": true
+    },
+    {
+      "symbol": "MANKIND",
+      "action": "buy-ladder",
+      "side": "long",
+      "weekKey": "2026-08-17",
+      "anchor": 2419,
+      "sessionsElapsed": 1,
+      "levels": [
+        1,
+        2
+      ],
+      "entries": [
+        {
+          "level": 1,
+          "entry": 2370.62,
+          "target": 2418.03,
+          "stepFromAnchorPct": 2,
+          "historicalFills": 98,
+          "hitRatePct": 63.27,
+          "hitRateLowerPct": 53.39,
+          "averageNetPct": 0.507,
+          "medianSessionsHeld": 1
+        },
+        {
+          "level": 2,
+          "entry": 2323.21,
+          "target": 2369.67,
+          "stepFromAnchorPct": 4,
+          "historicalFills": 44,
+          "hitRatePct": 68.18,
+          "hitRateLowerPct": 53.44,
+          "averageNetPct": 0.653,
+          "medianSessionsHeld": 1
+        }
+      ],
+      "convictionPct": 17.5,
+      "expectedWeeklyPct": 0.129,
+      "expectedFromPricePct": 0.22,
+      "expectedFromCarryPct": -0.091,
+      "sizeMultiplier": 0.438,
+      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
+      "reasons": [
+        "Rungs 1, 2 cleared t≥1.89 with 0.22% average out-of-sample week",
+        "Realised weekly edge: 0.22% average out-of-sample week over 52 weeks",
+        "Target hit reliability: rung 1 hits its 2% target at least 53.39% of the time with 95% confidence",
+        "Trend alignment: 12-month move -1.288%, -0.05 per unit of risk",
+        "Carry: futures at a premium of 0.143%, worth -0.091% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.4208"
+      ],
+      "vetoes": [],
+      "components": [
+        {
+          "name": "Realised weekly edge",
+          "weight": 22,
+          "score": 0.11,
+          "contribution": 2.42,
+          "note": "0.22% average out-of-sample week over 52 weeks"
+        },
+        {
+          "name": "Target hit reliability",
+          "weight": 16,
+          "score": 0.113,
+          "contribution": 1.81,
+          "note": "rung 1 hits its 2% target at least 53.39% of the time with 95% confidence"
+        },
+        {
+          "name": "Trend alignment",
+          "weight": 15,
+          "score": 0.2988,
+          "contribution": 4.48,
+          "note": "12-month move -1.288%, -0.05 per unit of risk"
+        },
+        {
+          "name": "Model expectation",
+          "weight": 16,
+          "score": 0,
+          "contribution": 0,
+          "note": "model did not clear its out-of-sample gate"
+        },
+        {
+          "name": "Model skill",
+          "weight": 7,
+          "score": 0,
+          "contribution": 0,
+          "note": "out-of-sample information coefficient -0.0543"
+        },
+        {
+          "name": "Technical alignment",
+          "weight": 6,
+          "score": 0,
+          "contribution": 0,
+          "note": "no technical composite supplied"
+        },
+        {
+          "name": "Carry",
+          "weight": 12,
+          "score": 0.2725,
+          "contribution": 3.27,
+          "note": "futures at a premium of 0.143%, worth -0.091% to this side over the week"
+        },
+        {
+          "name": "Balance-sheet asymmetry",
+          "weight": 6,
+          "score": 0.9208,
+          "contribution": 5.52,
+          "note": "balance-sheet score 0.4208"
+        }
+      ],
+      "evidence": {
+        "cycleWeeks": 171,
+        "cycleOutOfSampleFrom": "2025-08-18",
+        "modelValidation": {
+          "weeks": 76,
+          "actedWeeks": 57,
+          "informationCoefficient": -0.0543,
+          "meanAbsoluteErrorPct": 1.757,
+          "actedAverageWeeklyPct": 0.091,
+          "actedWinRatePct": 36.25,
+          "allWeeksAverageWeeklyPct": 0.112
+        },
+        "modelTrustworthy": false,
+        "trend": {
+          "returnPct": -1.288,
+          "scaled": -0.0518,
+          "annualisedVolatilityPct": 24.85
+        },
+        "topFeatures": [
+          {
+            "feature": "return63Pct",
+            "sharePct": 12.94
+          },
+          {
+            "feature": "volumeRatio520",
+            "sharePct": 11.18
+          },
+          {
+            "feature": "bodyRatio",
+            "sharePct": 9.22
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 8.04
+          },
+          {
+            "feature": "realisedVol21Pct",
+            "sharePct": 7.84
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.65
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 6.27
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 6.27
+          }
+        ],
+        "fundamentals": {
+          "balanceSheetScore": 0.4208,
+          "nextEarningsDate": "2026-10-29",
+          "metrics": {
+            "profitMargin": 0.13859999,
+            "returnOnEquity": null,
+            "returnOnAssets": null,
+            "operatingMargin": 0.20605,
+            "debtToEquity": 38.111,
+            "currentRatio": null,
+            "quickRatio": null,
+            "totalDebt": 63115399168,
+            "totalCash": 22076499968,
+            "revenueGrowth": 0.129,
+            "earningsGrowth": 0.296,
+            "forwardPE": 34.124172,
+            "enterpriseValue": 1044837236736,
+            "beta": 0.46,
+            "floatShares": 112949831,
+            "sharesOutstanding": 412995978
+          }
+        }
+      },
+      "symbolBars": 812,
+      "inJournal": false
+    },
+    {
+      "symbol": "SOLARINDS",
+      "action": "buy-ladder",
+      "side": "long",
+      "weekKey": "2026-08-17",
+      "anchor": 19951,
+      "sessionsElapsed": 1,
+      "levels": [
+        4
+      ],
+      "entries": [
+        {
+          "level": 4,
+          "entry": 18402.17,
+          "target": 18770.21,
+          "stepFromAnchorPct": 8,
+          "historicalFills": 24,
+          "hitRatePct": 75,
+          "hitRateLowerPct": 55.1,
+          "averageNetPct": 1.113,
+          "medianSessionsHeld": 1
+        }
+      ],
+      "convictionPct": 35.73,
+      "expectedWeeklyPct": 0.097,
+      "expectedFromPricePct": 0.306,
+      "expectedFromCarryPct": -0.209,
+      "sizeMultiplier": 0.633,
+      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
+      "reasons": [
+        "Rungs 4 cleared t≥1.89 with 0.055% average out-of-sample week",
+        "Realised weekly edge: 0.055% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 4 hits its 2% target at least 55.1% of the time with 95% confidence",
+        "Trend alignment: 12-month move 39.635%, 1.22 per unit of risk",
+        "Model expectation: boosted trees expect 0.5563% this week",
+        "Model skill: out-of-sample information coefficient 0.133",
+        "Balance-sheet asymmetry: balance-sheet score 0.4918"
+      ],
+      "vetoes": [],
+      "components": [
+        {
+          "name": "Realised weekly edge",
+          "weight": 22,
+          "score": 0.0275,
+          "contribution": 0.61,
+          "note": "0.055% average out-of-sample week over 79 weeks"
+        },
+        {
+          "name": "Target hit reliability",
+          "weight": 16,
+          "score": 0.17,
+          "contribution": 2.72,
+          "note": "rung 4 hits its 2% target at least 55.1% of the time with 95% confidence"
+        },
+        {
+          "name": "Trend alignment",
+          "weight": 15,
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 39.635%, 1.22 per unit of risk"
+        },
+        {
+          "name": "Model expectation",
+          "weight": 16,
+          "score": 0.2782,
+          "contribution": 4.45,
+          "note": "boosted trees expect 0.5563% this week"
+        },
+        {
+          "name": "Model skill",
+          "weight": 7,
+          "score": 1,
+          "contribution": 7,
+          "note": "out-of-sample information coefficient 0.133"
+        },
+        {
+          "name": "Technical alignment",
+          "weight": 6,
+          "score": 0,
+          "contribution": 0,
+          "note": "no technical composite supplied"
+        },
+        {
+          "name": "Carry",
+          "weight": 12,
+          "score": 0,
+          "contribution": 0,
+          "note": "futures at a premium of 0.328%, worth -0.209% to this side over the week"
+        },
+        {
+          "name": "Balance-sheet asymmetry",
+          "weight": 6,
+          "score": 0.9918,
+          "contribution": 5.95,
+          "note": "balance-sheet score 0.4918"
+        }
+      ],
+      "evidence": {
+        "cycleWeeks": 261,
+        "cycleOutOfSampleFrom": "2025-02-10",
+        "modelValidation": {
+          "weeks": 165,
+          "actedWeeks": 92,
+          "informationCoefficient": 0.133,
+          "meanAbsoluteErrorPct": 2.591,
+          "actedAverageWeeklyPct": 0.572,
+          "actedWinRatePct": 44.91,
+          "allWeeksAverageWeeklyPct": 0.292
+        },
+        "modelTrustworthy": true,
+        "trend": {
+          "returnPct": 39.635,
+          "scaled": 1.2249,
+          "annualisedVolatilityPct": 32.36
+        },
+        "topFeatures": [
+          {
+            "feature": "return63Pct",
+            "sharePct": 10.68
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 9.79
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 8.72
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 7.65
+          },
+          {
+            "feature": "drawdown63Pct",
+            "sharePct": 7.3
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 7.12
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 6.05
+          },
+          {
+            "feature": "return21Pct",
+            "sharePct": 5.87
+          }
+        ],
+        "fundamentals": {
+          "balanceSheetScore": 0.4918,
+          "nextEarningsDate": "2026-08-13",
+          "metrics": {
+            "profitMargin": 0.17543,
+            "returnOnEquity": null,
+            "returnOnAssets": null,
+            "operatingMargin": 0.25502002,
+            "debtToEquity": 23.271,
+            "currentRatio": null,
+            "quickRatio": null,
+            "totalDebt": 15240200192,
+            "totalCash": 4806300160,
+            "revenueGrowth": 0.703,
+            "earningsGrowth": 0.927,
+            "forwardPE": 58.8168,
+            "enterpriseValue": 1820146794496,
+            "beta": 0.238,
+            "floatShares": 23873086,
+            "sharesOutstanding": 90490055
+          }
+        }
+      },
+      "symbolBars": 1237,
+      "inJournal": false
+    },
+    {
+      "symbol": "ABB",
+      "action": "buy-ladder",
+      "side": "long",
+      "weekKey": "2026-08-17",
+      "anchor": 7652.5,
+      "sessionsElapsed": 1,
+      "levels": [
+        3
+      ],
+      "entries": [
+        {
+          "level": 3,
+          "entry": 7202.47,
+          "target": 7346.52,
+          "stepFromAnchorPct": 6,
+          "historicalFills": 24,
+          "hitRatePct": 83.33,
+          "hitRateLowerPct": 64.15,
+          "averageNetPct": 1.157,
+          "medianSessionsHeld": 1
+        }
+      ],
+      "convictionPct": 34.14,
+      "expectedWeeklyPct": 0.039,
+      "expectedFromPricePct": 0.223,
+      "expectedFromCarryPct": -0.184,
+      "sizeMultiplier": 0.616,
+      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
+      "reasons": [
+        "Rungs 3 cleared t≥1.89 with 0.223% average out-of-sample week",
+        "Realised weekly edge: 0.223% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 3 hits its 2% target at least 64.15% of the time with 95% confidence",
+        "Trend alignment: 12-month move 51.387%, 1.69 per unit of risk",
+        "Model skill: out-of-sample information coefficient 0.038",
+        "Carry: futures at a premium of 0.288%, worth -0.184% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.9411"
+      ],
+      "vetoes": [],
+      "components": [
+        {
+          "name": "Realised weekly edge",
+          "weight": 22,
+          "score": 0.1115,
+          "contribution": 2.45,
+          "note": "0.223% average out-of-sample week over 79 weeks"
+        },
+        {
+          "name": "Target hit reliability",
+          "weight": 16,
+          "score": 0.4717,
+          "contribution": 7.55,
+          "note": "rung 3 hits its 2% target at least 64.15% of the time with 95% confidence"
+        },
+        {
+          "name": "Trend alignment",
+          "weight": 15,
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 51.387%, 1.69 per unit of risk"
+        },
+        {
+          "name": "Model expectation",
+          "weight": 16,
+          "score": 0,
+          "contribution": 0,
+          "note": "model did not clear its out-of-sample gate"
+        },
+        {
+          "name": "Model skill",
+          "weight": 7,
+          "score": 0.38,
+          "contribution": 2.66,
+          "note": "out-of-sample information coefficient 0.038"
+        },
+        {
+          "name": "Technical alignment",
+          "weight": 6,
+          "score": 0,
+          "contribution": 0,
+          "note": "no technical composite supplied"
+        },
+        {
+          "name": "Carry",
+          "weight": 12,
+          "score": 0.04,
+          "contribution": 0.48,
+          "note": "futures at a premium of 0.288%, worth -0.184% to this side over the week"
+        },
+        {
+          "name": "Balance-sheet asymmetry",
+          "weight": 6,
+          "score": 1,
+          "contribution": 6,
+          "note": "balance-sheet score 0.9411"
+        }
+      ],
+      "evidence": {
+        "cycleWeeks": 261,
+        "cycleOutOfSampleFrom": "2025-02-10",
+        "modelValidation": {
+          "weeks": 165,
+          "actedWeeks": 107,
+          "informationCoefficient": 0.038,
+          "meanAbsoluteErrorPct": 2.281,
+          "actedAverageWeeklyPct": -0.314,
+          "actedWinRatePct": 36.56,
+          "allWeeksAverageWeeklyPct": -0.146
+        },
+        "modelTrustworthy": false,
+        "trend": {
+          "returnPct": 51.387,
+          "scaled": 1.6879,
+          "annualisedVolatilityPct": 30.44
+        },
+        "topFeatures": [
+          {
+            "feature": "return5Pct",
+            "sharePct": 9.38
+          },
+          {
+            "feature": "drawdown63Pct",
+            "sharePct": 8.33
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.99
+          },
+          {
+            "feature": "return21Pct",
+            "sharePct": 7.64
+          },
+          {
+            "feature": "realisedVol21Pct",
+            "sharePct": 7.64
+          },
+          {
+            "feature": "zScore20",
+            "sharePct": 7.47
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 7.29
+          },
+          {
+            "feature": "rangeLocation20",
+            "sharePct": 7.12
+          }
+        ],
+        "fundamentals": {
+          "balanceSheetScore": 0.9411,
+          "nextEarningsDate": "2026-07-31",
+          "metrics": {
+            "profitMargin": 0.21349001,
+            "returnOnEquity": 0.19131,
+            "returnOnAssets": 0.07907,
+            "operatingMargin": 0.11459,
+            "debtToEquity": 1.547,
+            "currentRatio": 2.193,
+            "quickRatio": 1.691,
+            "totalDebt": 1445200000,
+            "totalCash": 73355198464,
+            "revenueGrowth": 0.121,
+            "earningsGrowth": 0.03,
+            "forwardPE": 72.84953,
+            "enterpriseValue": 1549642235904,
+            "beta": 0.486,
+            "floatShares": 51771377,
+            "sharesOutstanding": 211908375
+          }
+        }
+      },
+      "symbolBars": 1238,
+      "inJournal": false
     }
   ],
   "sells": [
@@ -1681,17 +1870,17 @@
       "symbol": "SUPREMEIND",
       "action": "sell-ladder",
       "side": "short",
-      "weekKey": "2026-08-10",
-      "anchor": 3422.9,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 3590,
+      "sessionsElapsed": 1,
       "levels": [
         4
       ],
       "entries": [
         {
           "level": 4,
-          "entry": 3705.06,
-          "target": 3630.96,
+          "entry": 3885.93,
+          "target": 3808.21,
           "stepFromAnchorPct": 8,
           "historicalFills": 25,
           "hitRatePct": 84,
@@ -1700,19 +1889,19 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 59,
-      "expectedWeeklyPct": 1.92,
-      "expectedFromPricePct": 1.555,
+      "convictionPct": 53.39,
+      "expectedWeeklyPct": 1.3,
+      "expectedFromPricePct": 0.935,
       "expectedFromCarryPct": 0.365,
-      "sizeMultiplier": 0.882,
+      "sizeMultiplier": 0.822,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
         "Rungs 4 cleared t≥1.89 with 0.746% average out-of-sample week",
         "Realised weekly edge: 0.746% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 4 hits its 2% target at least 65.35% of the time with 95% confidence",
-        "Trend alignment: 12-month move -14.794%, -0.52 per unit of risk",
-        "Model expectation: boosted trees expect 2.3638% this week",
-        "Model skill: out-of-sample information coefficient 0.0525",
+        "Trend alignment: 12-month move -17.882%, -0.63 per unit of risk",
+        "Model expectation: boosted trees expect 1.1241% this week",
+        "Model skill: out-of-sample information coefficient 0.0564",
         "Carry: futures at a premium of 0.574%, worth 0.365% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.38"
       ],
@@ -1735,23 +1924,23 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.6799,
-          "contribution": 10.2,
-          "note": "12-month move -14.794%, -0.52 per unit of risk"
+          "score": 0.755,
+          "contribution": 11.33,
+          "note": "12-month move -17.882%, -0.63 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 1,
-          "contribution": 16,
-          "note": "boosted trees expect 2.3638% this week"
+          "score": 0.5621,
+          "contribution": 8.99,
+          "note": "boosted trees expect 1.1241% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.525,
-          "contribution": 3.68,
-          "note": "out-of-sample information coefficient 0.0525"
+          "score": 0.564,
+          "contribution": 3.95,
+          "note": "out-of-sample information coefficient 0.0564"
         },
         {
           "name": "Technical alignment",
@@ -1781,50 +1970,50 @@
         "modelValidation": {
           "weeks": 165,
           "actedWeeks": 100,
-          "informationCoefficient": 0.0525,
-          "meanAbsoluteErrorPct": 2.675,
+          "informationCoefficient": 0.0564,
+          "meanAbsoluteErrorPct": 2.679,
           "actedAverageWeeklyPct": 0.437,
           "actedWinRatePct": 50.68,
           "allWeeksAverageWeeklyPct": 0.355
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": -14.794,
-          "scaled": -0.5199,
-          "annualisedVolatilityPct": 28.45
+          "returnPct": -17.882,
+          "scaled": -0.6325,
+          "annualisedVolatilityPct": 28.27
         },
         "topFeatures": [
           {
             "feature": "return5Pct",
-            "sharePct": 16.42
+            "sharePct": 17.33
           },
           {
             "feature": "return63Pct",
-            "sharePct": 12.83
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 9.81
+            "sharePct": 12.57
           },
           {
             "feature": "bodyRatio",
-            "sharePct": 8.49
+            "sharePct": 8.76
           },
           {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.98
+            "feature": "volumeRatio520",
+            "sharePct": 8.19
           },
           {
             "feature": "gapFromWeekOpenPct",
-            "sharePct": 6.42
+            "sharePct": 7.81
+          },
+          {
+            "feature": "realisedVol21Pct",
+            "sharePct": 6.86
           },
           {
             "feature": "volRatio2163",
-            "sharePct": 6.23
+            "sharePct": 6.67
           },
           {
             "feature": "closeLocation",
-            "sharePct": 6.23
+            "sharePct": 4.95
           }
         ],
         "fundamentals": {
@@ -1842,7 +2031,7 @@
             "totalCash": 6488399872,
             "revenueGrowth": 0.042,
             "earningsGrowth": 0.387,
-            "forwardPE": 34.086777,
+            "forwardPE": 34.250557,
             "enterpriseValue": 446495916032,
             "beta": 0.182,
             "floatShares": 64309893,
@@ -1850,7 +2039,7 @@
           }
         }
       },
-      "symbolBars": 1237,
+      "symbolBars": 1238,
       "inJournal": false
     }
   ],
@@ -1859,17 +2048,17 @@
       "symbol": "SUPREMEIND",
       "action": "sell-ladder",
       "side": "short",
-      "weekKey": "2026-08-10",
-      "anchor": 3422.9,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 3590,
+      "sessionsElapsed": 1,
       "levels": [
         4
       ],
       "entries": [
         {
           "level": 4,
-          "entry": 3705.06,
-          "target": 3630.96,
+          "entry": 3885.93,
+          "target": 3808.21,
           "stepFromAnchorPct": 8,
           "historicalFills": 25,
           "hitRatePct": 84,
@@ -1878,19 +2067,19 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 59,
-      "expectedWeeklyPct": 1.92,
-      "expectedFromPricePct": 1.555,
+      "convictionPct": 53.39,
+      "expectedWeeklyPct": 1.3,
+      "expectedFromPricePct": 0.935,
       "expectedFromCarryPct": 0.365,
-      "sizeMultiplier": 0.882,
+      "sizeMultiplier": 0.822,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
         "Rungs 4 cleared t≥1.89 with 0.746% average out-of-sample week",
         "Realised weekly edge: 0.746% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 4 hits its 2% target at least 65.35% of the time with 95% confidence",
-        "Trend alignment: 12-month move -14.794%, -0.52 per unit of risk",
-        "Model expectation: boosted trees expect 2.3638% this week",
-        "Model skill: out-of-sample information coefficient 0.0525",
+        "Trend alignment: 12-month move -17.882%, -0.63 per unit of risk",
+        "Model expectation: boosted trees expect 1.1241% this week",
+        "Model skill: out-of-sample information coefficient 0.0564",
         "Carry: futures at a premium of 0.574%, worth 0.365% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.38"
       ],
@@ -1913,23 +2102,23 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.6799,
-          "contribution": 10.2,
-          "note": "12-month move -14.794%, -0.52 per unit of risk"
+          "score": 0.755,
+          "contribution": 11.33,
+          "note": "12-month move -17.882%, -0.63 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 1,
-          "contribution": 16,
-          "note": "boosted trees expect 2.3638% this week"
+          "score": 0.5621,
+          "contribution": 8.99,
+          "note": "boosted trees expect 1.1241% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.525,
-          "contribution": 3.68,
-          "note": "out-of-sample information coefficient 0.0525"
+          "score": 0.564,
+          "contribution": 3.95,
+          "note": "out-of-sample information coefficient 0.0564"
         },
         {
           "name": "Technical alignment",
@@ -1959,50 +2148,50 @@
         "modelValidation": {
           "weeks": 165,
           "actedWeeks": 100,
-          "informationCoefficient": 0.0525,
-          "meanAbsoluteErrorPct": 2.675,
+          "informationCoefficient": 0.0564,
+          "meanAbsoluteErrorPct": 2.679,
           "actedAverageWeeklyPct": 0.437,
           "actedWinRatePct": 50.68,
           "allWeeksAverageWeeklyPct": 0.355
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": -14.794,
-          "scaled": -0.5199,
-          "annualisedVolatilityPct": 28.45
+          "returnPct": -17.882,
+          "scaled": -0.6325,
+          "annualisedVolatilityPct": 28.27
         },
         "topFeatures": [
           {
             "feature": "return5Pct",
-            "sharePct": 16.42
+            "sharePct": 17.33
           },
           {
             "feature": "return63Pct",
-            "sharePct": 12.83
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 9.81
+            "sharePct": 12.57
           },
           {
             "feature": "bodyRatio",
-            "sharePct": 8.49
+            "sharePct": 8.76
           },
           {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.98
+            "feature": "volumeRatio520",
+            "sharePct": 8.19
           },
           {
             "feature": "gapFromWeekOpenPct",
-            "sharePct": 6.42
+            "sharePct": 7.81
+          },
+          {
+            "feature": "realisedVol21Pct",
+            "sharePct": 6.86
           },
           {
             "feature": "volRatio2163",
-            "sharePct": 6.23
+            "sharePct": 6.67
           },
           {
             "feature": "closeLocation",
-            "sharePct": 6.23
+            "sharePct": 4.95
           }
         ],
         "fundamentals": {
@@ -2020,7 +2209,7 @@
             "totalCash": 6488399872,
             "revenueGrowth": 0.042,
             "earningsGrowth": 0.387,
-            "forwardPE": 34.086777,
+            "forwardPE": 34.250557,
             "enterpriseValue": 446495916032,
             "beta": 0.182,
             "floatShares": 64309893,
@@ -2028,283 +2217,120 @@
           }
         }
       },
-      "symbolBars": 1237,
+      "symbolBars": 1238,
       "inJournal": false
     },
     {
-      "symbol": "CHOLAFIN",
+      "symbol": "RADICO",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1875.9,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 4657.8,
+      "sessionsElapsed": 1,
       "levels": [
         1,
-        2
+        2,
+        3,
+        4
       ],
       "entries": [
         {
           "level": 1,
-          "entry": 1838.38,
-          "target": 1875.15,
+          "entry": 4564.64,
+          "target": 4655.94,
           "stepFromAnchorPct": 2,
-          "historicalFills": 147,
-          "hitRatePct": 65.31,
-          "hitRateLowerPct": 57.31,
-          "averageNetPct": 0.452,
+          "historicalFills": 153,
+          "hitRatePct": 67.32,
+          "hitRateLowerPct": 59.54,
+          "averageNetPct": 0.62,
           "medianSessionsHeld": 1
         },
         {
           "level": 2,
-          "entry": 1801.61,
-          "target": 1837.65,
+          "entry": 4473.35,
+          "target": 4562.82,
           "stepFromAnchorPct": 4,
-          "historicalFills": 72,
-          "hitRatePct": 73.61,
-          "hitRateLowerPct": 62.42,
-          "averageNetPct": 0.865,
-          "medianSessionsHeld": 1
-        }
-      ],
-      "convictionPct": 52.58,
-      "expectedWeeklyPct": 0.913,
-      "expectedFromPricePct": 0.774,
-      "expectedFromCarryPct": 0.139,
-      "sizeMultiplier": 0.813,
-      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
-      "reasons": [
-        "Rungs 1, 2 cleared t≥1.89 with 0.53% average out-of-sample week",
-        "Realised weekly edge: 0.53% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 1 hits its 2% target at least 57.31% of the time with 95% confidence",
-        "Trend alignment: 12-month move 30.549%, 0.86 per unit of risk",
-        "Model expectation: boosted trees expect 1.0189% this week",
-        "Model skill: out-of-sample information coefficient 0.2694",
-        "Carry: futures at a discount of -0.219%, worth 0.139% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.15"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.265,
-          "contribution": 5.83,
-          "note": "0.53% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0.2437,
-          "contribution": 3.9,
-          "note": "rung 1 hits its 2% target at least 57.31% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.9085,
-          "contribution": 13.63,
-          "note": "12-month move 30.549%, 0.86 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0.5095,
-          "contribution": 8.15,
-          "note": "boosted trees expect 1.0189% this week"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 1,
-          "contribution": 7,
-          "note": "out-of-sample information coefficient 0.2694"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "no technical composite supplied"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.8475,
-          "contribution": 10.17,
-          "note": "futures at a discount of -0.219%, worth 0.139% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 0.65,
-          "contribution": 3.9,
-          "note": "balance-sheet score 0.15"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-02-10",
-        "modelValidation": {
-          "weeks": 165,
-          "actedWeeks": 116,
-          "informationCoefficient": 0.2694,
-          "meanAbsoluteErrorPct": 2.042,
-          "actedAverageWeeklyPct": 0.692,
-          "actedWinRatePct": 48.06,
-          "allWeeksAverageWeeklyPct": 0.528
-        },
-        "modelTrustworthy": true,
-        "trend": {
-          "returnPct": 30.549,
-          "scaled": 0.8627,
-          "annualisedVolatilityPct": 35.41
-        },
-        "topFeatures": [
-          {
-            "feature": "atr14Pct",
-            "sharePct": 10.2
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 9.35
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.67
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 8.16
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 7.14
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 6.8
-          },
-          {
-            "feature": "smaGap20Pct",
-            "sharePct": 6.46
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 6.29
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.15,
-          "nextEarningsDate": "2026-07-28",
-          "metrics": {
-            "profitMargin": 0.40549,
-            "returnOnEquity": null,
-            "returnOnAssets": null,
-            "operatingMargin": 0.56586,
-            "debtToEquity": 695.283,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 2117722046464,
-            "totalCash": 100159102976,
-            "revenueGrowth": 0.346,
-            "earningsGrowth": 0.437,
-            "forwardPE": 19.294487,
-            "enterpriseValue": 3631662235648,
-            "beta": 0.477,
-            "floatShares": 433133095,
-            "sharesOutstanding": 854065996
-          }
-        }
-      },
-      "symbolBars": 1238,
-      "inJournal": true
-    },
-    {
-      "symbol": "MFSL",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1498.9,
-      "sessionsElapsed": 5,
-      "levels": [
-        1,
-        3
-      ],
-      "entries": [
-        {
-          "level": 1,
-          "entry": 1468.92,
-          "target": 1498.3,
-          "stepFromAnchorPct": 2,
-          "historicalFills": 152,
-          "hitRatePct": 63.16,
-          "hitRateLowerPct": 55.25,
-          "averageNetPct": 0.415,
+          "historicalFills": 76,
+          "hitRatePct": 76.32,
+          "hitRateLowerPct": 65.64,
+          "averageNetPct": 1.089,
           "medianSessionsHeld": 1
         },
         {
           "level": 3,
-          "entry": 1410.75,
-          "target": 1438.97,
+          "entry": 4383.88,
+          "target": 4471.56,
           "stepFromAnchorPct": 6,
-          "historicalFills": 25,
+          "historicalFills": 36,
+          "hitRatePct": 86.11,
+          "hitRateLowerPct": 71.34,
+          "averageNetPct": 1.376,
+          "medianSessionsHeld": 1
+        },
+        {
+          "level": 4,
+          "entry": 4296.21,
+          "target": 4382.13,
+          "stepFromAnchorPct": 8,
+          "historicalFills": 15,
           "hitRatePct": 80,
-          "hitRateLowerPct": 60.87,
-          "averageNetPct": 0.96,
+          "hitRateLowerPct": 54.81,
+          "averageNetPct": 1.277,
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 38.42,
-      "expectedWeeklyPct": 0.628,
-      "expectedFromPricePct": 1.139,
-      "expectedFromCarryPct": -0.511,
-      "sizeMultiplier": 0.662,
+      "convictionPct": 55.04,
+      "expectedWeeklyPct": 0.949,
+      "expectedFromPricePct": 0.846,
+      "expectedFromCarryPct": 0.103,
+      "sizeMultiplier": 0.84,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 1, 3 cleared t≥1.89 with 0.469% average out-of-sample week",
-        "Realised weekly edge: 0.469% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 1 hits its 2% target at least 55.25% of the time with 95% confidence",
-        "Trend alignment: 12-month move 2.206%, 0.09 per unit of risk",
-        "Model expectation: boosted trees expect 1.8091% this week",
-        "Model skill: out-of-sample information coefficient 0.1459",
-        "Balance-sheet asymmetry: balance-sheet score 0.0219"
+        "Rungs 1, 2, 3, 4 cleared t≥1.89 with 1.073% average out-of-sample week",
+        "Realised weekly edge: 1.073% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 1 hits its 2% target at least 59.54% of the time with 95% confidence",
+        "Trend alignment: 12-month move 64.481%, 2.71 per unit of risk",
+        "Model expectation: boosted trees expect 0.6195% this week",
+        "Model skill: out-of-sample information coefficient 0.0495",
+        "Carry: futures at a discount of -0.162%, worth 0.103% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.4391"
       ],
       "vetoes": [],
       "components": [
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.2345,
-          "contribution": 5.16,
-          "note": "0.469% average out-of-sample week over 79 weeks"
+          "score": 0.5365,
+          "contribution": 11.8,
+          "note": "1.073% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
           "weight": 16,
-          "score": 0.175,
-          "contribution": 2.8,
-          "note": "rung 1 hits its 2% target at least 55.25% of the time with 95% confidence"
+          "score": 0.318,
+          "contribution": 5.09,
+          "note": "rung 1 hits its 2% target at least 59.54% of the time with 95% confidence"
         },
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.3904,
-          "contribution": 5.86,
-          "note": "12-month move 2.206%, 0.09 per unit of risk"
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 64.481%, 2.71 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.9046,
-          "contribution": 14.47,
-          "note": "boosted trees expect 1.8091% this week"
+          "score": 0.3098,
+          "contribution": 4.96,
+          "note": "boosted trees expect 0.6195% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 1,
-          "contribution": 7,
-          "note": "out-of-sample information coefficient 0.1459"
+          "score": 0.495,
+          "contribution": 3.47,
+          "note": "out-of-sample information coefficient 0.0495"
         },
         {
           "name": "Technical alignment",
@@ -2316,16 +2342,16 @@
         {
           "name": "Carry",
           "weight": 12,
-          "score": 0,
-          "contribution": 0,
-          "note": "futures at a premium of 0.804%, worth -0.511% to this side over the week"
+          "score": 0.7575,
+          "contribution": 9.09,
+          "note": "futures at a discount of -0.162%, worth 0.103% to this side over the week"
         },
         {
           "name": "Balance-sheet asymmetry",
           "weight": 6,
-          "score": 0.5219,
-          "contribution": 3.13,
-          "note": "balance-sheet score 0.0219"
+          "score": 0.9391,
+          "contribution": 5.63,
+          "note": "balance-sheet score 0.4391"
         }
       ],
       "evidence": {
@@ -2333,272 +2359,86 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 93,
-          "informationCoefficient": 0.1459,
-          "meanAbsoluteErrorPct": 1.918,
-          "actedAverageWeeklyPct": 0.79,
-          "actedWinRatePct": 42.6,
-          "allWeeksAverageWeeklyPct": 0.543
+          "actedWeeks": 133,
+          "informationCoefficient": 0.0495,
+          "meanAbsoluteErrorPct": 2.019,
+          "actedAverageWeeklyPct": 1.08,
+          "actedWinRatePct": 50.01,
+          "allWeeksAverageWeeklyPct": 1.049
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": 2.206,
-          "scaled": 0.0856,
-          "annualisedVolatilityPct": 25.77
+          "returnPct": 64.481,
+          "scaled": 2.7097,
+          "annualisedVolatilityPct": 23.8
         },
         "topFeatures": [
           {
-            "feature": "bodyRatio",
-            "sharePct": 11.6
-          },
-          {
-            "feature": "smaGap20Pct",
-            "sharePct": 8.75
+            "feature": "volumeRatio520",
+            "sharePct": 11.51
           },
           {
             "feature": "closeLocation",
-            "sharePct": 8.56
+            "sharePct": 10.25
           },
           {
-            "feature": "rsi14",
-            "sharePct": 8.37
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 7.41
+            "feature": "volRatio2163",
+            "sharePct": 9.71
           },
           {
             "feature": "smaSpread2050Pct",
-            "sharePct": 7.41
+            "sharePct": 8.63
           },
           {
-            "feature": "volumeRatio520",
-            "sharePct": 6.84
+            "feature": "atr14Pct",
+            "sharePct": 7.91
           },
           {
-            "feature": "return63Pct",
-            "sharePct": 6.46
+            "feature": "realisedVol21Pct",
+            "sharePct": 7.73
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 7.55
+          },
+          {
+            "feature": "bodyRatio",
+            "sharePct": 7.01
           }
         ],
         "fundamentals": {
-          "balanceSheetScore": 0.0219,
-          "nextEarningsDate": "2026-10-27",
+          "balanceSheetScore": 0.4391,
+          "nextEarningsDate": "2026-10-28",
           "metrics": {
-            "profitMargin": 0.00221,
+            "profitMargin": 0.08838,
             "returnOnEquity": null,
             "returnOnAssets": null,
-            "operatingMargin": 0.04599,
-            "debtToEquity": 12.673,
+            "operatingMargin": 0.14869,
+            "debtToEquity": 20.939,
             "currentRatio": null,
             "quickRatio": null,
-            "totalDebt": 3572400128,
-            "totalCash": 4491100160,
-            "revenueGrowth": -0.402,
-            "earningsGrowth": null,
-            "forwardPE": 112.01326,
-            "enterpriseValue": 420058562560,
-            "beta": null,
-            "floatShares": 206073900,
-            "sharesOutstanding": 343446614
+            "totalDebt": 6235012096,
+            "totalCash": 539059968,
+            "revenueGrowth": 0.195,
+            "earningsGrowth": 0.621,
+            "forwardPE": 58.264454,
+            "enterpriseValue": 365108363264,
+            "beta": 0.244,
+            "floatShares": 76898725,
+            "sharesOutstanding": 133982398
           }
         }
       },
       "symbolBars": 1237,
-      "inJournal": false
-    },
-    {
-      "symbol": "FORCEMOT",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 18500,
-      "sessionsElapsed": 5,
-      "levels": [
-        4,
-        5
-      ],
-      "entries": [
-        {
-          "level": 4,
-          "entry": 17063.81,
-          "target": 17405.09,
-          "stepFromAnchorPct": 8,
-          "historicalFills": 27,
-          "hitRatePct": 81.48,
-          "hitRateLowerPct": 63.3,
-          "averageNetPct": 1.293,
-          "medianSessionsHeld": 1
-        },
-        {
-          "level": 5,
-          "entry": 16722.53,
-          "target": 17056.99,
-          "stepFromAnchorPct": 10,
-          "historicalFills": 13,
-          "hitRatePct": 92.31,
-          "hitRateLowerPct": 66.69,
-          "averageNetPct": 1.697,
-          "medianSessionsHeld": 1
-        }
-      ],
-      "convictionPct": 26.94,
-      "expectedWeeklyPct": 0.422,
-      "expectedFromPricePct": 0.458,
-      "expectedFromCarryPct": -0.036,
-      "sizeMultiplier": 0.539,
-      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
-      "reasons": [
-        "Rungs 4, 5 cleared t≥1.89 with 0.458% average out-of-sample week",
-        "Realised weekly edge: 0.458% average out-of-sample week over 76 weeks",
-        "Target hit reliability: rung 4 hits its 2% target at least 63.3% of the time with 95% confidence",
-        "Trend alignment: 12-month move 1.47%, 0.04 per unit of risk",
-        "Carry: futures at a premium of 0.056%, worth -0.036% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.2558"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.229,
-          "contribution": 5.04,
-          "note": "0.458% average out-of-sample week over 76 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0.4433,
-          "contribution": 7.09,
-          "note": "rung 4 hits its 2% target at least 63.3% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.3572,
-          "contribution": 5.36,
-          "note": "12-month move 1.47%, 0.04 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "model did not clear its out-of-sample gate"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 0,
-          "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0147"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "no technical composite supplied"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.41,
-          "contribution": 4.92,
-          "note": "futures at a premium of 0.056%, worth -0.036% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 0.7558,
-          "contribution": 4.53,
-          "note": "balance-sheet score 0.2558"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 253,
-        "cycleOutOfSampleFrom": "2025-03-03",
-        "modelValidation": {
-          "weeks": 157,
-          "actedWeeks": 92,
-          "informationCoefficient": -0.0147,
-          "meanAbsoluteErrorPct": 3.189,
-          "actedAverageWeeklyPct": 0.316,
-          "actedWinRatePct": 50.77,
-          "allWeeksAverageWeeklyPct": 0.256
-        },
-        "modelTrustworthy": false,
-        "trend": {
-          "returnPct": 1.47,
-          "scaled": 0.0358,
-          "annualisedVolatilityPct": 41.09
-        },
-        "topFeatures": [
-          {
-            "feature": "atr14Pct",
-            "sharePct": 10.91
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 9.73
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 8.72
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.22
-          },
-          {
-            "feature": "realisedVol21Pct",
-            "sharePct": 7.55
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 7.21
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 6.21
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 6.04
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.2558,
-          "nextEarningsDate": null,
-          "metrics": {
-            "profitMargin": 0.13607,
-            "returnOnEquity": null,
-            "returnOnAssets": null,
-            "operatingMargin": 0.10262,
-            "debtToEquity": null,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 0,
-            "totalCash": 8315899904,
-            "revenueGrowth": 0.062,
-            "earningsGrowth": 0.228,
-            "forwardPE": null,
-            "enterpriseValue": 233632415744,
-            "beta": 0.662,
-            "floatShares": 4664683,
-            "sharesOutstanding": 13176262
-          }
-        }
-      },
-      "symbolBars": 1196,
       "inJournal": false
     },
     {
       "symbol": "CGPOWER",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 880.05,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 893.2,
+      "sessionsElapsed": 1,
       "levels": [
         3,
         4
@@ -2606,8 +2446,8 @@
       "entries": [
         {
           "level": 3,
-          "entry": 828.3,
-          "target": 844.86,
+          "entry": 840.67,
+          "target": 857.49,
           "stepFromAnchorPct": 6,
           "historicalFills": 35,
           "hitRatePct": 74.29,
@@ -2617,8 +2457,8 @@
         },
         {
           "level": 4,
-          "entry": 811.73,
-          "target": 827.96,
+          "entry": 823.86,
+          "target": 840.34,
           "stepFromAnchorPct": 8,
           "historicalFills": 18,
           "hitRatePct": 88.89,
@@ -2627,19 +2467,19 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 41.64,
-      "expectedWeeklyPct": 0.369,
-      "expectedFromPricePct": 0.339,
+      "convictionPct": 52.08,
+      "expectedWeeklyPct": 0.915,
+      "expectedFromPricePct": 0.885,
       "expectedFromCarryPct": 0.03,
-      "sizeMultiplier": 0.696,
+      "sizeMultiplier": 0.808,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
         "Rungs 3, 4 cleared t≥1.89 with 0.33% average out-of-sample week",
         "Realised weekly edge: 0.33% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 3 hits its 2% target at least 57.93% of the time with 95% confidence",
-        "Trend alignment: 12-month move 33.576%, 0.91 per unit of risk",
-        "Model expectation: boosted trees expect 0.3471% this week",
-        "Model skill: out-of-sample information coefficient 0.0585",
+        "Trend alignment: 12-month move 35.153%, 0.98 per unit of risk",
+        "Model expectation: boosted trees expect 1.4399% this week",
+        "Model skill: out-of-sample information coefficient 0.0727",
         "Carry: futures at a flat of -0.047%, worth 0.03% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4784"
       ],
@@ -2662,23 +2502,23 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.9419,
-          "contribution": 14.13,
-          "note": "12-month move 33.576%, 0.91 per unit of risk"
+          "score": 0.9891,
+          "contribution": 14.84,
+          "note": "12-month move 35.153%, 0.98 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.1736,
-          "contribution": 2.78,
-          "note": "boosted trees expect 0.3471% this week"
+          "score": 0.72,
+          "contribution": 11.52,
+          "note": "boosted trees expect 1.4399% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.585,
-          "contribution": 4.1,
-          "note": "out-of-sample information coefficient 0.0585"
+          "score": 0.727,
+          "contribution": 5.09,
+          "note": "out-of-sample information coefficient 0.0727"
         },
         {
           "name": "Technical alignment",
@@ -2708,50 +2548,50 @@
         "modelValidation": {
           "weeks": 165,
           "actedWeeks": 97,
-          "informationCoefficient": 0.0585,
-          "meanAbsoluteErrorPct": 2.743,
-          "actedAverageWeeklyPct": 0.336,
-          "actedWinRatePct": 47.19,
+          "informationCoefficient": 0.0727,
+          "meanAbsoluteErrorPct": 2.745,
+          "actedAverageWeeklyPct": 0.396,
+          "actedWinRatePct": 48.28,
           "allWeeksAverageWeeklyPct": 0.416
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": 33.576,
-          "scaled": 0.9128,
-          "annualisedVolatilityPct": 36.78
+          "returnPct": 35.153,
+          "scaled": 0.9836,
+          "annualisedVolatilityPct": 35.74
         },
         "topFeatures": [
           {
+            "feature": "volumeRatio520",
+            "sharePct": 10.43
+          },
+          {
             "feature": "closeLocation",
-            "sharePct": 9.18
+            "sharePct": 9.77
           },
           {
             "feature": "rsi14",
-            "sharePct": 9.02
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 8.51
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 8.18
+            "sharePct": 8.44
           },
           {
             "feature": "return63Pct",
-            "sharePct": 7.51
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.51
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 7.51
+            "sharePct": 7.62
           },
           {
             "feature": "return5Pct",
-            "sharePct": 6.68
+            "sharePct": 7.28
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.12
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 7.12
+          },
+          {
+            "feature": "bodyRatio",
+            "sharePct": 7.12
           }
         ],
         "fundamentals": {
@@ -2777,93 +2617,96 @@
           }
         }
       },
-      "symbolBars": 1238,
+      "symbolBars": 1239,
       "inJournal": false
     },
     {
-      "symbol": "ABCAPITAL",
+      "symbol": "AUBANK",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 405,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 1080,
+      "sessionsElapsed": 1,
       "levels": [
         2,
-        4
+        3
       ],
       "entries": [
         {
           "level": 2,
-          "entry": 388.96,
-          "target": 396.74,
+          "entry": 1037.23,
+          "target": 1057.98,
           "stepFromAnchorPct": 4,
-          "historicalFills": 73,
-          "hitRatePct": 69.86,
-          "hitRateLowerPct": 58.56,
+          "historicalFills": 61,
+          "hitRatePct": 63.93,
+          "hitRateLowerPct": 51.39,
           "averageNetPct": 0.656,
           "medianSessionsHeld": 1
         },
         {
-          "level": 4,
-          "entry": 373.56,
-          "target": 381.03,
-          "stepFromAnchorPct": 8,
-          "historicalFills": 11,
-          "hitRatePct": 90.91,
-          "hitRateLowerPct": 62.26,
-          "averageNetPct": 1.679,
+          "level": 3,
+          "entry": 1016.49,
+          "target": 1036.82,
+          "stepFromAnchorPct": 6,
+          "historicalFills": 27,
+          "hitRatePct": 74.07,
+          "hitRateLowerPct": 55.32,
+          "averageNetPct": 1.023,
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 30.3,
-      "expectedWeeklyPct": 0.339,
-      "expectedFromPricePct": 0.625,
-      "expectedFromCarryPct": -0.286,
-      "sizeMultiplier": 0.575,
+      "convictionPct": 34.66,
+      "expectedWeeklyPct": 0.354,
+      "expectedFromPricePct": 0.474,
+      "expectedFromCarryPct": -0.12,
+      "sizeMultiplier": 0.621,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 2, 4 cleared t≥1.89 with 0.625% average out-of-sample week",
-        "Realised weekly edge: 0.625% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 2 hits its 2% target at least 58.56% of the time with 95% confidence",
-        "Trend alignment: 12-month move 44.687%, 1.25 per unit of risk",
-        "Balance-sheet asymmetry: balance-sheet score 0.1411"
+        "Rungs 2, 3 cleared t≥1.89 with 0.312% average out-of-sample week",
+        "Realised weekly edge: 0.312% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 2 hits its 2% target at least 51.39% of the time with 95% confidence",
+        "Trend alignment: 12-month move 50.373%, 1.8 per unit of risk",
+        "Model expectation: boosted trees expect 0.6354% this week",
+        "Model skill: out-of-sample information coefficient 0.0416",
+        "Carry: futures at a premium of 0.188%, worth -0.12% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.35"
       ],
       "vetoes": [],
       "components": [
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.3125,
-          "contribution": 6.88,
-          "note": "0.625% average out-of-sample week over 79 weeks"
+          "score": 0.156,
+          "contribution": 3.43,
+          "note": "0.312% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
           "weight": 16,
-          "score": 0.2853,
-          "contribution": 4.57,
-          "note": "rung 2 hits its 2% target at least 58.56% of the time with 95% confidence"
+          "score": 0.0463,
+          "contribution": 0.74,
+          "note": "rung 2 hits its 2% target at least 51.39% of the time with 95% confidence"
         },
         {
           "name": "Trend alignment",
           "weight": 15,
           "score": 1,
           "contribution": 15,
-          "note": "12-month move 44.687%, 1.25 per unit of risk"
+          "note": "12-month move 50.373%, 1.8 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "model did not clear its out-of-sample gate"
+          "score": 0.3177,
+          "contribution": 5.08,
+          "note": "boosted trees expect 0.6354% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0,
-          "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0097"
+          "score": 0.416,
+          "contribution": 2.91,
+          "note": "out-of-sample information coefficient 0.0416"
         },
         {
           "name": "Technical alignment",
@@ -2875,16 +2718,16 @@
         {
           "name": "Carry",
           "weight": 12,
-          "score": 0,
-          "contribution": 0,
-          "note": "futures at a premium of 0.449%, worth -0.286% to this side over the week"
+          "score": 0.2,
+          "contribution": 2.4,
+          "note": "futures at a premium of 0.188%, worth -0.12% to this side over the week"
         },
         {
           "name": "Balance-sheet asymmetry",
           "weight": 6,
-          "score": 0.6411,
-          "contribution": 3.85,
-          "note": "balance-sheet score 0.1411"
+          "score": 0.85,
+          "contribution": 5.1,
+          "note": "balance-sheet score 0.35"
         }
       ],
       "evidence": {
@@ -2892,94 +2735,94 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 122,
-          "informationCoefficient": -0.0097,
-          "meanAbsoluteErrorPct": 2.021,
-          "actedAverageWeeklyPct": 0.442,
-          "actedWinRatePct": 40.04,
-          "allWeeksAverageWeeklyPct": 0.506
+          "actedWeeks": 98,
+          "informationCoefficient": 0.0416,
+          "meanAbsoluteErrorPct": 1.769,
+          "actedAverageWeeklyPct": 0.282,
+          "actedWinRatePct": 39.67,
+          "allWeeksAverageWeeklyPct": 0.317
         },
-        "modelTrustworthy": false,
+        "modelTrustworthy": true,
         "trend": {
-          "returnPct": 44.687,
-          "scaled": 1.2484,
-          "annualisedVolatilityPct": 35.8
+          "returnPct": 50.373,
+          "scaled": 1.7956,
+          "annualisedVolatilityPct": 28.05
         },
         "topFeatures": [
           {
-            "feature": "drawdown63Pct",
-            "sharePct": 10.51
+            "feature": "volumeRatio520",
+            "sharePct": 10.72
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 9.12
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 9.12
           },
           {
             "feature": "return21Pct",
-            "sharePct": 9.78
+            "sharePct": 7.2
           },
           {
-            "feature": "volumeRatio520",
-            "sharePct": 9.06
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.25
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 7.25
-          },
-          {
-            "feature": "rsi14",
+            "feature": "return63Pct",
             "sharePct": 6.88
           },
           {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 6.52
+            "feature": "atr14Pct",
+            "sharePct": 6.88
           },
           {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.34
+            "feature": "closeLocation",
+            "sharePct": 6.4
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 6.24
           }
         ],
         "fundamentals": {
-          "balanceSheetScore": 0.1411,
-          "nextEarningsDate": "2026-10-29",
+          "balanceSheetScore": 0.35,
+          "nextEarningsDate": "2026-10-17",
           "metrics": {
-            "profitMargin": 0.119449995,
+            "profitMargin": 0.21372999,
             "returnOnEquity": null,
             "returnOnAssets": null,
-            "operatingMargin": 0.17869,
-            "debtToEquity": 495.936,
+            "operatingMargin": 0.35311002,
+            "debtToEquity": null,
             "currentRatio": null,
             "quickRatio": null,
-            "totalDebt": 1823427919872,
-            "totalCash": 171203493888,
-            "revenueGrowth": 0.314,
-            "earningsGrowth": 0.391,
-            "forwardPE": 15.808992,
-            "enterpriseValue": 2726129303552,
-            "beta": 0.687,
-            "floatShares": 868739969,
-            "sharesOutstanding": 2736160882
+            "totalDebt": 138715447296,
+            "totalCash": 85234098176,
+            "revenueGrowth": 0.298,
+            "earningsGrowth": 0.351,
+            "forwardPE": 17.945562,
+            "enterpriseValue": 863586156544,
+            "beta": null,
+            "floatShares": 188550235,
+            "sharesOutstanding": 749004181
           }
         }
       },
-      "symbolBars": 1236,
-      "inJournal": false
+      "symbolBars": 1239,
+      "inJournal": true
     },
     {
       "symbol": "SHRIRAMFIN",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1115,
-      "sessionsElapsed": 4,
+      "weekKey": "2026-08-17",
+      "anchor": 1116,
+      "sessionsElapsed": 1,
       "levels": [
         1
       ],
       "entries": [
         {
           "level": 1,
-          "entry": 1092.7,
-          "target": 1114.55,
+          "entry": 1093.68,
+          "target": 1115.55,
           "stepFromAnchorPct": 2,
           "historicalFills": 151,
           "hitRatePct": 68.21,
@@ -2998,7 +2841,7 @@
         "Rungs 1 cleared t≥1.89 with 0.487% average out-of-sample week",
         "Realised weekly edge: 0.487% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 1 hits its 2% target at least 60.41% of the time with 95% confidence",
-        "Trend alignment: 12-month move 85.73%, 2.63 per unit of risk",
+        "Trend alignment: 12-month move 82.873%, 2.54 per unit of risk",
         "Carry: futures at a premium of 0.255%, worth -0.162% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4274"
       ],
@@ -3023,7 +2866,7 @@
           "weight": 15,
           "score": 1,
           "contribution": 15,
-          "note": "12-month move 85.73%, 2.63 per unit of risk"
+          "note": "12-month move 82.873%, 2.54 per unit of risk"
         },
         {
           "name": "Model expectation",
@@ -3075,9 +2918,9 @@
         },
         "modelTrustworthy": false,
         "trend": {
-          "returnPct": 85.73,
-          "scaled": 2.6279,
-          "annualisedVolatilityPct": 32.62
+          "returnPct": 82.873,
+          "scaled": 2.5389,
+          "annualisedVolatilityPct": 32.64
         },
         "topFeatures": [
           {
@@ -3128,24 +2971,24 @@
             "totalCash": 104298799104,
             "revenueGrowth": 0.428,
             "earningsGrowth": 0.295,
-            "forwardPE": 15.632664,
+            "forwardPE": 15.597832,
             "enterpriseValue": 4356188143616,
             "beta": 0.606,
             "floatShares": 1767008667,
-            "sharesOutstanding": 2352983543
+            "sharesOutstanding": 2352948439
           }
         }
       },
-      "symbolBars": 1238,
+      "symbolBars": 1239,
       "inJournal": true
     },
     {
       "symbol": "PHOENIXLTD",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1907,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 1891,
+      "sessionsElapsed": 1,
       "levels": [
         2,
         3,
@@ -3154,8 +2997,8 @@
       "entries": [
         {
           "level": 2,
-          "entry": 1831.48,
-          "target": 1868.11,
+          "entry": 1816.12,
+          "target": 1852.44,
           "stepFromAnchorPct": 4,
           "historicalFills": 86,
           "hitRatePct": 74.42,
@@ -3165,8 +3008,8 @@
         },
         {
           "level": 3,
-          "entry": 1794.85,
-          "target": 1830.75,
+          "entry": 1779.79,
+          "target": 1815.39,
           "stepFromAnchorPct": 6,
           "historicalFills": 39,
           "hitRatePct": 74.36,
@@ -3176,8 +3019,8 @@
         },
         {
           "level": 4,
-          "entry": 1758.96,
-          "target": 1794.14,
+          "entry": 1744.2,
+          "target": 1779.08,
           "stepFromAnchorPct": 8,
           "historicalFills": 18,
           "hitRatePct": 77.78,
@@ -3186,17 +3029,17 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 36.45,
-      "expectedWeeklyPct": 0.304,
-      "expectedFromPricePct": 0.358,
+      "convictionPct": 36.27,
+      "expectedWeeklyPct": 0.286,
+      "expectedFromPricePct": 0.34,
       "expectedFromCarryPct": -0.054,
-      "sizeMultiplier": 0.641,
+      "sizeMultiplier": 0.639,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 2, 3, 4 cleared t≥1.89 with 0.358% average out-of-sample week",
-        "Realised weekly edge: 0.358% average out-of-sample week over 79 weeks",
+        "Rungs 2, 3, 4 cleared t≥1.89 with 0.34% average out-of-sample week",
+        "Realised weekly edge: 0.34% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 2 hits its 2% target at least 64.29% of the time with 95% confidence",
-        "Trend alignment: 12-month move 28.04%, 1 per unit of risk",
+        "Trend alignment: 12-month move 29.276%, 1.04 per unit of risk",
         "Carry: futures at a premium of 0.086%, worth -0.054% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4222"
       ],
@@ -3205,9 +3048,9 @@
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.179,
-          "contribution": 3.94,
-          "note": "0.358% average out-of-sample week over 79 weeks"
+          "score": 0.17,
+          "contribution": 3.74,
+          "note": "0.34% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
@@ -3219,9 +3062,9 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.9987,
-          "contribution": 14.98,
-          "note": "12-month move 28.04%, 1 per unit of risk"
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 29.276%, 1.04 per unit of risk"
         },
         {
           "name": "Model expectation",
@@ -3235,7 +3078,7 @@
           "weight": 7,
           "score": 0,
           "contribution": 0,
-          "note": "out-of-sample information coefficient -0.1347"
+          "note": "out-of-sample information coefficient -0.132"
         },
         {
           "name": "Technical alignment",
@@ -3265,50 +3108,50 @@
         "modelValidation": {
           "weeks": 165,
           "actedWeeks": 111,
-          "informationCoefficient": -0.1347,
-          "meanAbsoluteErrorPct": 2.746,
-          "actedAverageWeeklyPct": 0.133,
+          "informationCoefficient": -0.132,
+          "meanAbsoluteErrorPct": 2.757,
+          "actedAverageWeeklyPct": 0.12,
           "actedWinRatePct": 31.3,
-          "allWeeksAverageWeeklyPct": 0.39
+          "allWeeksAverageWeeklyPct": 0.381
         },
         "modelTrustworthy": false,
         "trend": {
-          "returnPct": 28.04,
-          "scaled": 0.998,
-          "annualisedVolatilityPct": 28.09
+          "returnPct": 29.276,
+          "scaled": 1.0436,
+          "annualisedVolatilityPct": 28.05
         },
         "topFeatures": [
           {
             "feature": "atr14Pct",
-            "sharePct": 10.32
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 9.03
+            "sharePct": 9.88
           },
           {
             "feature": "return63Pct",
-            "sharePct": 8.87
+            "sharePct": 8.9
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 8.4
           },
           {
             "feature": "closeLocation",
-            "sharePct": 8.06
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 6.61
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 6.61
+            "sharePct": 8.07
           },
           {
             "feature": "smaGap20Pct",
-            "sharePct": 6.45
+            "sharePct": 7.91
           },
           {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.45
+            "feature": "volumeRatio520",
+            "sharePct": 7.41
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 6.59
+          },
+          {
+            "feature": "return21Pct",
+            "sharePct": 5.93
           }
         ],
         "fundamentals": {
@@ -3326,7 +3169,7 @@
             "totalCash": 8230745088,
             "revenueGrowth": 0.128,
             "earningsGrowth": 0.233,
-            "forwardPE": 37.878036,
+            "forwardPE": 37.75378,
             "enterpriseValue": 754152505344,
             "beta": 0.324,
             "floatShares": 186201245,
@@ -3334,96 +3177,95 @@
           }
         }
       },
-      "symbolBars": 1235,
+      "symbolBars": 1236,
       "inJournal": false
     },
     {
-      "symbol": "AUBANK",
+      "symbol": "MFSL",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 1068.3,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 1533,
+      "sessionsElapsed": 1,
       "levels": [
-        2,
+        1,
         3
       ],
       "entries": [
         {
-          "level": 2,
-          "entry": 1026,
-          "target": 1046.52,
-          "stepFromAnchorPct": 4,
-          "historicalFills": 61,
-          "hitRatePct": 63.93,
-          "hitRateLowerPct": 51.39,
-          "averageNetPct": 0.656,
+          "level": 1,
+          "entry": 1502.34,
+          "target": 1532.39,
+          "stepFromAnchorPct": 2,
+          "historicalFills": 151,
+          "hitRatePct": 62.91,
+          "hitRateLowerPct": 54.98,
+          "averageNetPct": 0.41,
           "medianSessionsHeld": 1
         },
         {
           "level": 3,
-          "entry": 1005.48,
-          "target": 1025.59,
+          "entry": 1442.85,
+          "target": 1471.7,
           "stepFromAnchorPct": 6,
-          "historicalFills": 27,
-          "hitRatePct": 74.07,
-          "hitRateLowerPct": 55.32,
-          "averageNetPct": 1.023,
+          "historicalFills": 25,
+          "hitRatePct": 80,
+          "hitRateLowerPct": 60.87,
+          "averageNetPct": 0.96,
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 33.33,
-      "expectedWeeklyPct": 0.266,
-      "expectedFromPricePct": 0.386,
-      "expectedFromCarryPct": -0.12,
-      "sizeMultiplier": 0.607,
+      "convictionPct": 31.32,
+      "expectedWeeklyPct": 0.281,
+      "expectedFromPricePct": 0.792,
+      "expectedFromCarryPct": -0.511,
+      "sizeMultiplier": 0.586,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
-        "Rungs 2, 3 cleared t≥1.89 with 0.312% average out-of-sample week",
-        "Realised weekly edge: 0.312% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 2 hits its 2% target at least 51.39% of the time with 95% confidence",
-        "Trend alignment: 12-month move 46.401%, 1.65 per unit of risk",
-        "Model expectation: boosted trees expect 0.4602% this week",
-        "Model skill: out-of-sample information coefficient 0.0426",
-        "Carry: futures at a premium of 0.188%, worth -0.12% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.35"
+        "Rungs 1, 3 cleared t≥1.89 with 0.479% average out-of-sample week",
+        "Realised weekly edge: 0.479% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 1 hits its 2% target at least 54.98% of the time with 95% confidence",
+        "Trend alignment: 12-month move -1.491%, -0.06 per unit of risk",
+        "Model expectation: boosted trees expect 1.1053% this week",
+        "Model skill: out-of-sample information coefficient 0.1487",
+        "Balance-sheet asymmetry: balance-sheet score 0.0219"
       ],
       "vetoes": [],
       "components": [
         {
           "name": "Realised weekly edge",
           "weight": 22,
-          "score": 0.156,
-          "contribution": 3.43,
-          "note": "0.312% average out-of-sample week over 79 weeks"
+          "score": 0.2395,
+          "contribution": 5.27,
+          "note": "0.479% average out-of-sample week over 79 weeks"
         },
         {
           "name": "Target hit reliability",
           "weight": 16,
-          "score": 0.0463,
-          "contribution": 0.74,
-          "note": "rung 2 hits its 2% target at least 51.39% of the time with 95% confidence"
+          "score": 0.166,
+          "contribution": 2.66,
+          "note": "rung 1 hits its 2% target at least 54.98% of the time with 95% confidence"
         },
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 1,
-          "contribution": 15,
-          "note": "12-month move 46.401%, 1.65 per unit of risk"
+          "score": 0.2947,
+          "contribution": 4.42,
+          "note": "12-month move -1.491%, -0.06 per unit of risk"
         },
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.2301,
-          "contribution": 3.68,
-          "note": "boosted trees expect 0.4602% this week"
+          "score": 0.5527,
+          "contribution": 8.84,
+          "note": "boosted trees expect 1.1053% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.426,
-          "contribution": 2.98,
-          "note": "out-of-sample information coefficient 0.0426"
+          "score": 1,
+          "contribution": 7,
+          "note": "out-of-sample information coefficient 0.1487"
         },
         {
           "name": "Technical alignment",
@@ -3435,16 +3277,16 @@
         {
           "name": "Carry",
           "weight": 12,
-          "score": 0.2,
-          "contribution": 2.4,
-          "note": "futures at a premium of 0.188%, worth -0.12% to this side over the week"
+          "score": 0,
+          "contribution": 0,
+          "note": "futures at a premium of 0.804%, worth -0.511% to this side over the week"
         },
         {
           "name": "Balance-sheet asymmetry",
           "weight": 6,
-          "score": 0.85,
-          "contribution": 5.1,
-          "note": "balance-sheet score 0.35"
+          "score": 0.5219,
+          "contribution": 3.13,
+          "note": "balance-sheet score 0.0219"
         }
       ],
       "evidence": {
@@ -3452,94 +3294,94 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 97,
-          "informationCoefficient": 0.0426,
-          "meanAbsoluteErrorPct": 1.766,
-          "actedAverageWeeklyPct": 0.285,
-          "actedWinRatePct": 40.07,
-          "allWeeksAverageWeeklyPct": 0.317
+          "actedWeeks": 93,
+          "informationCoefficient": 0.1487,
+          "meanAbsoluteErrorPct": 1.913,
+          "actedAverageWeeklyPct": 0.798,
+          "actedWinRatePct": 43.41,
+          "allWeeksAverageWeeklyPct": 0.547
         },
         "modelTrustworthy": true,
         "trend": {
-          "returnPct": 46.401,
-          "scaled": 1.6491,
-          "annualisedVolatilityPct": 28.14
+          "returnPct": -1.491,
+          "scaled": -0.058,
+          "annualisedVolatilityPct": 25.69
         },
         "topFeatures": [
           {
-            "feature": "volumeRatio520",
-            "sharePct": 10.56
+            "feature": "bodyRatio",
+            "sharePct": 11.45
           },
           {
-            "feature": "return5Pct",
-            "sharePct": 10.08
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.16
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 7.36
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 7.36
+            "feature": "rsi14",
+            "sharePct": 8.97
           },
           {
             "feature": "closeLocation",
-            "sharePct": 7.04
+            "sharePct": 8.59
           },
           {
-            "feature": "return63Pct",
-            "sharePct": 6.4
+            "feature": "smaGap20Pct",
+            "sharePct": 8.21
           },
           {
-            "feature": "atr14Pct",
-            "sharePct": 6.4
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 8.21
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 7.44
+          },
+          {
+            "feature": "volRatio2163",
+            "sharePct": 7.44
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 6.87
           }
         ],
         "fundamentals": {
-          "balanceSheetScore": 0.35,
-          "nextEarningsDate": "2026-10-17",
+          "balanceSheetScore": 0.0219,
+          "nextEarningsDate": "2026-10-27",
           "metrics": {
-            "profitMargin": 0.21372999,
+            "profitMargin": 0.00221,
             "returnOnEquity": null,
             "returnOnAssets": null,
-            "operatingMargin": 0.35311002,
-            "debtToEquity": null,
+            "operatingMargin": 0.04599,
+            "debtToEquity": 12.673,
             "currentRatio": null,
             "quickRatio": null,
-            "totalDebt": 138715447296,
-            "totalCash": 85234098176,
-            "revenueGrowth": 0.298,
-            "earningsGrowth": 0.351,
-            "forwardPE": 17.813839,
-            "enterpriseValue": 863586156544,
+            "totalDebt": 3572400128,
+            "totalCash": 4491100160,
+            "revenueGrowth": -0.402,
+            "earningsGrowth": null,
+            "forwardPE": 111.67826,
+            "enterpriseValue": 420058562560,
             "beta": null,
-            "floatShares": 188550235,
-            "sharesOutstanding": 749004181
+            "floatShares": 206073900,
+            "sharesOutstanding": 343446614
           }
         }
       },
       "symbolBars": 1238,
-      "inJournal": true
+      "inJournal": false
     },
     {
       "symbol": "GLENMARK",
       "action": "buy-ladder",
       "side": "long",
-      "weekKey": "2026-08-10",
-      "anchor": 2293,
-      "sessionsElapsed": 5,
+      "weekKey": "2026-08-17",
+      "anchor": 2329.7,
+      "sessionsElapsed": 1,
       "levels": [
         1
       ],
       "entries": [
         {
           "level": 1,
-          "entry": 2247.14,
-          "target": 2292.08,
+          "entry": 2283.11,
+          "target": 2328.77,
           "stepFromAnchorPct": 2,
           "historicalFills": 136,
           "hitRatePct": 66.91,
@@ -3548,17 +3390,17 @@
           "medianSessionsHeld": 1
         }
       ],
-      "convictionPct": 31,
+      "convictionPct": 31.48,
       "expectedWeeklyPct": 0.252,
       "expectedFromPricePct": 0.142,
       "expectedFromCarryPct": 0.11,
-      "sizeMultiplier": 0.582,
+      "sizeMultiplier": 0.587,
       "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
       "reasons": [
         "Rungs 1 cleared t≥1.89 with 0.142% average out-of-sample week",
         "Realised weekly edge: 0.142% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 1 hits its 2% target at least 58.63% of the time with 95% confidence",
-        "Trend alignment: 12-month move 12.391%, 0.45 per unit of risk",
+        "Trend alignment: 12-month move 13.37%, 0.5 per unit of risk",
         "Carry: futures at a discount of -0.173%, worth 0.11% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4981"
       ],
@@ -3581,9 +3423,9 @@
         {
           "name": "Trend alignment",
           "weight": 15,
-          "score": 0.6366,
-          "contribution": 9.55,
-          "note": "12-month move 12.391%, 0.45 per unit of risk"
+          "score": 0.6684,
+          "contribution": 10.03,
+          "note": "12-month move 13.37%, 0.5 per unit of risk"
         },
         {
           "name": "Model expectation",
@@ -3597,7 +3439,7 @@
           "weight": 7,
           "score": 0,
           "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0401"
+          "note": "out-of-sample information coefficient -0.0417"
         },
         {
           "name": "Technical alignment",
@@ -3626,51 +3468,51 @@
         "cycleOutOfSampleFrom": "2025-02-10",
         "modelValidation": {
           "weeks": 165,
-          "actedWeeks": 119,
-          "informationCoefficient": -0.0401,
-          "meanAbsoluteErrorPct": 1.965,
-          "actedAverageWeeklyPct": 0.22,
-          "actedWinRatePct": 32.87,
+          "actedWeeks": 118,
+          "informationCoefficient": -0.0417,
+          "meanAbsoluteErrorPct": 1.971,
+          "actedAverageWeeklyPct": 0.189,
+          "actedWinRatePct": 32.2,
           "allWeeksAverageWeeklyPct": 0.401
         },
         "modelTrustworthy": false,
         "trend": {
-          "returnPct": 12.391,
-          "scaled": 0.4549,
-          "annualisedVolatilityPct": 27.24
+          "returnPct": 13.37,
+          "scaled": 0.5026,
+          "annualisedVolatilityPct": 26.6
         },
         "topFeatures": [
           {
             "feature": "return5Pct",
-            "sharePct": 13.81
+            "sharePct": 12.38
           },
           {
             "feature": "volRatio2163",
-            "sharePct": 10.7
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.98
+            "sharePct": 12.38
           },
           {
             "feature": "bodyRatio",
-            "sharePct": 7.39
+            "sharePct": 8.06
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.47
           },
           {
             "feature": "zScore20",
-            "sharePct": 6.61
+            "sharePct": 6.88
           },
           {
-            "feature": "drawdown63Pct",
-            "sharePct": 6.23
+            "feature": "closeLocation",
+            "sharePct": 6.88
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 6.68
           },
           {
             "feature": "rangeLocation20",
-            "sharePct": 6.03
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 5.84
+            "sharePct": 6.09
           }
         ],
         "fundamentals": {
@@ -3688,7 +3530,7 @@
             "totalCash": 11762570240,
             "revenueGrowth": 0.231,
             "earningsGrowth": 9.307,
-            "forwardPE": 23.73781,
+            "forwardPE": 23.787981,
             "enterpriseValue": 648530165760,
             "beta": 0.248,
             "floatShares": 141617251,
@@ -3696,18 +3538,554 @@
           }
         }
       },
-      "symbolBars": 1237,
+      "symbolBars": 1238,
       "inJournal": true
+    },
+    {
+      "symbol": "MANKIND",
+      "action": "buy-ladder",
+      "side": "long",
+      "weekKey": "2026-08-17",
+      "anchor": 2419,
+      "sessionsElapsed": 1,
+      "levels": [
+        1,
+        2
+      ],
+      "entries": [
+        {
+          "level": 1,
+          "entry": 2370.62,
+          "target": 2418.03,
+          "stepFromAnchorPct": 2,
+          "historicalFills": 98,
+          "hitRatePct": 63.27,
+          "hitRateLowerPct": 53.39,
+          "averageNetPct": 0.507,
+          "medianSessionsHeld": 1
+        },
+        {
+          "level": 2,
+          "entry": 2323.21,
+          "target": 2369.67,
+          "stepFromAnchorPct": 4,
+          "historicalFills": 44,
+          "hitRatePct": 68.18,
+          "hitRateLowerPct": 53.44,
+          "averageNetPct": 0.653,
+          "medianSessionsHeld": 1
+        }
+      ],
+      "convictionPct": 17.5,
+      "expectedWeeklyPct": 0.129,
+      "expectedFromPricePct": 0.22,
+      "expectedFromCarryPct": -0.091,
+      "sizeMultiplier": 0.438,
+      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
+      "reasons": [
+        "Rungs 1, 2 cleared t≥1.89 with 0.22% average out-of-sample week",
+        "Realised weekly edge: 0.22% average out-of-sample week over 52 weeks",
+        "Target hit reliability: rung 1 hits its 2% target at least 53.39% of the time with 95% confidence",
+        "Trend alignment: 12-month move -1.288%, -0.05 per unit of risk",
+        "Carry: futures at a premium of 0.143%, worth -0.091% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.4208"
+      ],
+      "vetoes": [],
+      "components": [
+        {
+          "name": "Realised weekly edge",
+          "weight": 22,
+          "score": 0.11,
+          "contribution": 2.42,
+          "note": "0.22% average out-of-sample week over 52 weeks"
+        },
+        {
+          "name": "Target hit reliability",
+          "weight": 16,
+          "score": 0.113,
+          "contribution": 1.81,
+          "note": "rung 1 hits its 2% target at least 53.39% of the time with 95% confidence"
+        },
+        {
+          "name": "Trend alignment",
+          "weight": 15,
+          "score": 0.2988,
+          "contribution": 4.48,
+          "note": "12-month move -1.288%, -0.05 per unit of risk"
+        },
+        {
+          "name": "Model expectation",
+          "weight": 16,
+          "score": 0,
+          "contribution": 0,
+          "note": "model did not clear its out-of-sample gate"
+        },
+        {
+          "name": "Model skill",
+          "weight": 7,
+          "score": 0,
+          "contribution": 0,
+          "note": "out-of-sample information coefficient -0.0543"
+        },
+        {
+          "name": "Technical alignment",
+          "weight": 6,
+          "score": 0,
+          "contribution": 0,
+          "note": "no technical composite supplied"
+        },
+        {
+          "name": "Carry",
+          "weight": 12,
+          "score": 0.2725,
+          "contribution": 3.27,
+          "note": "futures at a premium of 0.143%, worth -0.091% to this side over the week"
+        },
+        {
+          "name": "Balance-sheet asymmetry",
+          "weight": 6,
+          "score": 0.9208,
+          "contribution": 5.52,
+          "note": "balance-sheet score 0.4208"
+        }
+      ],
+      "evidence": {
+        "cycleWeeks": 171,
+        "cycleOutOfSampleFrom": "2025-08-18",
+        "modelValidation": {
+          "weeks": 76,
+          "actedWeeks": 57,
+          "informationCoefficient": -0.0543,
+          "meanAbsoluteErrorPct": 1.757,
+          "actedAverageWeeklyPct": 0.091,
+          "actedWinRatePct": 36.25,
+          "allWeeksAverageWeeklyPct": 0.112
+        },
+        "modelTrustworthy": false,
+        "trend": {
+          "returnPct": -1.288,
+          "scaled": -0.0518,
+          "annualisedVolatilityPct": 24.85
+        },
+        "topFeatures": [
+          {
+            "feature": "return63Pct",
+            "sharePct": 12.94
+          },
+          {
+            "feature": "volumeRatio520",
+            "sharePct": 11.18
+          },
+          {
+            "feature": "bodyRatio",
+            "sharePct": 9.22
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 8.04
+          },
+          {
+            "feature": "realisedVol21Pct",
+            "sharePct": 7.84
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.65
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 6.27
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 6.27
+          }
+        ],
+        "fundamentals": {
+          "balanceSheetScore": 0.4208,
+          "nextEarningsDate": "2026-10-29",
+          "metrics": {
+            "profitMargin": 0.13859999,
+            "returnOnEquity": null,
+            "returnOnAssets": null,
+            "operatingMargin": 0.20605,
+            "debtToEquity": 38.111,
+            "currentRatio": null,
+            "quickRatio": null,
+            "totalDebt": 63115399168,
+            "totalCash": 22076499968,
+            "revenueGrowth": 0.129,
+            "earningsGrowth": 0.296,
+            "forwardPE": 34.124172,
+            "enterpriseValue": 1044837236736,
+            "beta": 0.46,
+            "floatShares": 112949831,
+            "sharesOutstanding": 412995978
+          }
+        }
+      },
+      "symbolBars": 812,
+      "inJournal": false
+    },
+    {
+      "symbol": "SOLARINDS",
+      "action": "buy-ladder",
+      "side": "long",
+      "weekKey": "2026-08-17",
+      "anchor": 19951,
+      "sessionsElapsed": 1,
+      "levels": [
+        4
+      ],
+      "entries": [
+        {
+          "level": 4,
+          "entry": 18402.17,
+          "target": 18770.21,
+          "stepFromAnchorPct": 8,
+          "historicalFills": 24,
+          "hitRatePct": 75,
+          "hitRateLowerPct": 55.1,
+          "averageNetPct": 1.113,
+          "medianSessionsHeld": 1
+        }
+      ],
+      "convictionPct": 35.73,
+      "expectedWeeklyPct": 0.097,
+      "expectedFromPricePct": 0.306,
+      "expectedFromCarryPct": -0.209,
+      "sizeMultiplier": 0.633,
+      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
+      "reasons": [
+        "Rungs 4 cleared t≥1.89 with 0.055% average out-of-sample week",
+        "Realised weekly edge: 0.055% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 4 hits its 2% target at least 55.1% of the time with 95% confidence",
+        "Trend alignment: 12-month move 39.635%, 1.22 per unit of risk",
+        "Model expectation: boosted trees expect 0.5563% this week",
+        "Model skill: out-of-sample information coefficient 0.133",
+        "Balance-sheet asymmetry: balance-sheet score 0.4918"
+      ],
+      "vetoes": [],
+      "components": [
+        {
+          "name": "Realised weekly edge",
+          "weight": 22,
+          "score": 0.0275,
+          "contribution": 0.61,
+          "note": "0.055% average out-of-sample week over 79 weeks"
+        },
+        {
+          "name": "Target hit reliability",
+          "weight": 16,
+          "score": 0.17,
+          "contribution": 2.72,
+          "note": "rung 4 hits its 2% target at least 55.1% of the time with 95% confidence"
+        },
+        {
+          "name": "Trend alignment",
+          "weight": 15,
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 39.635%, 1.22 per unit of risk"
+        },
+        {
+          "name": "Model expectation",
+          "weight": 16,
+          "score": 0.2782,
+          "contribution": 4.45,
+          "note": "boosted trees expect 0.5563% this week"
+        },
+        {
+          "name": "Model skill",
+          "weight": 7,
+          "score": 1,
+          "contribution": 7,
+          "note": "out-of-sample information coefficient 0.133"
+        },
+        {
+          "name": "Technical alignment",
+          "weight": 6,
+          "score": 0,
+          "contribution": 0,
+          "note": "no technical composite supplied"
+        },
+        {
+          "name": "Carry",
+          "weight": 12,
+          "score": 0,
+          "contribution": 0,
+          "note": "futures at a premium of 0.328%, worth -0.209% to this side over the week"
+        },
+        {
+          "name": "Balance-sheet asymmetry",
+          "weight": 6,
+          "score": 0.9918,
+          "contribution": 5.95,
+          "note": "balance-sheet score 0.4918"
+        }
+      ],
+      "evidence": {
+        "cycleWeeks": 261,
+        "cycleOutOfSampleFrom": "2025-02-10",
+        "modelValidation": {
+          "weeks": 165,
+          "actedWeeks": 92,
+          "informationCoefficient": 0.133,
+          "meanAbsoluteErrorPct": 2.591,
+          "actedAverageWeeklyPct": 0.572,
+          "actedWinRatePct": 44.91,
+          "allWeeksAverageWeeklyPct": 0.292
+        },
+        "modelTrustworthy": true,
+        "trend": {
+          "returnPct": 39.635,
+          "scaled": 1.2249,
+          "annualisedVolatilityPct": 32.36
+        },
+        "topFeatures": [
+          {
+            "feature": "return63Pct",
+            "sharePct": 10.68
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 9.79
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 8.72
+          },
+          {
+            "feature": "smaSpread2050Pct",
+            "sharePct": 7.65
+          },
+          {
+            "feature": "drawdown63Pct",
+            "sharePct": 7.3
+          },
+          {
+            "feature": "gapFromWeekOpenPct",
+            "sharePct": 7.12
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 6.05
+          },
+          {
+            "feature": "return21Pct",
+            "sharePct": 5.87
+          }
+        ],
+        "fundamentals": {
+          "balanceSheetScore": 0.4918,
+          "nextEarningsDate": "2026-08-13",
+          "metrics": {
+            "profitMargin": 0.17543,
+            "returnOnEquity": null,
+            "returnOnAssets": null,
+            "operatingMargin": 0.25502002,
+            "debtToEquity": 23.271,
+            "currentRatio": null,
+            "quickRatio": null,
+            "totalDebt": 15240200192,
+            "totalCash": 4806300160,
+            "revenueGrowth": 0.703,
+            "earningsGrowth": 0.927,
+            "forwardPE": 58.8168,
+            "enterpriseValue": 1820146794496,
+            "beta": 0.238,
+            "floatShares": 23873086,
+            "sharesOutstanding": 90490055
+          }
+        }
+      },
+      "symbolBars": 1237,
+      "inJournal": false
+    },
+    {
+      "symbol": "ABB",
+      "action": "buy-ladder",
+      "side": "long",
+      "weekKey": "2026-08-17",
+      "anchor": 7652.5,
+      "sessionsElapsed": 1,
+      "levels": [
+        3
+      ],
+      "entries": [
+        {
+          "level": 3,
+          "entry": 7202.47,
+          "target": 7346.52,
+          "stepFromAnchorPct": 6,
+          "historicalFills": 24,
+          "hitRatePct": 83.33,
+          "hitRateLowerPct": 64.15,
+          "averageNetPct": 1.157,
+          "medianSessionsHeld": 1
+        }
+      ],
+      "convictionPct": 34.14,
+      "expectedWeeklyPct": 0.039,
+      "expectedFromPricePct": 0.223,
+      "expectedFromCarryPct": -0.184,
+      "sizeMultiplier": 0.616,
+      "bookOut": "Book every open leg at the Friday close; Monday's open sets the next anchor",
+      "reasons": [
+        "Rungs 3 cleared t≥1.89 with 0.223% average out-of-sample week",
+        "Realised weekly edge: 0.223% average out-of-sample week over 79 weeks",
+        "Target hit reliability: rung 3 hits its 2% target at least 64.15% of the time with 95% confidence",
+        "Trend alignment: 12-month move 51.387%, 1.69 per unit of risk",
+        "Model skill: out-of-sample information coefficient 0.038",
+        "Carry: futures at a premium of 0.288%, worth -0.184% to this side over the week",
+        "Balance-sheet asymmetry: balance-sheet score 0.9411"
+      ],
+      "vetoes": [],
+      "components": [
+        {
+          "name": "Realised weekly edge",
+          "weight": 22,
+          "score": 0.1115,
+          "contribution": 2.45,
+          "note": "0.223% average out-of-sample week over 79 weeks"
+        },
+        {
+          "name": "Target hit reliability",
+          "weight": 16,
+          "score": 0.4717,
+          "contribution": 7.55,
+          "note": "rung 3 hits its 2% target at least 64.15% of the time with 95% confidence"
+        },
+        {
+          "name": "Trend alignment",
+          "weight": 15,
+          "score": 1,
+          "contribution": 15,
+          "note": "12-month move 51.387%, 1.69 per unit of risk"
+        },
+        {
+          "name": "Model expectation",
+          "weight": 16,
+          "score": 0,
+          "contribution": 0,
+          "note": "model did not clear its out-of-sample gate"
+        },
+        {
+          "name": "Model skill",
+          "weight": 7,
+          "score": 0.38,
+          "contribution": 2.66,
+          "note": "out-of-sample information coefficient 0.038"
+        },
+        {
+          "name": "Technical alignment",
+          "weight": 6,
+          "score": 0,
+          "contribution": 0,
+          "note": "no technical composite supplied"
+        },
+        {
+          "name": "Carry",
+          "weight": 12,
+          "score": 0.04,
+          "contribution": 0.48,
+          "note": "futures at a premium of 0.288%, worth -0.184% to this side over the week"
+        },
+        {
+          "name": "Balance-sheet asymmetry",
+          "weight": 6,
+          "score": 1,
+          "contribution": 6,
+          "note": "balance-sheet score 0.9411"
+        }
+      ],
+      "evidence": {
+        "cycleWeeks": 261,
+        "cycleOutOfSampleFrom": "2025-02-10",
+        "modelValidation": {
+          "weeks": 165,
+          "actedWeeks": 107,
+          "informationCoefficient": 0.038,
+          "meanAbsoluteErrorPct": 2.281,
+          "actedAverageWeeklyPct": -0.314,
+          "actedWinRatePct": 36.56,
+          "allWeeksAverageWeeklyPct": -0.146
+        },
+        "modelTrustworthy": false,
+        "trend": {
+          "returnPct": 51.387,
+          "scaled": 1.6879,
+          "annualisedVolatilityPct": 30.44
+        },
+        "topFeatures": [
+          {
+            "feature": "return5Pct",
+            "sharePct": 9.38
+          },
+          {
+            "feature": "drawdown63Pct",
+            "sharePct": 8.33
+          },
+          {
+            "feature": "atr14Pct",
+            "sharePct": 7.99
+          },
+          {
+            "feature": "return21Pct",
+            "sharePct": 7.64
+          },
+          {
+            "feature": "realisedVol21Pct",
+            "sharePct": 7.64
+          },
+          {
+            "feature": "zScore20",
+            "sharePct": 7.47
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 7.29
+          },
+          {
+            "feature": "rangeLocation20",
+            "sharePct": 7.12
+          }
+        ],
+        "fundamentals": {
+          "balanceSheetScore": 0.9411,
+          "nextEarningsDate": "2026-07-31",
+          "metrics": {
+            "profitMargin": 0.21349001,
+            "returnOnEquity": 0.19131,
+            "returnOnAssets": 0.07907,
+            "operatingMargin": 0.11459,
+            "debtToEquity": 1.547,
+            "currentRatio": 2.193,
+            "quickRatio": 1.691,
+            "totalDebt": 1445200000,
+            "totalCash": 73355198464,
+            "revenueGrowth": 0.121,
+            "earningsGrowth": 0.03,
+            "forwardPE": 72.84953,
+            "enterpriseValue": 1549642235904,
+            "beta": 0.486,
+            "floatShares": 51771377,
+            "sharesOutstanding": 211908375
+          }
+        }
+      },
+      "symbolBars": 1238,
+      "inJournal": false
     }
   ],
   "rejected": [
     {
       "symbol": "360ONE",
-      "reason": "The 12-month trend runs against this ladder (11.658% over 252 sessions, 0.42 per unit of risk)"
+      "reason": "The 12-month trend runs against this ladder (10.568% over 252 sessions, 0.38 per unit of risk)"
     },
     {
-      "symbol": "ABB",
-      "reason": "The model expects a -3.0997% week against this ladder"
+      "symbol": "ABCAPITAL",
+      "reason": "The model expects a -0.5203% week against this ladder"
     },
     {
       "symbol": "ADANIENSOL",
@@ -3731,7 +4109,7 @@
     },
     {
       "symbol": "ALKEM",
-      "reason": "The model expects a -0.0802% week against this ladder"
+      "reason": "The model expects a -0.0936% week against this ladder"
     },
     {
       "symbol": "AMBER",
@@ -3803,7 +4181,7 @@
     },
     {
       "symbol": "BDL",
-      "reason": "The model expects a -0.1786% week against this ladder"
+      "reason": "The model expects a -1.102% week against this ladder"
     },
     {
       "symbol": "BEL",
@@ -3847,7 +4225,7 @@
     },
     {
       "symbol": "CAMS",
-      "reason": "The model expects a -0.1364% week against this ladder"
+      "reason": "The week is not expected to pay: 0.183% from price against -0.283% of carry"
     },
     {
       "symbol": "CANBK",
@@ -3856,6 +4234,10 @@
     {
       "symbol": "CDSL",
       "reason": "No ladder rung cleared its significance hurdle with a positive out-of-sample week"
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "reason": "The model expects a -0.0918% week against this ladder"
     },
     {
       "symbol": "CIPLA",
@@ -3934,6 +4316,10 @@
       "reason": "No ladder rung cleared its significance hurdle with a positive out-of-sample week"
     },
     {
+      "symbol": "FORCEMOT",
+      "reason": "The model expects a -0.6885% week against this ladder"
+    },
+    {
       "symbol": "FORTIS",
       "reason": "No ladder rung cleared its significance hurdle with a positive out-of-sample week"
     },
@@ -3943,7 +4329,7 @@
     },
     {
       "symbol": "GMRAIRPORT",
-      "reason": "The model expects a -0.572% week against this ladder"
+      "reason": "The model expects a -0.0943% week against this ladder"
     },
     {
       "symbol": "GODFRYPHLP",
@@ -4166,19 +4552,11 @@
       "reason": "No ladder rung cleared its significance hurdle with a positive out-of-sample week"
     },
     {
-      "symbol": "MANKIND",
-      "reason": "The model expects a -0.1458% week against this ladder"
-    },
-    {
       "symbol": "MARICO",
       "reason": "No ladder rung cleared its significance hurdle with a positive out-of-sample week"
     },
     {
       "symbol": "MARUTI",
-      "reason": "No ladder rung cleared its significance hurdle with a positive out-of-sample week"
-    },
-    {
-      "symbol": "MAXHEALTH",
       "reason": "No ladder rung cleared its significance hurdle with a positive out-of-sample week"
     }
   ]
