@@ -149,6 +149,28 @@
     border: 1px solid var(--line); border-radius: 999px; background: var(--white); color: var(--ink); }
   .search:focus-visible { outline: 2px solid var(--violet); outline-offset: 1px; }
   .no-hits { padding: 18px; color: var(--muted); font-size: 14px; }
+  
+  .calc-section { margin-bottom: 28px; }
+  .calc-card { background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 22px 24px; box-shadow: var(--shadow); }
+  .calc-title { font-family: var(--display); font-size: 21px; font-weight: 400; margin: 0 0 6px; }
+  .calc-desc { color: var(--muted); font-size: 13.5px; margin: 0 0 18px; max-width: 74ch; }
+  .calc-inputs { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; margin-bottom: 16px; }
+  .calc-group { flex: 1 1 200px; min-width: 180px; }
+  .calc-group label { display: block; font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+  .calc-group select, .calc-group input { width: 100%; font: inherit; font-family: var(--mono); font-size: 14px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); color: var(--ink); }
+  .calc-group select:focus-visible, .calc-group input:focus-visible { outline: 2px solid var(--violet); }
+  .calc-badge-container { flex: 1 1 280px; min-width: 240px; display: flex; align-items: center; }
+  .calc-badge { display: inline-flex; align-items: center; justify-content: center; width: 100%; padding: 11px 18px; border-radius: 12px; font-weight: 600; font-size: 13px; font-family: var(--mono); text-align: center; }
+  .badge-buy { background: color-mix(in srgb, var(--mint) 40%, transparent); color: var(--mint-deep); border: 1px solid var(--mint-deep); }
+  .badge-warn { background: color-mix(in srgb, var(--sun) 34%, transparent); color: #8a6b0f; border: 1px solid #d4a72c; }
+  .badge-stop { background: color-mix(in srgb, var(--coral) 26%, transparent); color: var(--coral-deep); border: 1px solid var(--coral-deep); }
+  .badge-info { background: var(--violet-soft); color: var(--violet); border: 1px solid var(--violet); }
+  .calc-results-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+  .calc-metric .lbl { display: block; font-size: 11px; color: var(--muted); margin-bottom: 2px; }
+  .calc-metric b { font-family: var(--mono); font-size: 16px; font-weight: 600; }
+  .calc-metric.full { grid-column: 1 / -1; border-top: 1px dashed var(--line); padding-top: 8px; margin-top: 2px; }
+  .order-text { font-size: 13.5px !important; color: var(--ink) !important; font-weight: 500 !important; }
+
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
@@ -158,7 +180,7 @@
     <h1 class="wordmark">K<span>²</span> Range Desk</h1>
     <div class="stamp">
       NSE futures · weekly ladder<br>
-      built 2026-08-25 04:06 UTC
+      built 2026-08-25 17:42 UTC
     </div>
   </header>
 
@@ -170,9 +192,41 @@
     <div class="tile"><b>1.68%</b><span>best expected week</span></div>
   </div>
 
+  <section class="calc-section">
+    <div class="calc-card" id="decision-assistant">
+      <div class="calc-header">
+        <h3 class="calc-title">⚡ Live Price Decision Assistant & Distance Calculator</h3>
+        <p class="calc-desc">Enter the current price from your broker app (or click any row in the table below). The system automatically calculates the exact distance from entry, remaining profit to target, and gives you a clear <b>BUY NOW</b> or <b>DO NOT CHASE</b> instruction.</p>
+      </div>
+      <div class="calc-body">
+        <div class="calc-inputs">
+          <div class="calc-group">
+            <label for="calc-symbol">Stock Setup</label>
+            <select id="calc-symbol">
+              <option value="COFORGE">COFORGE (LONG)</option><option value="MFSL">MFSL (LONG)</option><option value="ABCAPITAL">ABCAPITAL (LONG)</option><option value="AUBANK">AUBANK (LONG)</option><option value="GLENMARK">GLENMARK (LONG)</option><option value="UNOMINDA">UNOMINDA (LONG)</option><option value="SOLARINDS">SOLARINDS (LONG)</option><option value="ALKEM">ALKEM (LONG)</option><option value="RADICO">RADICO (LONG)</option><option value="SUPREMEIND">SUPREMEIND (SHORT)</option><option value="MANKIND">MANKIND (LONG)</option><option value="APLAPOLLO">APLAPOLLO (LONG)</option><option value="ABB">ABB (LONG)</option>
+            </select>
+          </div>
+          <div class="calc-group">
+            <label for="calc-live-price">Live Market Price (₹)</label>
+            <input id="calc-live-price" type="number" step="any" placeholder="Enter live broker price">
+          </div>
+          <div class="calc-badge-container">
+            <div class="calc-badge badge-buy" id="calc-badge">Select a stock to evaluate</div>
+          </div>
+        </div>
+        <div class="calc-results-grid">
+          <div class="calc-metric"><span class="lbl">Distance from Entry</span><b id="calc-dist-entry">—</b></div>
+          <div class="calc-metric"><span class="lbl">Remaining to Target</span><b id="calc-dist-target" class="pos">—</b></div>
+          <div class="calc-metric"><span class="lbl">Buffer to Stop-Loss</span><b id="calc-dist-stop" class="neg">—</b></div>
+          <div class="calc-metric full"><span class="lbl">Exact Broker Action</span><b id="calc-order-plan" class="order-text">—</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section>
     <h2>Qualified ladders · week of 2026-08-31</h2>
-    <p class="sub">Rungs are distance from Monday's open, with the measured hit rate and the number of historical fills behind it. Prices are set from that open each week.</p>
+    <p class="sub">Rungs are distance from Monday's open, with the measured hit rate and the number of historical fills behind it. Prices are set from that open each week. <em>Click any row to load into the Live Decision Assistant above.</em></p>
     <div class="row-tools">
       <button type="button" data-filter="all" aria-pressed="true">All 13</button>
       <button type="button" data-filter="long" aria-pressed="false">Buy 12</button>
@@ -183,11 +237,12 @@
     </div>
     <div class="scroll">
       <table>
-        <thead><tr><th scope="col">Instrument</th><th scope="col">Buy / Entry Price</th><th scope="col">Sell Target (+2%)</th><th scope="col">Stop Loss (-1%)</th><th scope="col">Reward : Risk</th><th scope="col">Expected week</th><th scope="col">Conviction</th><th scope="col">Size</th></tr></thead>
+        <thead><tr><th scope="col">Instrument</th><th scope="col">Buy / Entry Price</th><th scope="col">Max Buy Cap (+0.8%)</th><th scope="col">Sell Target</th><th scope="col">Stop Loss</th><th scope="col">Reward : Risk</th><th scope="col">Expected week</th><th scope="col">Conviction</th><th scope="col">Size</th></tr></thead>
         <tbody id="plan-rows">
-        <tr data-side="long" data-expected="1.678" data-conviction="2.28">
+        <tr data-side="long" data-symbol="COFORGE" data-entry="1853.87" data-target="1901.7" data-stop="1829.96" data-targetpct="2.6" data-stoppct="1.3" data-expected="1.678" data-conviction="2.28" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">COFORGE</span><span class="chip chip-long">buy</span><span class="chip chip-potential">potential</span><span class="chip chip-journal">traded before</span></th>
           <td class="n"><b>₹1853.87</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹1868.70</small></td>
           <td class="n pos"><b>₹1901.70</b> <span class="verdict-detail">+2.6%</span></td>
           <td class="n neg"><b>₹1829.96</b> <span class="verdict-detail">−1.3%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -195,9 +250,10 @@
           <td class="n"><span class="bar"><i style="width:2.28%"></i></span>2</td>
           <td class="n">×0.27</td>
         </tr>
-        <tr data-side="long" data-expected="1.495" data-conviction="46.75">
+        <tr data-side="long" data-symbol="MFSL" data-entry="1553.3" data-target="1596.48" data-stop="1531.71" data-targetpct="2.8" data-stoppct="1.4" data-expected="1.495" data-conviction="46.75" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">MFSL</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹1553.30</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹1565.73</small></td>
           <td class="n pos"><b>₹1596.48</b> <span class="verdict-detail">+2.8%</span></td>
           <td class="n neg"><b>₹1531.71</b> <span class="verdict-detail">−1.4%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -205,9 +261,10 @@
           <td class="n"><span class="bar"><i style="width:46.75%"></i></span>47</td>
           <td class="n">×0.75</td>
         </tr>
-        <tr data-side="long" data-expected="1.42" data-conviction="44.95">
+        <tr data-side="long" data-symbol="ABCAPITAL" data-entry="394.29" data-target="404.38" data-stop="389.24" data-targetpct="2.6" data-stoppct="1.3" data-expected="1.42" data-conviction="44.95" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">ABCAPITAL</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹394.29</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹397.44</small></td>
           <td class="n pos"><b>₹404.38</b> <span class="verdict-detail">+2.6%</span></td>
           <td class="n neg"><b>₹389.24</b> <span class="verdict-detail">−1.3%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -215,9 +272,10 @@
           <td class="n"><span class="bar"><i style="width:44.95%"></i></span>45</td>
           <td class="n">×0.73</td>
         </tr>
-        <tr data-side="long" data-expected="1.189" data-conviction="49.54">
+        <tr data-side="long" data-symbol="AUBANK" data-entry="1065.08" data-target="1090.43" data-stop="1052.41" data-targetpct="2.4" data-stoppct="1.2" data-expected="1.189" data-conviction="49.54" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">AUBANK</span><span class="chip chip-long">buy</span><span class="chip chip-journal">traded before</span></th>
           <td class="n"><b>₹1065.08</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹1073.60</small></td>
           <td class="n pos"><b>₹1090.43</b> <span class="verdict-detail">+2.4%</span></td>
           <td class="n neg"><b>₹1052.41</b> <span class="verdict-detail">−1.2%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -225,9 +283,10 @@
           <td class="n"><span class="bar"><i style="width:49.54%"></i></span>50</td>
           <td class="n">×0.78</td>
         </tr>
-        <tr data-side="long" data-expected="1.062" data-conviction="43.84">
+        <tr data-side="long" data-symbol="GLENMARK" data-entry="2268.8" data-target="2324.61" data-stop="2240.89" data-targetpct="2.5" data-stoppct="1.2" data-expected="1.062" data-conviction="43.84" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">GLENMARK</span><span class="chip chip-long">buy</span><span class="chip chip-journal">traded before</span></th>
           <td class="n"><b>₹2268.80</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹2286.95</small></td>
           <td class="n pos"><b>₹2324.61</b> <span class="verdict-detail">+2.5%</span></td>
           <td class="n neg"><b>₹2240.89</b> <span class="verdict-detail">−1.2%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -235,9 +294,10 @@
           <td class="n"><span class="bar"><i style="width:43.84%"></i></span>44</td>
           <td class="n">×0.72</td>
         </tr>
-        <tr data-side="long" data-expected="0.92" data-conviction="34.73">
+        <tr data-side="long" data-symbol="UNOMINDA" data-entry="1211.64" data-target="1243.14" data-stop="1195.89" data-targetpct="2.6" data-stoppct="1.3" data-expected="0.92" data-conviction="34.73" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">UNOMINDA</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹1211.64</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹1221.33</small></td>
           <td class="n pos"><b>₹1243.14</b> <span class="verdict-detail">+2.6%</span></td>
           <td class="n neg"><b>₹1195.89</b> <span class="verdict-detail">−1.3%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -245,9 +305,10 @@
           <td class="n"><span class="bar"><i style="width:34.73%"></i></span>35</td>
           <td class="n">×0.62</td>
         </tr>
-        <tr data-side="long" data-expected="0.764" data-conviction="51.69">
+        <tr data-side="long" data-symbol="SOLARINDS" data-entry="18433.53" data-target="19104.51" data-stop="18098.04" data-targetpct="3.6" data-stoppct="1.8" data-expected="0.764" data-conviction="51.69" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">SOLARINDS</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹18433.53</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹18581.00</small></td>
           <td class="n pos"><b>₹19104.51</b> <span class="verdict-detail">+3.6%</span></td>
           <td class="n neg"><b>₹18098.04</b> <span class="verdict-detail">−1.8%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -255,9 +316,10 @@
           <td class="n"><span class="bar"><i style="width:51.69%"></i></span>52</td>
           <td class="n">×0.80</td>
         </tr>
-        <tr data-side="long" data-expected="0.737" data-conviction="26.88">
+        <tr data-side="long" data-symbol="ALKEM" data-entry="5292" data-target="5442.29" data-stop="5216.85" data-targetpct="2.8" data-stoppct="1.4" data-expected="0.737" data-conviction="26.88" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">ALKEM</span><span class="chip chip-long">buy</span><span class="chip chip-journal">traded before</span></th>
           <td class="n"><b>₹5292.00</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹5334.34</small></td>
           <td class="n pos"><b>₹5442.29</b> <span class="verdict-detail">+2.8%</span></td>
           <td class="n neg"><b>₹5216.85</b> <span class="verdict-detail">−1.4%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -265,9 +327,10 @@
           <td class="n"><span class="bar"><i style="width:26.88%"></i></span>27</td>
           <td class="n">×0.54</td>
         </tr>
-        <tr data-side="long" data-expected="0.512" data-conviction="48.02">
+        <tr data-side="long" data-symbol="RADICO" data-entry="4539.36" data-target="4654.66" data-stop="4481.71" data-targetpct="2.5" data-stoppct="1.3" data-expected="0.512" data-conviction="48.02" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">RADICO</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹4539.36</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹4575.67</small></td>
           <td class="n pos"><b>₹4654.66</b> <span class="verdict-detail">+2.5%</span></td>
           <td class="n neg"><b>₹4481.71</b> <span class="verdict-detail">−1.3%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -275,9 +338,10 @@
           <td class="n"><span class="bar"><i style="width:48.02%"></i></span>48</td>
           <td class="n">×0.77</td>
         </tr>
-        <tr data-side="short" data-expected="0.48" data-conviction="42.52">
+        <tr data-side="short" data-symbol="SUPREMEIND" data-entry="3961.7" data-target="3859.49" data-stop="4012.81" data-targetpct="2.6" data-stoppct="1.3" data-expected="0.48" data-conviction="42.52" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">SUPREMEIND</span><span class="chip chip-short">sell</span></th>
           <td class="n"><b>₹3961.70</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹3930.01</small></td>
           <td class="n pos"><b>₹3859.49</b> <span class="verdict-detail">−2.6%</span></td>
           <td class="n neg"><b>₹4012.81</b> <span class="verdict-detail">+1.3%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -285,9 +349,10 @@
           <td class="n"><span class="bar"><i style="width:42.52%"></i></span>43</td>
           <td class="n">×0.71</td>
         </tr>
-        <tr data-side="long" data-expected="0.407" data-conviction="23.93">
+        <tr data-side="long" data-symbol="MANKIND" data-entry="2337.3" data-target="2385.92" data-stop="2312.99" data-targetpct="2.1" data-stoppct="1.0" data-expected="0.407" data-conviction="23.93" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">MANKIND</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹2337.30</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹2356.00</small></td>
           <td class="n pos"><b>₹2385.92</b> <span class="verdict-detail">+2.1%</span></td>
           <td class="n neg"><b>₹2312.99</b> <span class="verdict-detail">−1.0%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -295,9 +360,10 @@
           <td class="n"><span class="bar"><i style="width:23.93%"></i></span>24</td>
           <td class="n">×0.51</td>
         </tr>
-        <tr data-side="long" data-expected="0.261" data-conviction="31.43">
+        <tr data-side="long" data-symbol="APLAPOLLO" data-entry="2023.37" data-target="2073.55" data-stop="1998.28" data-targetpct="2.5" data-stoppct="1.2" data-expected="0.261" data-conviction="31.43" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">APLAPOLLO</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹2023.37</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹2039.56</small></td>
           <td class="n pos"><b>₹2073.55</b> <span class="verdict-detail">+2.5%</span></td>
           <td class="n neg"><b>₹1998.28</b> <span class="verdict-detail">−1.2%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -305,9 +371,10 @@
           <td class="n"><span class="bar"><i style="width:31.43%"></i></span>31</td>
           <td class="n">×0.59</td>
         </tr>
-        <tr data-side="long" data-expected="0.195" data-conviction="36.8">
+        <tr data-side="long" data-symbol="ABB" data-entry="7021.29" data-target="7182.78" data-stop="6940.55" data-targetpct="2.3" data-stoppct="1.1" data-expected="0.195" data-conviction="36.8" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row"><span class="tkr">ABB</span><span class="chip chip-long">buy</span></th>
           <td class="n"><b>₹7021.29</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹7077.46</small></td>
           <td class="n pos"><b>₹7182.78</b> <span class="verdict-detail">+2.3%</span></td>
           <td class="n neg"><b>₹6940.55</b> <span class="verdict-detail">−1.1%</span></td>
           <td class="n"><b>2.0 : 1</b></td>
@@ -383,6 +450,104 @@
   if (planSearch) planSearch.addEventListener("input", refresh);
   apply();
   refresh();
+
+  // Live Decision Assistant & Distance Calculator logic
+  var calcSymbol = document.getElementById("calc-symbol");
+  var calcLivePrice = document.getElementById("calc-live-price");
+  var calcBadge = document.getElementById("calc-badge");
+  var calcDistEntry = document.getElementById("calc-dist-entry");
+  var calcDistTarget = document.getElementById("calc-dist-target");
+  var calcDistStop = document.getElementById("calc-dist-stop");
+  var calcOrderPlan = document.getElementById("calc-order-plan");
+
+  function evaluateLiveDecision() {
+    if (!calcSymbol) return;
+    var sym = calcSymbol.value;
+    var targetRow = rows.find(function (r) { return r.dataset.symbol === sym; });
+    if (!targetRow) return;
+
+    var side = targetRow.dataset.side || "long";
+    var entry = Number(targetRow.dataset.entry) || 0;
+    var target = Number(targetRow.dataset.target) || 0;
+    var stop = Number(targetRow.dataset.stop) || 0;
+
+    var liveVal = parseFloat(calcLivePrice.value);
+    var isUserPrice = Number.isFinite(liveVal) && liveVal > 0;
+    var live = isUserPrice ? liveVal : entry;
+
+    if (!isUserPrice) {
+      calcLivePrice.placeholder = "Entry is ₹" + entry.toFixed(2) + " (enter live price)";
+    }
+
+    var distEntryPct = side === "short"
+      ? ((entry - live) / entry) * 100
+      : ((live - entry) / entry) * 100;
+    var distTargetPct = Math.abs((target - live) / live) * 100;
+    var distStopPct = Math.abs((stop - live) / live) * 100;
+
+    var distEntryDiff = Math.abs(live - entry);
+    var distTargetDiff = Math.abs(target - live);
+    var distStopDiff = Math.abs(stop - live);
+
+    calcDistEntry.textContent = (distEntryPct >= 0 ? "+" : "") + distEntryPct.toFixed(2) + "% (" + (live >= entry ? "+" : "-") + "₹" + distEntryDiff.toFixed(2) + ")";
+    calcDistEntry.className = Math.abs(distEntryPct) <= 0.8 ? "pos" : (distEntryPct > 1.0 ? "neg" : "");
+
+    calcDistTarget.textContent = "+" + distTargetPct.toFixed(2) + "% (+₹" + distTargetDiff.toFixed(2) + " left)";
+    calcDistStop.textContent = "−" + distStopPct.toFixed(2) + "% (₹" + distStopDiff.toFixed(2) + " cushion)";
+
+    calcBadge.className = "calc-badge";
+
+    if (side === "long" && live >= target) {
+      calcBadge.className += " badge-buy";
+      calcBadge.textContent = "🏁 TARGET REACHED (+" + distEntryPct.toFixed(1) + "%) · PROFIT BOOKED";
+      calcOrderPlan.textContent = "Trade complete. Target was hit at ₹" + target.toFixed(2) + ". Do not enter now.";
+    } else if (side === "long" && live <= stop) {
+      calcBadge.className += " badge-stop";
+      calcBadge.textContent = "🛑 STOP-LOSS BREACHED (" + distEntryPct.toFixed(1) + "%) · DO NOT BUY";
+      calcOrderPlan.textContent = "Setup invalidated. Price dropped below stop-loss (₹" + stop.toFixed(2) + ").";
+    } else if (distEntryPct <= 0.8 && distEntryPct >= -1.5) {
+      calcBadge.className += " badge-buy";
+      calcBadge.textContent = "🟢 IN BUY ZONE · SAFE TO ENTER NOW";
+      calcOrderPlan.textContent = "Place " + (distEntryPct < 0 ? "Discount Buy" : "Buy") + " @ ₹" + live.toFixed(2) + " | Set GTT Target @ ₹" + target.toFixed(2) + " | Set GTT Stop-Loss @ ₹" + stop.toFixed(2);
+    } else if (distEntryPct > 0.8) {
+      calcBadge.className += " badge-warn";
+      calcBadge.textContent = "🛑 EXTENDED (+" + distEntryPct.toFixed(1) + "% above entry) · DO NOT CHASE";
+      calcOrderPlan.textContent = "Price is too high above entry. Place a Limit Buy Order @ ₹" + entry.toFixed(2) + " and wait for pullback.";
+    } else {
+      calcBadge.className += " badge-info";
+      calcBadge.textContent = "ℹ️ BELOW ENTRY · VERIFY MOMENTUM";
+      calcOrderPlan.textContent = "Place Limit Order @ ₹" + entry.toFixed(2) + " | Target: ₹" + target.toFixed(2) + " | Stop: ₹" + stop.toFixed(2);
+    }
+  }
+
+  if (calcSymbol) calcSymbol.addEventListener("change", function () {
+    var sym = calcSymbol.value;
+    var targetRow = rows.find(function (r) { return r.dataset.symbol === sym; });
+    if (targetRow) {
+      calcLivePrice.value = "";
+      calcLivePrice.placeholder = "Entry: ₹" + Number(targetRow.dataset.entry).toFixed(2);
+    }
+    evaluateLiveDecision();
+  });
+
+  if (calcLivePrice) calcLivePrice.addEventListener("input", evaluateLiveDecision);
+
+  // Clicking any row in the table automatically loads it into the Decision Assistant
+  rows.forEach(function (r) {
+    r.addEventListener("click", function () {
+      var sym = r.dataset.symbol;
+      if (calcSymbol && sym) {
+        calcSymbol.value = sym;
+        calcLivePrice.value = "";
+        calcLivePrice.placeholder = "Entry: ₹" + Number(r.dataset.entry).toFixed(2);
+        evaluateLiveDecision();
+        var assistant = document.getElementById("decision-assistant");
+        if (assistant) assistant.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
+  });
+
+  evaluateLiveDecision();
 
   var sealedNode = document.getElementById("sealed");
   var sealed = null;
