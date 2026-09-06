@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T18:40:07.219Z",
+  "generatedAt": "2026-09-06T19:05:36.754Z",
   "weekKey": "2026-08-31",
   "universe": 210,
   "failed": 0,
@@ -63,11 +63,11 @@
           }
         }
       ],
-      "convictionPct": 36.94,
-      "expectedWeeklyPct": 0.308,
-      "expectedFromPricePct": 0.065,
+      "convictionPct": 35.76,
+      "expectedWeeklyPct": 0.3,
+      "expectedFromPricePct": 0.057,
       "expectedFromCarryPct": 0.243,
-      "sizeMultiplier": 0.646,
+      "sizeMultiplier": 0.633,
       "chartPattern": {
         "pattern": "ASCENDING_TRIANGLE",
         "bias": "BULLISH",
@@ -82,7 +82,7 @@
         "er": 0.042,
         "vpin": 0.202,
         "toxicityTone": "LOW",
-        "metaProb": 0.704,
+        "metaProb": 0.699,
         "metaDecision": "TAKE",
         "qualityRating": "HIGH_CONVICTION",
         "kellyFraction": 0.05
@@ -93,8 +93,8 @@
         "Realised weekly edge: 0.033% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 4 hits its 2% target at least 56.57% of the time with 95% confidence",
         "Trend alignment: 12-month move -24.213%, -0.9 per unit of risk",
-        "Model expectation: boosted trees expect 0.0974% this week",
-        "Model skill: out-of-sample information coefficient 0.0684",
+        "Model expectation: boosted trees expect 0.0808% this week",
+        "Model skill: out-of-sample information coefficient 0.0534",
         "Carry: futures at a premium of 0.867%, worth 0.243% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.255"
       ],
@@ -124,16 +124,16 @@
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.0487,
-          "contribution": 0.78,
-          "note": "boosted trees expect 0.0974% this week"
+          "score": 0.0404,
+          "contribution": 0.65,
+          "note": "boosted trees expect 0.0808% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.684,
-          "contribution": 4.79,
-          "note": "out-of-sample information coefficient 0.0684"
+          "score": 0.534,
+          "contribution": 3.74,
+          "note": "out-of-sample information coefficient 0.0534"
         },
         {
           "name": "Technical alignment",
@@ -162,12 +162,12 @@
         "cycleOutOfSampleFrom": "2025-03-03",
         "modelValidation": {
           "weeks": 166,
-          "actedWeeks": 73,
-          "informationCoefficient": 0.0684,
-          "rSquared": -0.14,
-          "meanAbsoluteErrorPct": 0.374,
-          "actedAverageWeeklyPct": 0.044,
-          "actedWinRatePct": 30.98,
+          "actedWeeks": 75,
+          "informationCoefficient": 0.0534,
+          "rSquared": -0.1579,
+          "meanAbsoluteErrorPct": 0.377,
+          "actedAverageWeeklyPct": 0.036,
+          "actedWinRatePct": 30.11,
           "allWeeksAverageWeeklyPct": -0.017
         },
         "modelTrustworthy": true,
@@ -178,36 +178,36 @@
         },
         "topFeatures": [
           {
-            "feature": "return63Pct",
-            "sharePct": 9.81
-          },
-          {
             "feature": "realisedVol21Pct",
-            "sharePct": 9.44
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 8.89
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 8.7
+            "sharePct": 9.96
           },
           {
             "feature": "gapFromWeekOpenPct",
-            "sharePct": 8.7
+            "sharePct": 9.78
+          },
+          {
+            "feature": "return63Pct",
+            "sharePct": 9.41
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 8.12
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 8.12
           },
           {
             "feature": "volRatio2163",
-            "sharePct": 7.96
+            "sharePct": 7.93
           },
           {
             "feature": "volumeRatio520",
-            "sharePct": 7.59
+            "sharePct": 6.83
           },
           {
-            "feature": "atr14Pct",
-            "sharePct": 5.19
+            "feature": "bodyRatio",
+            "sharePct": 6.64
           }
         ],
         "fundamentals": {
@@ -293,11 +293,11 @@
           }
         }
       ],
-      "convictionPct": 36.94,
-      "expectedWeeklyPct": 0.308,
-      "expectedFromPricePct": 0.065,
+      "convictionPct": 35.76,
+      "expectedWeeklyPct": 0.3,
+      "expectedFromPricePct": 0.057,
       "expectedFromCarryPct": 0.243,
-      "sizeMultiplier": 0.646,
+      "sizeMultiplier": 0.633,
       "chartPattern": {
         "pattern": "ASCENDING_TRIANGLE",
         "bias": "BULLISH",
@@ -312,7 +312,7 @@
         "er": 0.042,
         "vpin": 0.202,
         "toxicityTone": "LOW",
-        "metaProb": 0.704,
+        "metaProb": 0.699,
         "metaDecision": "TAKE",
         "qualityRating": "HIGH_CONVICTION",
         "kellyFraction": 0.05
@@ -323,8 +323,8 @@
         "Realised weekly edge: 0.033% average out-of-sample week over 79 weeks",
         "Target hit reliability: rung 4 hits its 2% target at least 56.57% of the time with 95% confidence",
         "Trend alignment: 12-month move -24.213%, -0.9 per unit of risk",
-        "Model expectation: boosted trees expect 0.0974% this week",
-        "Model skill: out-of-sample information coefficient 0.0684",
+        "Model expectation: boosted trees expect 0.0808% this week",
+        "Model skill: out-of-sample information coefficient 0.0534",
         "Carry: futures at a premium of 0.867%, worth 0.243% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.255"
       ],
@@ -354,16 +354,16 @@
         {
           "name": "Model expectation",
           "weight": 16,
-          "score": 0.0487,
-          "contribution": 0.78,
-          "note": "boosted trees expect 0.0974% this week"
+          "score": 0.0404,
+          "contribution": 0.65,
+          "note": "boosted trees expect 0.0808% this week"
         },
         {
           "name": "Model skill",
           "weight": 7,
-          "score": 0.684,
-          "contribution": 4.79,
-          "note": "out-of-sample information coefficient 0.0684"
+          "score": 0.534,
+          "contribution": 3.74,
+          "note": "out-of-sample information coefficient 0.0534"
         },
         {
           "name": "Technical alignment",
@@ -392,12 +392,12 @@
         "cycleOutOfSampleFrom": "2025-03-03",
         "modelValidation": {
           "weeks": 166,
-          "actedWeeks": 73,
-          "informationCoefficient": 0.0684,
-          "rSquared": -0.14,
-          "meanAbsoluteErrorPct": 0.374,
-          "actedAverageWeeklyPct": 0.044,
-          "actedWinRatePct": 30.98,
+          "actedWeeks": 75,
+          "informationCoefficient": 0.0534,
+          "rSquared": -0.1579,
+          "meanAbsoluteErrorPct": 0.377,
+          "actedAverageWeeklyPct": 0.036,
+          "actedWinRatePct": 30.11,
           "allWeeksAverageWeeklyPct": -0.017
         },
         "modelTrustworthy": true,
@@ -408,36 +408,36 @@
         },
         "topFeatures": [
           {
-            "feature": "return63Pct",
-            "sharePct": 9.81
-          },
-          {
             "feature": "realisedVol21Pct",
-            "sharePct": 9.44
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 8.89
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 8.7
+            "sharePct": 9.96
           },
           {
             "feature": "gapFromWeekOpenPct",
-            "sharePct": 8.7
+            "sharePct": 9.78
+          },
+          {
+            "feature": "return63Pct",
+            "sharePct": 9.41
+          },
+          {
+            "feature": "return5Pct",
+            "sharePct": 8.12
+          },
+          {
+            "feature": "closeLocation",
+            "sharePct": 8.12
           },
           {
             "feature": "volRatio2163",
-            "sharePct": 7.96
+            "sharePct": 7.93
           },
           {
             "feature": "volumeRatio520",
-            "sharePct": 7.59
+            "sharePct": 6.83
           },
           {
-            "feature": "atr14Pct",
-            "sharePct": 5.19
+            "feature": "bodyRatio",
+            "sharePct": 6.64
           }
         ],
         "fundamentals": {
