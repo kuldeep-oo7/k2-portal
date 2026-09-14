@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T15:39:26.120Z",
+  "generatedAt": "2026-09-14T16:23:52.742Z",
   "weekKey": "2026-09-07",
   "universe": 210,
   "failed": 0,
@@ -50,7 +50,7 @@
             "brokerSide": "BUY",
             "clientOrderId": "K2_708C05E4A49B5AA89119",
             "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T15:38:31.357Z",
+            "decisionAt": "2026-09-14T16:23:06.044Z",
             "weekKey": "2026-09-07",
             "level": 2,
             "sector": null,
@@ -161,7 +161,7 @@
         "Realised weekly edge: 0.036% average out-of-sample week over 79 weeks",
         "Trend alignment: 12-month move 4.786%, 0.24 per unit of risk",
         "Model expectation: boosted trees expect 0.2006% this week",
-        "Model skill: out-of-sample information coefficient 0.1025",
+        "Model skill: out-of-sample information coefficient 0.1054",
         "Carry: futures at a premium of 0.062%, worth -0.024% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4243"
       ],
@@ -200,7 +200,7 @@
           "weight": 7,
           "score": 1,
           "contribution": 7,
-          "note": "out-of-sample information coefficient 0.1025"
+          "note": "out-of-sample information coefficient 0.1054"
         },
         {
           "name": "Technical alignment",
@@ -230,11 +230,11 @@
         "modelValidation": {
           "weeks": 166,
           "actedWeeks": 113,
-          "informationCoefficient": 0.1025,
-          "rSquared": -0.1471,
+          "informationCoefficient": 0.1054,
+          "rSquared": -0.1443,
           "meanAbsoluteErrorPct": 0.291,
-          "actedAverageWeeklyPct": 0.026,
-          "actedWinRatePct": 30.05,
+          "actedAverageWeeklyPct": 0.033,
+          "actedWinRatePct": 30.97,
           "allWeeksAverageWeeklyPct": 0.008
         },
         "modelTrustworthy": true,
@@ -346,7 +346,7 @@
             "brokerSide": "BUY",
             "clientOrderId": "K2_2F9FFB350E920C62DD2B",
             "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T15:38:16.280Z",
+            "decisionAt": "2026-09-14T16:22:54.734Z",
             "weekKey": "2026-09-07",
             "level": 3,
             "sector": null,
@@ -645,7 +645,7 @@
             "brokerSide": "BUY",
             "clientOrderId": "K2_08F862AE0A5EF5F34330",
             "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T15:38:29.177Z",
+            "decisionAt": "2026-09-14T16:23:04.443Z",
             "weekKey": "2026-09-07",
             "level": 3,
             "sector": null,
@@ -934,7 +934,7 @@
             "brokerSide": "BUY",
             "clientOrderId": "K2_708C05E4A49B5AA89119",
             "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T15:38:31.357Z",
+            "decisionAt": "2026-09-14T16:23:06.044Z",
             "weekKey": "2026-09-07",
             "level": 2,
             "sector": null,
@@ -1045,7 +1045,7 @@
         "Realised weekly edge: 0.036% average out-of-sample week over 79 weeks",
         "Trend alignment: 12-month move 4.786%, 0.24 per unit of risk",
         "Model expectation: boosted trees expect 0.2006% this week",
-        "Model skill: out-of-sample information coefficient 0.1025",
+        "Model skill: out-of-sample information coefficient 0.1054",
         "Carry: futures at a premium of 0.062%, worth -0.024% to this side over the week",
         "Balance-sheet asymmetry: balance-sheet score 0.4243"
       ],
@@ -1084,7 +1084,7 @@
           "weight": 7,
           "score": 1,
           "contribution": 7,
-          "note": "out-of-sample information coefficient 0.1025"
+          "note": "out-of-sample information coefficient 0.1054"
         },
         {
           "name": "Technical alignment",
@@ -1114,11 +1114,11 @@
         "modelValidation": {
           "weeks": 166,
           "actedWeeks": 113,
-          "informationCoefficient": 0.1025,
-          "rSquared": -0.1471,
+          "informationCoefficient": 0.1054,
+          "rSquared": -0.1443,
           "meanAbsoluteErrorPct": 0.291,
-          "actedAverageWeeklyPct": 0.026,
-          "actedWinRatePct": 30.05,
+          "actedAverageWeeklyPct": 0.033,
+          "actedWinRatePct": 30.97,
           "allWeeksAverageWeeklyPct": 0.008
         },
         "modelTrustworthy": true,
@@ -1230,7 +1230,7 @@
             "brokerSide": "BUY",
             "clientOrderId": "K2_2F9FFB350E920C62DD2B",
             "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T15:38:16.280Z",
+            "decisionAt": "2026-09-14T16:22:54.734Z",
             "weekKey": "2026-09-07",
             "level": 3,
             "sector": null,
@@ -1529,7 +1529,7 @@
             "brokerSide": "BUY",
             "clientOrderId": "K2_08F862AE0A5EF5F34330",
             "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T15:38:29.177Z",
+            "decisionAt": "2026-09-14T16:23:04.443Z",
             "weekKey": "2026-09-07",
             "level": 3,
             "sector": null,
