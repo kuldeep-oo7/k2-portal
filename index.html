@@ -230,7 +230,7 @@
     <h1 class="wordmark">K<span>²</span> Range Desk</h1>
     <div class="stamp">
       NSE futures · weekly ladder<br>
-      built 2026-09-11 14:27 UTC
+      built 2026-09-14 08:08 UTC
     </div>
   </header>
 
@@ -243,20 +243,20 @@
       <div class="radar-time" id="radar-sync-time">Live TradingView Sync (Auto-refreshing)</div>
     </div>
     <div class="radar-pills">
-      <div class="radar-pill">GIFT NIFTY: <b id="radar-gift-val" class="neg">-0.03%</b> <span id="radar-gift-price">(23454)</span></div>
-      <div class="radar-pill">INDIA VIX: <b id="radar-vix-val">12.28</b></div>
-      <div class="radar-pill">BRENT CRUDE: <b id="radar-crude-val">$104.99</b></div>
-      <div class="radar-pill">US S&P FUTURES: <b id="radar-sp-val" class="pos">+0.88%</b></div>
+      <div class="radar-pill">GIFT NIFTY: <b id="radar-gift-val" class="pos">+0.15%</b> <span id="radar-gift-price">(23490)</span></div>
+      <div class="radar-pill">INDIA VIX: <b id="radar-vix-val">12.29</b></div>
+      <div class="radar-pill">BRENT CRUDE: <b id="radar-crude-val">$107.64</b></div>
+      <div class="radar-pill">US S&P FUTURES: <b id="radar-sp-val" class="neg">-0.68%</b></div>
       <div class="radar-pill status-pill">SHIELD DIRECTIVE: <b id="radar-directive">L3/L4 Deep Dips Only</b></div>
     </div>
   </div>
 
   <div class="grid">
     <div class="tile"><b>210</b><span>names measured</span></div>
-    <div class="tile gold"><b>2</b><span>cleared every test</span></div>
-    <div class="tile"><b>1</b><span>buy ladders</span></div>
-    <div class="tile"><b>1</b><span>sell ladders</span></div>
-    <div class="tile"><b>0.28%</b><span>best expected week</span></div>
+    <div class="tile gold"><b>3</b><span>cleared every test</span></div>
+    <div class="tile"><b>3</b><span>buy ladders</span></div>
+    <div class="tile"><b>0</b><span>sell ladders</span></div>
+    <div class="tile"><b>0.09%</b><span>best expected week</span></div>
   </div>
 
   <!-- Institutional Active Holding & Return Targets Dashboard -->
@@ -411,7 +411,7 @@
           <div class="calc-group">
             <label for="calc-symbol">Stock Setup</label>
             <select id="calc-symbol">
-              <option value="SUPREMEIND">SUPREMEIND (SHORT)</option><option value="APLAPOLLO">APLAPOLLO (LONG)</option>
+              <option value="BEL">BEL (LONG)</option><option value="ABB">ABB (LONG)</option><option value="BANKBARODA">BANKBARODA (LONG)</option>
             </select>
           </div>
           <div class="calc-group">
@@ -439,9 +439,9 @@
     <p class="sub">Rungs are distance from Monday's open, with the measured hit rate and the number of historical fills behind it. Prices are set from that open each week. <em>Click any row to load into the Live Decision Assistant above.</em></p>
     
     <div class="row-tools">
-      <button type="button" data-filter="all" aria-pressed="true">All 2</button>
-      <button type="button" data-filter="long" aria-pressed="false">Buy 1</button>
-      <button type="button" data-filter="short" aria-pressed="false">Sell 1</button>
+      <button type="button" data-filter="all" aria-pressed="true">All 3</button>
+      <button type="button" data-filter="long" aria-pressed="false">Buy 3</button>
+      <button type="button" data-filter="short" aria-pressed="false">Sell 0</button>
       <button type="button" data-sort="expected" aria-pressed="true">Expected</button>
       <button type="button" data-sort="conviction" aria-pressed="false">Conviction</button>
       <input type="search" class="search" id="plan-search" placeholder="Search a stock" aria-label="Search the ladder list">
@@ -450,41 +450,59 @@
       <table>
         <thead><tr><th scope="col">Instrument</th><th scope="col">Buy / Entry Price</th><th scope="col">Max Buy Cap (±0.8%)</th><th scope="col">Target 1 (+2% De-Risk)</th><th scope="col">Target 2 (Runner)</th><th scope="col">Stop Loss (BE on T1)</th><th scope="col">Holding Horizon</th><th scope="col">Reward : Risk</th><th scope="col">Conviction / 8 Pillars</th><th scope="col">Size</th></tr></thead>
         <tbody id="plan-rows">
-        <tr data-side="short" data-symbol="SUPREMEIND" data-entry="3761.45" data-target="3654.62" data-target1="3654.62" data-target1pct="2.8" data-target2="3526.36" data-target2pct="6.3" data-target3="3197.2324999999996" data-target3pct="15.0" data-dayst1="1-3d" data-dayst2="2d" data-dayst3="Continuous / Roll" data-stagedplan="T1: Bank 50% @ ₹3654.62 &amp; move SL to Breakeven | T2: Bank 25% @ ₹3526.36 | T3: Trail remaining 25%" data-stop="3814.86" data-targetpct="2.8" data-stoppct="1.4" data-expected="0.276" data-conviction="30.17" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
+        <tr data-side="long" data-symbol="BEL" data-entry="390.26" data-target="398.14" data-target1="398.14" data-target1pct="2.0" data-target2="409.77" data-target2pct="5.0" data-target3="449.58" data-target3pct="15.2" data-dayst1="1" data-dayst2="12" data-dayst3="Continuous Hold (Roll at Monthly Expiry - 3d)" data-stagedplan="T1: Bank 50% @ ₹398.14 (1–3d), slide SL to Breakeven (₹390.26). T2: Bank 25% @ ₹409.77 (12d). T3: Trail 25% for Macro Runner @ ₹449.58." data-stop="386.32" data-targetpct="2.0" data-stoppct="1.0" data-expected="0.094" data-conviction="27.23" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row">
-            <span class="tkr">SUPREMEIND</span>
-            <span class="chip chip-short">sell</span>
-            <span class="chip chip-level level-4" title="Ladder Level 4 (L4 Capitulation)">L4 Capitulation</span>
+            <span class="tkr">BEL</span>
+            <span class="chip chip-long">buy</span>
+            <span class="chip chip-level level-2" title="Ladder Level 2 (L2 Pullback)">L2 Pullback</span>
             
             
           </th>
-          <td class="n"><b>₹3761.45</b></td>
-          <td class="n" style="color:var(--muted);"><small>Max: ₹3731.36</small></td>
-          <td class="n pos"><b>₹3654.62</b> <span class="verdict-detail">−2.8% <small style="color:var(--muted);font-weight:normal;">(1-3d)</small></span></td>
-          <td class="n pos"><b>₹3526.36</b> <span class="verdict-detail">−6.3% <small style="color:var(--muted);font-weight:normal;">(2d)</small></span></td>
-          <td class="n neg"><b>₹3814.86</b> <span class="verdict-detail" title="Move SL to breakeven once Target 1 is reached" style="background:rgba(239,68,68,0.1);padding:2px 5px;border-radius:4px;font-size:11px;">BE on T1</span></td>
-          <td class="n" style="font-size:12.5px;color:var(--violet);font-weight:600;"><span class="chip" style="background:var(--violet-soft);color:var(--violet);">1-3d / 2d</span></td>
-          <td class="n"><b>2.0:1 → 4.4:1</b></td>
-          <td class="n"><span class="bar"><i style="width:30.17%"></i></span>30 <span class="chip" style="background:rgba(22,122,98,0.12);color:var(--mint-deep);font-size:9.5px;padding:2px 5px;font-weight:700;">8/8 PASS</span></td>
-          <td class="n">×0.57</td>
+          <td class="n"><b>₹390.26</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹393.38</small></td>
+          <td class="n pos"><b>₹398.14</b> <span class="verdict-detail">+2.0% <small style="color:var(--muted);font-weight:normal;">(1)</small></span></td>
+          <td class="n pos"><b>₹409.77</b> <span class="verdict-detail">+5.0% <small style="color:var(--muted);font-weight:normal;">(12)</small></span></td>
+          <td class="n neg"><b>₹386.32</b> <span class="verdict-detail" title="Move SL to breakeven once Target 1 is reached" style="background:rgba(239,68,68,0.1);padding:2px 5px;border-radius:4px;font-size:11px;">BE on T1</span></td>
+          <td class="n" style="font-size:12.5px;color:var(--violet);font-weight:600;"><span class="chip" style="background:var(--violet-soft);color:var(--violet);">1 / 12</span></td>
+          <td class="n"><b>2.0:1 → 5.0:1</b></td>
+          <td class="n"><span class="bar"><i style="width:27.23%"></i></span>27 <span class="chip" style="background:rgba(22,122,98,0.12);color:var(--mint-deep);font-size:9.5px;padding:2px 5px;font-weight:700;">8/8 PASS</span></td>
+          <td class="n">×0.54</td>
         </tr>
-        <tr data-side="long" data-symbol="APLAPOLLO" data-entry="2117.68" data-target="2183.33" data-target1="2183.33" data-target1pct="3.1" data-target2="2262.11" data-target2pct="6.8" data-target3="2435.3319999999994" data-target3pct="15.0" data-dayst1="1-3d" data-dayst2="2d" data-dayst3="Continuous / Roll" data-stagedplan="T1: Bank 50% @ ₹2183.33 &amp; move SL to Breakeven | T2: Bank 25% @ ₹2262.11 | T3: Trail remaining 25%" data-stop="2084.86" data-targetpct="3.1" data-stoppct="1.6" data-expected="0.047" data-conviction="34.79" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
+        <tr data-side="long" data-symbol="ABB" data-entry="6954.47" data-target="7140.85" data-target1="7140.85" data-target1pct="2.7" data-target2="7364.78" data-target2pct="5.9" data-target3="8352.32" data-target3pct="20.1" data-dayst1="1" data-dayst2="11" data-dayst3="Continuous Hold (Roll at Monthly Expiry - 3d)" data-stagedplan="T1: Bank 50% @ ₹7140.85 (1–3d), slide SL to Breakeven (₹6954.47). T2: Bank 25% @ ₹7364.78 (11d). T3: Trail 25% for Macro Runner @ ₹8352.32." data-stop="6861.28" data-targetpct="2.7" data-stoppct="1.3" data-expected="0.041" data-conviction="36.78" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
           <th scope="row">
-            <span class="tkr">APLAPOLLO</span>
+            <span class="tkr">ABB</span>
             <span class="chip chip-long">buy</span>
             <span class="chip chip-level level-3" title="Ladder Level 3 (L3 Dip)">L3 Dip</span>
             
             
           </th>
-          <td class="n"><b>₹2117.68</b></td>
-          <td class="n" style="color:var(--muted);"><small>Max: ₹2134.62</small></td>
-          <td class="n pos"><b>₹2183.33</b> <span class="verdict-detail">+3.1% <small style="color:var(--muted);font-weight:normal;">(1-3d)</small></span></td>
-          <td class="n pos"><b>₹2262.11</b> <span class="verdict-detail">+6.8% <small style="color:var(--muted);font-weight:normal;">(2d)</small></span></td>
-          <td class="n neg"><b>₹2084.86</b> <span class="verdict-detail" title="Move SL to breakeven once Target 1 is reached" style="background:rgba(239,68,68,0.1);padding:2px 5px;border-radius:4px;font-size:11px;">BE on T1</span></td>
-          <td class="n" style="font-size:12.5px;color:var(--violet);font-weight:600;"><span class="chip" style="background:var(--violet-soft);color:var(--violet);">1-3d / 2d</span></td>
+          <td class="n"><b>₹6954.47</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹7010.11</small></td>
+          <td class="n pos"><b>₹7140.85</b> <span class="verdict-detail">+2.7% <small style="color:var(--muted);font-weight:normal;">(1)</small></span></td>
+          <td class="n pos"><b>₹7364.78</b> <span class="verdict-detail">+5.9% <small style="color:var(--muted);font-weight:normal;">(11)</small></span></td>
+          <td class="n neg"><b>₹6861.28</b> <span class="verdict-detail" title="Move SL to breakeven once Target 1 is reached" style="background:rgba(239,68,68,0.1);padding:2px 5px;border-radius:4px;font-size:11px;">BE on T1</span></td>
+          <td class="n" style="font-size:12.5px;color:var(--violet);font-weight:600;"><span class="chip" style="background:var(--violet-soft);color:var(--violet);">1 / 11</span></td>
           <td class="n"><b>2.0:1 → 4.4:1</b></td>
-          <td class="n"><span class="bar"><i style="width:34.79%"></i></span>35 <span class="chip" style="background:rgba(22,122,98,0.12);color:var(--mint-deep);font-size:9.5px;padding:2px 5px;font-weight:700;">8/8 PASS</span></td>
-          <td class="n">×0.78</td>
+          <td class="n"><span class="bar"><i style="width:36.78%"></i></span>37 <span class="chip" style="background:rgba(22,122,98,0.12);color:var(--mint-deep);font-size:9.5px;padding:2px 5px;font-weight:700;">8/8 PASS</span></td>
+          <td class="n">×0.64</td>
+        </tr>
+        <tr data-side="long" data-symbol="BANKBARODA" data-entry="225.89" data-target="230.59" data-target1="230.59" data-target1pct="2.1" data-target2="237.18" data-target2pct="5.0" data-target3="261.13" data-target3pct="15.6" data-dayst1="1" data-dayst2="12" data-dayst3="Continuous Hold (Roll at Monthly Expiry - 3d)" data-stagedplan="T1: Bank 50% @ ₹230.59 (1–3d), slide SL to Breakeven (₹225.89). T2: Bank 25% @ ₹237.18 (12d). T3: Trail 25% for Macro Runner @ ₹261.13." data-stop="223.54" data-targetpct="2.1" data-stoppct="1.0" data-expected="0.038" data-conviction="19.01" style="cursor:pointer;" title="Click to load into Live Decision Calculator">
+          <th scope="row">
+            <span class="tkr">BANKBARODA</span>
+            <span class="chip chip-long">buy</span>
+            <span class="chip chip-level level-3" title="Ladder Level 3 (L3 Dip)">L3 Dip</span>
+            
+            <span class="chip chip-journal">traded before</span>
+          </th>
+          <td class="n"><b>₹225.89</b></td>
+          <td class="n" style="color:var(--muted);"><small>Max: ₹227.70</small></td>
+          <td class="n pos"><b>₹230.59</b> <span class="verdict-detail">+2.1% <small style="color:var(--muted);font-weight:normal;">(1)</small></span></td>
+          <td class="n pos"><b>₹237.18</b> <span class="verdict-detail">+5.0% <small style="color:var(--muted);font-weight:normal;">(12)</small></span></td>
+          <td class="n neg"><b>₹223.54</b> <span class="verdict-detail" title="Move SL to breakeven once Target 1 is reached" style="background:rgba(239,68,68,0.1);padding:2px 5px;border-radius:4px;font-size:11px;">BE on T1</span></td>
+          <td class="n" style="font-size:12.5px;color:var(--violet);font-weight:600;"><span class="chip" style="background:var(--violet-soft);color:var(--violet);">1 / 12</span></td>
+          <td class="n"><b>2.0:1 → 4.8:1</b></td>
+          <td class="n"><span class="bar"><i style="width:19.01%"></i></span>19 <span class="chip" style="background:rgba(22,122,98,0.12);color:var(--mint-deep);font-size:9.5px;padding:2px 5px;font-weight:700;">8/8 PASS</span></td>
+          <td class="n">×0.45</td>
         </tr></tbody>
       </table>
     </div>
