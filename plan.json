@@ -1,2273 +1,755 @@
 {
-  "generatedAt": "2026-09-14T16:23:52.742Z",
-  "weekKey": "2026-09-07",
+  "generatedAt": "2026-09-15T13:46:59.674Z",
+  "strategyVersion": "continuous-futures-v2",
+  "weekKey": null,
   "universe": 210,
+  "marketCoverage": {
+    "orderGeneratingStockFutures": 210,
+    "futuresSymbols": [
+      "360ONE",
+      "ABB",
+      "ABCAPITAL",
+      "ADANIENSOL",
+      "ADANIENT",
+      "ADANIGREEN",
+      "ADANIPORTS",
+      "ADANIPOWER",
+      "ALKEM",
+      "AMBER",
+      "AMBUJACEM",
+      "ANGELONE",
+      "APLAPOLLO",
+      "APOLLOHOSP",
+      "ASHOKLEY",
+      "ASIANPAINT",
+      "ASTRAL",
+      "ATHERENERG",
+      "AUBANK",
+      "AUROPHARMA",
+      "AXISBANK",
+      "BAJAJ-AUTO",
+      "BAJAJFINSV",
+      "BAJAJHLDNG",
+      "BAJFINANCE",
+      "BANDHANBNK",
+      "BANKBARODA",
+      "BANKINDIA",
+      "BDL",
+      "BEL",
+      "BHARATFORG",
+      "BHARTIARTL",
+      "BHEL",
+      "BIOCON",
+      "BLUESTARCO",
+      "BOSCHLTD",
+      "BPCL",
+      "BRITANNIA",
+      "BSE",
+      "CAMS",
+      "CANBK",
+      "CDSL",
+      "CGPOWER",
+      "CHOLAFIN",
+      "CIPLA",
+      "COALINDIA",
+      "COCHINSHIP",
+      "COFORGE",
+      "COLPAL",
+      "CONCOR",
+      "CROMPTON",
+      "CUMMINSIND",
+      "DABUR",
+      "DELHIVERY",
+      "DIVISLAB",
+      "DIXON",
+      "DLF",
+      "DMART",
+      "DRREDDY",
+      "EICHERMOT",
+      "ETERNAL",
+      "FEDERALBNK",
+      "FORCEMOT",
+      "FORTIS",
+      "GAIL",
+      "GLENMARK",
+      "GMRAIRPORT",
+      "GODFRYPHLP",
+      "GODREJCP",
+      "GODREJPROP",
+      "GRASIM",
+      "GVT&D",
+      "HAL",
+      "HAVELLS",
+      "HCLTECH",
+      "HDFCAMC",
+      "HDFCBANK",
+      "HDFCLIFE",
+      "HEROMOTOCO",
+      "HINDALCO",
+      "HINDPETRO",
+      "HINDUNILVR",
+      "HINDZINC",
+      "HYUNDAI",
+      "ICICIBANK",
+      "ICICIGI",
+      "ICICIPRULI",
+      "IDEA",
+      "IDFCFIRSTB",
+      "IEX",
+      "INDHOTEL",
+      "INDIANB",
+      "INDIGO",
+      "INDUSINDBK",
+      "INDUSTOWER",
+      "INFY",
+      "INOXWIND",
+      "IOC",
+      "IREDA",
+      "IRFC",
+      "ITC",
+      "JINDALSTEL",
+      "JIOFIN",
+      "JSWENERGY",
+      "JSWSTEEL",
+      "JUBLFOOD",
+      "KALYANKJIL",
+      "KAYNES",
+      "KEI",
+      "KFINTECH",
+      "KOTAKBANK",
+      "KPITTECH",
+      "LAURUSLABS",
+      "LICHSGFIN",
+      "LICI",
+      "LODHA",
+      "LT",
+      "LTF",
+      "LTM",
+      "LUPIN",
+      "M&M",
+      "MAHABANK",
+      "MANAPPURAM",
+      "MANKIND",
+      "MARICO",
+      "MARUTI",
+      "MAXHEALTH",
+      "MAZDOCK",
+      "MCX",
+      "MFSL",
+      "MOTHERSON",
+      "MOTILALOFS",
+      "MPHASIS",
+      "MUTHOOTFIN",
+      "NAM-INDIA",
+      "NATIONALUM",
+      "NAUKRI",
+      "NBCC",
+      "NESTLEIND",
+      "NHPC",
+      "NMDC",
+      "NTPC",
+      "NYKAA",
+      "OBEROIRLTY",
+      "OFSS",
+      "OIL",
+      "ONGC",
+      "PAGEIND",
+      "PATANJALI",
+      "PAYTM",
+      "PERSISTENT",
+      "PETRONET",
+      "PFC",
+      "PGEL",
+      "PHOENIXLTD",
+      "PIDILITIND",
+      "PIIND",
+      "PNB",
+      "PNBHOUSING",
+      "POLICYBZR",
+      "POLYCAB",
+      "POWERGRID",
+      "POWERINDIA",
+      "PREMIERENE",
+      "PRESTIGE",
+      "RADICO",
+      "RBLBANK",
+      "RECLTD",
+      "RELIANCE",
+      "RVNL",
+      "SAGILITY",
+      "SAIL",
+      "SBICARD",
+      "SBILIFE",
+      "SBIN",
+      "SHREECEM",
+      "SHRIRAMFIN",
+      "SIEMENS",
+      "SOLARINDS",
+      "SONACOMS",
+      "SRF",
+      "SUNPHARMA",
+      "SUPREMEIND",
+      "SUZLON",
+      "SWIGGY",
+      "TATACONSUM",
+      "TATAELXSI",
+      "TATAPOWER",
+      "TATASTEEL",
+      "TCS",
+      "TECHM",
+      "TIINDIA",
+      "TITAN",
+      "TMPV",
+      "TORNTPHARM",
+      "TRENT",
+      "TVSMOTOR",
+      "ULTRACEMCO",
+      "UNIONBANK",
+      "UNITDSPR",
+      "UNOMINDA",
+      "UPL",
+      "VBL",
+      "VEDL",
+      "VMM",
+      "VOLTAS",
+      "WAAREEENER",
+      "WIPRO",
+      "YESBANK",
+      "ZYDUSLIFE"
+    ],
+    "broadEquitiesTracked": 500,
+    "researchOnlyEquities": 290,
+    "derivativesAsOf": "2026-09-15",
+    "derivativesVerified": true,
+    "banStatusVerified": false,
+    "universeError": null,
+    "broadUniverseSource": "NSE Indices",
+    "broadUniverseGeneratedAt": "2026-07-30T17:16:10.352Z"
+  },
   "failed": 0,
-  "generatedFor": "2026-09-07",
+  "portfolioAdmitted": 0,
+  "portfolioLimits": {
+    "maxTotalCapital": 2000000,
+    "maxMarginUtilizationPct": 0.7,
+    "maxOpenPositions": 5,
+    "maxSectorPositions": 2,
+    "maxSymbolPositions": 5,
+    "maxSingleNameRiskBudget": 25000,
+    "maxGrossNotionalMultiple": 3,
+    "maxSessionParticipationPct": 0.02,
+    "stressMovePct": 0.05,
+    "maxStressLossPctOfEquity": 0.2,
+    "minDaysToExpiryForNewRisk": 4,
+    "dailyLossLimitInr": 50000,
+    "killSwitchTriggered": false,
+    "requireCompleteMacro": false,
+    "requireSector": true,
+    "requireBanClear": true,
+    "requireCurrentMargin": false,
+    "strictOrderValidation": true
+  },
+  "generatedFor": null,
   "considered": 210,
-  "actionable": 3,
-  "buys": [
-    {
-      "symbol": "BEL",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-09-07",
-      "anchor": 406.35,
-      "sessionsElapsed": 5,
-      "levels": [
-        2
-      ],
-      "entries": [
-        {
-          "level": 2,
-          "entry": 390.26,
-          "target": 398.14,
-          "runnerTarget": 409.77,
-          "runnerTargetPct": 5,
-          "target1Price": 398.14,
-          "target1Pct": 2.02,
-          "target2Price": 409.77,
-          "target2Pct": 5,
-          "target3MacroPrice": 449.58,
-          "target3Pct": 15.2,
-          "holdingDaysT1": 1,
-          "holdingDaysT2": 12,
-          "holdingDaysT3": "Continuous Hold (Roll at Monthly Expiry - 3d)",
-          "stagedExecutionPlan": "T1: Bank 50% @ ₹398.14 (1–3d), slide SL to Breakeven (₹390.26). T2: Bank 25% @ ₹409.77 (12d). T3: Trail 25% for Macro Runner @ ₹449.58.",
-          "stopLoss": 386.32,
-          "riskReward": 2,
-          "targetPct": 2.02,
-          "stopLossPct": 1.01,
-          "stepFromAnchorPct": 4,
-          "historicalFills": 67,
-          "hitRatePct": 59.7,
-          "hitRateLowerPct": 47.74,
-          "averageNetPct": 0.528,
-          "medianSessionsHeld": 1,
-          "orderIntent": {
-            "symbol": "BEL",
-            "side": "long",
-            "brokerSide": "BUY",
-            "clientOrderId": "K2_708C05E4A49B5AA89119",
-            "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T16:23:06.044Z",
-            "weekKey": "2026-09-07",
-            "level": 2,
-            "sector": null,
-            "contractSymbol": "BEL26SEPFUT",
-            "instrumentId": "68447",
-            "segment": "NSE_FO",
-            "instrumentType": "STOCK_FUTURE",
-            "finInstrmTp": "STF",
-            "expiry": "2026-09-29",
-            "lotSize": 1425,
-            "lots": 2,
-            "quantity": 2850,
-            "executable": true,
-            "liveExecutable": false,
-            "executionMode": "SHADOW_ONLY",
-            "validationErrors": [],
-            "rejectionReason": null,
-            "tickSize": 0.05,
-            "entryPrice": 390.25,
-            "targetPrice": 398.15,
-            "runnerTargetPrice": 409.75,
-            "stopLossPrice": 386.3,
-            "riskReward": 2,
-            "targetPct": 2.02,
-            "stopLossPct": 1.01,
-            "contractNotional": 1112212.5,
-            "estMarginRequired": 244686.75,
-            "marginPct": 0.22,
-            "marginSource": "CONSERVATIVE_ESTIMATE",
-            "maxRiskInr": 11257.5,
-            "orderType": "LIMIT",
-            "timeInForce": "DAY"
-          }
-        }
-      ],
-      "convictionPct": 27.23,
-      "expectedWeeklyPct": 0.094,
-      "expectedFromPricePct": 0.118,
-      "expectedFromCarryPct": -0.024,
-      "sizeMultiplier": 0.542,
-      "chartPattern": {
-        "pattern": "DESCENDING_TRIANGLE",
-        "bias": "BEARISH",
-        "confidence": 0.8,
-        "breakdownLevel": 402.9,
-        "targetPrice": 376.48,
-        "invalidationPrice": 416.35,
-        "confirmed": true
-      },
-      "advancedQuant": {
-        "hurst": 0.563,
-        "er": 0.104,
-        "vpin": 0.192,
-        "toxicityTone": "LOW",
-        "metaProb": 0.666,
-        "metaDecision": "TAKE",
-        "qualityRating": "HIGH_CONVICTION",
-        "kellyFraction": 0.05
-      },
-      "eightPillars": {
-        "pillar1_fundamentals": {
-          "balanceSheetScore": 0.4243,
-          "earningsVeto": null,
-          "status": "PASS"
-        },
-        "pillar2_technicals": {
-          "momentumReturnPct": 4.79,
-          "trendEfficiency": 0.104,
-          "atrPct": 1.68,
-          "status": "PASS"
-        },
-        "pillar3_chartPattern": {
-          "pattern": "DESCENDING_TRIANGLE",
-          "targetPrice": 376.48,
-          "confirmed": true
-        },
-        "pillar4_candlesticks": {
-          "pattern": "strong close near high",
-          "empiricalWinRatePct": 47.34,
-          "directionScore": 0.2593
-        },
-        "pillar5_quantMath": {
-          "hurst": 0.563,
-          "regime": "Persistent Trend",
-          "avwap": null,
-          "ouHalfLifeSessions": 11.6
-        },
-        "pillar6_statistics": {
-          "wilsonLowerBoundPct": 47.74,
-          "tStatistic": 2.36,
-          "kellyAllocationPct": 0.05
-        },
-        "pillar7_microstructure": {
-          "vpin": 0.192,
-          "toxicityTone": "LOW",
-          "toxicOrderFlow": false
-        },
-        "pillar8_machineLearning": {
-          "boostedTreeForecastPct": 0.2006,
-          "metaProbability": 0.666,
-          "metaDecision": "TAKE",
-          "qualityRating": "HIGH_CONVICTION"
-        }
-      },
-      "bookOut": "Hold open legs continuously across weekends with Monday reference rebase; exit strictly on 2% target, 2% stop-loss, or mandatory 3-day monthly futures expiry roll window",
-      "reasons": [
-        "Rungs 2 cleared in-sample t≥1.89 (OOS week: 0.036%)",
-        "Realised weekly edge: 0.036% average out-of-sample week over 79 weeks",
-        "Trend alignment: 12-month move 4.786%, 0.24 per unit of risk",
-        "Model expectation: boosted trees expect 0.2006% this week",
-        "Model skill: out-of-sample information coefficient 0.1054",
-        "Carry: futures at a premium of 0.062%, worth -0.024% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.4243"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.018,
-          "contribution": 0.4,
-          "note": "0.036% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "rung 2 hits its 2% target at least 47.74% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.4936,
-          "contribution": 7.4,
-          "note": "12-month move 4.786%, 0.24 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0.1003,
-          "contribution": 1.6,
-          "note": "boosted trees expect 0.2006% this week"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 1,
-          "contribution": 7,
-          "note": "out-of-sample information coefficient 0.1054"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "composite score -35 versus a long ladder"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.44,
-          "contribution": 5.28,
-          "note": "futures at a premium of 0.062%, worth -0.024% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 0.9243,
-          "contribution": 5.55,
-          "note": "balance-sheet score 0.4243"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-03-10",
-        "modelValidation": {
-          "weeks": 166,
-          "actedWeeks": 113,
-          "informationCoefficient": 0.1054,
-          "rSquared": -0.1443,
-          "meanAbsoluteErrorPct": 0.291,
-          "actedAverageWeeklyPct": 0.033,
-          "actedWinRatePct": 30.97,
-          "allWeeksAverageWeeklyPct": 0.008
-        },
-        "modelTrustworthy": true,
-        "trend": {
-          "returnPct": 4.786,
-          "scaled": 0.2404,
-          "annualisedVolatilityPct": 19.91
-        },
-        "topFeatures": [
-          {
-            "feature": "return63Pct",
-            "sharePct": 9.12
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.39
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 8.03
-          },
-          {
-            "feature": "rsi14",
-            "sharePct": 8.03
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 7.66
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 7.3
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 7.12
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 6.75
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.4243,
-          "nextEarningsDate": "2026-10-29",
-          "metrics": {
-            "profitMargin": 0.21403,
-            "returnOnEquity": null,
-            "returnOnAssets": null,
-            "operatingMargin": 0.22135,
-            "debtToEquity": 0.273,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 654600000,
-            "totalCash": 85720301568,
-            "revenueGrowth": 0.249,
-            "earningsGrowth": 0.083,
-            "forwardPE": 35.83078,
-            "enterpriseValue": 2870840131584,
-            "beta": 0.284,
-            "floatShares": 3488821344,
-            "sharesOutstanding": 7309778829
-          }
-        }
-      },
-      "symbolBars": 1240,
-      "inJournal": false
-    },
-    {
-      "symbol": "ABB",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-09-07",
-      "anchor": 7389,
-      "sessionsElapsed": 4,
-      "levels": [
-        3
-      ],
-      "entries": [
-        {
-          "level": 3,
-          "entry": 6954.47,
-          "target": 7140.85,
-          "runnerTarget": 7364.78,
-          "runnerTargetPct": 5.9,
-          "target1Price": 7140.85,
-          "target1Pct": 2.68,
-          "target2Price": 7364.78,
-          "target2Pct": 5.9,
-          "target3MacroPrice": 8352.32,
-          "target3Pct": 20.1,
-          "holdingDaysT1": 1,
-          "holdingDaysT2": 11,
-          "holdingDaysT3": "Continuous Hold (Roll at Monthly Expiry - 3d)",
-          "stagedExecutionPlan": "T1: Bank 50% @ ₹7140.85 (1–3d), slide SL to Breakeven (₹6954.47). T2: Bank 25% @ ₹7364.78 (11d). T3: Trail 25% for Macro Runner @ ₹8352.32.",
-          "stopLoss": 6861.28,
-          "riskReward": 2,
-          "targetPct": 2.68,
-          "stopLossPct": 1.34,
-          "stepFromAnchorPct": 6,
-          "historicalFills": 24,
-          "hitRatePct": 83.33,
-          "hitRateLowerPct": 64.15,
-          "averageNetPct": 1.348,
-          "medianSessionsHeld": 1,
-          "orderIntent": {
-            "symbol": "ABB",
-            "side": "long",
-            "brokerSide": "BUY",
-            "clientOrderId": "K2_2F9FFB350E920C62DD2B",
-            "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T16:22:54.734Z",
-            "weekKey": "2026-09-07",
-            "level": 3,
-            "sector": null,
-            "contractSymbol": "ABB26SEPFUT",
-            "instrumentId": "68414",
-            "segment": "NSE_FO",
-            "instrumentType": "STOCK_FUTURE",
-            "finInstrmTp": "STF",
-            "expiry": "2026-09-29",
-            "lotSize": 125,
-            "lots": 1,
-            "quantity": 125,
-            "executable": true,
-            "liveExecutable": false,
-            "executionMode": "SHADOW_ONLY",
-            "validationErrors": [],
-            "rejectionReason": null,
-            "tickSize": 0.05,
-            "entryPrice": 6954.45,
-            "targetPrice": 7140.85,
-            "runnerTargetPrice": 7364.8,
-            "stopLossPrice": 6861.3,
-            "riskReward": 2,
-            "targetPct": 2.68,
-            "stopLossPct": 1.34,
-            "contractNotional": 869306.25,
-            "estMarginRequired": 191247.38,
-            "marginPct": 0.22,
-            "marginSource": "CONSERVATIVE_ESTIMATE",
-            "maxRiskInr": 11643.75,
-            "orderType": "LIMIT",
-            "timeInForce": "DAY"
-          }
-        }
-      ],
-      "convictionPct": 36.8,
-      "expectedWeeklyPct": 0.041,
-      "expectedFromPricePct": 0.071,
-      "expectedFromCarryPct": -0.03,
-      "sizeMultiplier": 0.644,
-      "chartPattern": {
-        "pattern": "DOUBLE_BOTTOM",
-        "bias": "BULLISH",
-        "confidence": 0.65,
-        "neckline": 7699,
-        "trough1": 7391.5,
-        "trough2": 7258,
-        "targetPrice": 8140,
-        "invalidationPrice": 7149.13,
-        "confirmed": false
-      },
-      "advancedQuant": {
-        "hurst": 0.58,
-        "er": 0.313,
-        "vpin": 0.207,
-        "toxicityTone": "LOW",
-        "metaProb": 0.703,
-        "metaDecision": "TAKE",
-        "qualityRating": "HIGH_CONVICTION",
-        "kellyFraction": 0.05
-      },
-      "eightPillars": {
-        "pillar1_fundamentals": {
-          "balanceSheetScore": 0.9411,
-          "earningsVeto": null,
-          "status": "PASS"
-        },
-        "pillar2_technicals": {
-          "momentumReturnPct": 44,
-          "trendEfficiency": 0.313,
-          "atrPct": 2.23,
-          "status": "PASS"
-        },
-        "pillar3_chartPattern": {
-          "pattern": "DOUBLE_BOTTOM",
-          "targetPrice": 8140,
-          "confirmed": false
-        },
-        "pillar4_candlesticks": {
-          "pattern": "hammer-like rejection",
-          "empiricalWinRatePct": 46.55,
-          "directionScore": 0.3958
-        },
-        "pillar5_quantMath": {
-          "hurst": 0.58,
-          "regime": "Persistent Trend",
-          "avwap": null,
-          "ouHalfLifeSessions": 10.7
-        },
-        "pillar6_statistics": {
-          "wilsonLowerBoundPct": 64.15,
-          "tStatistic": 4.81,
-          "kellyAllocationPct": 0.05
-        },
-        "pillar7_microstructure": {
-          "vpin": 0.207,
-          "toxicityTone": "LOW",
-          "toxicOrderFlow": false
-        },
-        "pillar8_machineLearning": {
-          "boostedTreeForecastPct": 0.1213,
-          "metaProbability": 0.703,
-          "metaDecision": "TAKE",
-          "qualityRating": "HIGH_CONVICTION"
-        }
-      },
-      "bookOut": "Hold open legs continuously across weekends with Monday reference rebase; exit strictly on 2% target, 2% stop-loss, or mandatory 3-day monthly futures expiry roll window",
-      "reasons": [
-        "Rungs 3 cleared in-sample t≥1.89 (OOS week: 0.021%)",
-        "Realised weekly edge: 0.021% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 3 hits its 2% target at least 64.15% of the time with 95% confidence",
-        "Trend alignment: 12-month move 43.996%, 1.69 per unit of risk",
-        "Model expectation: boosted trees expect 0.1213% this week",
-        "Model skill: out-of-sample information coefficient 0.0279",
-        "Carry: futures at a premium of 0.077%, worth -0.03% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.9411"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.0105,
-          "contribution": 0.23,
-          "note": "0.021% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0.4717,
-          "contribution": 7.55,
-          "note": "rung 3 hits its 2% target at least 64.15% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 1,
-          "contribution": 15,
-          "note": "12-month move 43.996%, 1.69 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0.0607,
-          "contribution": 0.97,
-          "note": "boosted trees expect 0.1213% this week"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 0.279,
-          "contribution": 1.95,
-          "note": "out-of-sample information coefficient 0.0279"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "composite score -15 versus a long ladder"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.425,
-          "contribution": 5.1,
-          "note": "futures at a premium of 0.077%, worth -0.03% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 1,
-          "contribution": 6,
-          "note": "balance-sheet score 0.9411"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-03-10",
-        "modelValidation": {
-          "weeks": 166,
-          "actedWeeks": 105,
-          "informationCoefficient": 0.0279,
-          "rSquared": -0.3451,
-          "meanAbsoluteErrorPct": 0.308,
-          "actedAverageWeeklyPct": 0.01,
-          "actedWinRatePct": 26.65,
-          "allWeeksAverageWeeklyPct": -0.001
-        },
-        "modelTrustworthy": true,
-        "trend": {
-          "returnPct": 43.996,
-          "scaled": 1.6908,
-          "annualisedVolatilityPct": 26.02
-        },
-        "topFeatures": [
-          {
-            "feature": "volRatio2163",
-            "sharePct": 11.25
-          },
-          {
-            "feature": "realisedVol21Pct",
-            "sharePct": 10.38
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 10.03
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 8.82
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 8.3
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 8.13
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 6.23
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 6.06
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.9411,
-          "nextEarningsDate": "2026-11-05",
-          "metrics": {
-            "profitMargin": 0.21349001,
-            "returnOnEquity": 0.19131,
-            "returnOnAssets": 0.07907,
-            "operatingMargin": 0.11459,
-            "debtToEquity": 1.547,
-            "currentRatio": 2.193,
-            "quickRatio": 1.691,
-            "totalDebt": 1445200000,
-            "totalCash": 73355198464,
-            "revenueGrowth": 0.121,
-            "earningsGrowth": 0.03,
-            "forwardPE": 69.35508,
-            "enterpriseValue": 1470143922176,
-            "beta": 0.483,
-            "floatShares": 51771377,
-            "sharesOutstanding": 211908375
-          }
-        }
-      },
-      "symbolBars": 1239,
-      "inJournal": false
-    },
-    {
-      "symbol": "BANKBARODA",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-09-07",
-      "anchor": 240,
-      "sessionsElapsed": 5,
-      "levels": [
-        3
-      ],
-      "entries": [
-        {
-          "level": 3,
-          "entry": 225.89,
-          "target": 230.59,
-          "runnerTarget": 237.18,
-          "runnerTargetPct": 5,
-          "target1Price": 230.59,
-          "target1Pct": 2.08,
-          "target2Price": 237.18,
-          "target2Pct": 5,
-          "target3MacroPrice": 261.13,
-          "target3Pct": 15.6,
-          "holdingDaysT1": 1,
-          "holdingDaysT2": 12,
-          "holdingDaysT3": "Continuous Hold (Roll at Monthly Expiry - 3d)",
-          "stagedExecutionPlan": "T1: Bank 50% @ ₹230.59 (1–3d), slide SL to Breakeven (₹225.89). T2: Bank 25% @ ₹237.18 (12d). T3: Trail 25% for Macro Runner @ ₹261.13.",
-          "stopLoss": 223.54,
-          "riskReward": 2,
-          "targetPct": 2.08,
-          "stopLossPct": 1.04,
-          "stepFromAnchorPct": 6,
-          "historicalFills": 26,
-          "hitRatePct": 65.38,
-          "hitRateLowerPct": 46.22,
-          "averageNetPct": 0.625,
-          "medianSessionsHeld": 1,
-          "orderIntent": {
-            "symbol": "BANKBARODA",
-            "side": "long",
-            "brokerSide": "BUY",
-            "clientOrderId": "K2_08F862AE0A5EF5F34330",
-            "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T16:23:04.443Z",
-            "weekKey": "2026-09-07",
-            "level": 3,
-            "sector": null,
-            "contractSymbol": "BANKBARODA26SEPFUT",
-            "instrumentId": "68444",
-            "segment": "NSE_FO",
-            "instrumentType": "STOCK_FUTURE",
-            "finInstrmTp": "STF",
-            "expiry": "2026-09-29",
-            "lotSize": 2925,
-            "lots": 1,
-            "quantity": 2925,
-            "executable": true,
-            "liveExecutable": false,
-            "executionMode": "SHADOW_ONLY",
-            "validationErrors": [],
-            "rejectionReason": null,
-            "tickSize": 0.01,
-            "entryPrice": 225.89,
-            "targetPrice": 230.59,
-            "runnerTargetPrice": 237.18,
-            "stopLossPrice": 223.54,
-            "riskReward": 2,
-            "targetPct": 2.08,
-            "stopLossPct": 1.04,
-            "contractNotional": 660728.25,
-            "estMarginRequired": 145360.22,
-            "marginPct": 0.22,
-            "marginSource": "CONSERVATIVE_ESTIMATE",
-            "maxRiskInr": 6873.75,
-            "orderType": "LIMIT",
-            "timeInForce": "DAY"
-          }
-        }
-      ],
-      "convictionPct": 19.01,
-      "expectedWeeklyPct": 0.038,
-      "expectedFromPricePct": 0.028,
-      "expectedFromCarryPct": 0.01,
-      "sizeMultiplier": 0.454,
-      "chartPattern": null,
-      "advancedQuant": {
-        "hurst": 0.576,
-        "er": 0.273,
-        "vpin": 0.139,
-        "toxicityTone": "LOW",
-        "metaProb": 0.632,
-        "metaDecision": "TAKE",
-        "qualityRating": "HIGH_CONVICTION",
-        "kellyFraction": 0.05
-      },
-      "eightPillars": {
-        "pillar1_fundamentals": {
-          "balanceSheetScore": 0.5948,
-          "earningsVeto": null,
-          "status": "PASS"
-        },
-        "pillar2_technicals": {
-          "momentumReturnPct": 3.29,
-          "trendEfficiency": 0.273,
-          "atrPct": 1.73,
-          "status": "PASS"
-        },
-        "pillar3_chartPattern": {
-          "pattern": null,
-          "targetPrice": null,
-          "confirmed": false
-        },
-        "pillar4_candlesticks": {
-          "pattern": "strong close near high",
-          "empiricalWinRatePct": 52.03,
-          "directionScore": 0.2963
-        },
-        "pillar5_quantMath": {
-          "hurst": 0.576,
-          "regime": "Persistent Trend",
-          "avwap": null,
-          "ouHalfLifeSessions": 12.4
-        },
-        "pillar6_statistics": {
-          "wilsonLowerBoundPct": 46.22,
-          "tStatistic": 1.7,
-          "kellyAllocationPct": 0.05
-        },
-        "pillar7_microstructure": {
-          "vpin": 0.139,
-          "toxicityTone": "LOW",
-          "toxicOrderFlow": false
-        },
-        "pillar8_machineLearning": {
-          "boostedTreeForecastPct": 0.1122,
-          "metaProbability": 0.632,
-          "metaDecision": "TAKE",
-          "qualityRating": "HIGH_CONVICTION"
-        }
-      },
-      "bookOut": "Hold open legs continuously across weekends with Monday reference rebase; exit strictly on 2% target, 2% stop-loss, or mandatory 3-day monthly futures expiry roll window",
-      "reasons": [
-        "Rungs 3 cleared in-sample t≥1.89 (OOS week: 0.028%)",
-        "Realised weekly edge: 0.028% average out-of-sample week over 79 weeks",
-        "Trend alignment: 12-month move 3.288%, 0.14 per unit of risk",
-        "Carry: futures at a flat of -0.025%, worth 0.01% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.5948"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.014,
-          "contribution": 0.31,
-          "note": "0.028% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "rung 3 hits its 2% target at least 46.22% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.4267,
-          "contribution": 6.4,
-          "note": "12-month move 3.288%, 0.14 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "model did not clear its out-of-sample gate"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 0,
-          "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0539"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "composite score -35 versus a long ladder"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.525,
-          "contribution": 6.3,
-          "note": "futures at a flat of -0.025%, worth 0.01% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 1,
-          "contribution": 6,
-          "note": "balance-sheet score 0.5948"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-03-10",
-        "modelValidation": {
-          "weeks": 166,
-          "actedWeeks": 83,
-          "informationCoefficient": -0.0539,
-          "rSquared": -0.2396,
-          "meanAbsoluteErrorPct": 0.3,
-          "actedAverageWeeklyPct": -0.011,
-          "actedWinRatePct": 32.47,
-          "allWeeksAverageWeeklyPct": -0.002
-        },
-        "modelTrustworthy": false,
-        "trend": {
-          "returnPct": 3.288,
-          "scaled": 0.14,
-          "annualisedVolatilityPct": 23.49
-        },
-        "topFeatures": [
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 12.22
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 9.49
-          },
-          {
-            "feature": "return63Pct",
-            "sharePct": 9
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 7.72
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.07
-          },
-          {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.75
-          },
-          {
-            "feature": "rsi14",
-            "sharePct": 6.75
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 6.75
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.5948,
-          "nextEarningsDate": "2026-10-30",
-          "metrics": {
-            "profitMargin": 0.27392,
-            "returnOnEquity": 0.113170005,
-            "returnOnAssets": 0.0093,
-            "operatingMargin": 0.45536998,
-            "debtToEquity": null,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 1732858085376,
-            "totalCash": 506651410432,
-            "revenueGrowth": 0.18,
-            "earningsGrowth": -0.486,
-            "forwardPE": 5.5477033,
-            "enterpriseValue": 2472640249856,
-            "beta": 0.422,
-            "floatShares": 1853329361,
-            "sharesOutstanding": 5171362179
-          }
-        }
-      },
-      "symbolBars": 1240,
-      "inJournal": true
-    }
-  ],
+  "actionable": 0,
+  "buys": [],
   "sells": [],
-  "best": [
-    {
-      "symbol": "BEL",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-09-07",
-      "anchor": 406.35,
-      "sessionsElapsed": 5,
-      "levels": [
-        2
-      ],
-      "entries": [
-        {
-          "level": 2,
-          "entry": 390.26,
-          "target": 398.14,
-          "runnerTarget": 409.77,
-          "runnerTargetPct": 5,
-          "target1Price": 398.14,
-          "target1Pct": 2.02,
-          "target2Price": 409.77,
-          "target2Pct": 5,
-          "target3MacroPrice": 449.58,
-          "target3Pct": 15.2,
-          "holdingDaysT1": 1,
-          "holdingDaysT2": 12,
-          "holdingDaysT3": "Continuous Hold (Roll at Monthly Expiry - 3d)",
-          "stagedExecutionPlan": "T1: Bank 50% @ ₹398.14 (1–3d), slide SL to Breakeven (₹390.26). T2: Bank 25% @ ₹409.77 (12d). T3: Trail 25% for Macro Runner @ ₹449.58.",
-          "stopLoss": 386.32,
-          "riskReward": 2,
-          "targetPct": 2.02,
-          "stopLossPct": 1.01,
-          "stepFromAnchorPct": 4,
-          "historicalFills": 67,
-          "hitRatePct": 59.7,
-          "hitRateLowerPct": 47.74,
-          "averageNetPct": 0.528,
-          "medianSessionsHeld": 1,
-          "orderIntent": {
-            "symbol": "BEL",
-            "side": "long",
-            "brokerSide": "BUY",
-            "clientOrderId": "K2_708C05E4A49B5AA89119",
-            "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T16:23:06.044Z",
-            "weekKey": "2026-09-07",
-            "level": 2,
-            "sector": null,
-            "contractSymbol": "BEL26SEPFUT",
-            "instrumentId": "68447",
-            "segment": "NSE_FO",
-            "instrumentType": "STOCK_FUTURE",
-            "finInstrmTp": "STF",
-            "expiry": "2026-09-29",
-            "lotSize": 1425,
-            "lots": 2,
-            "quantity": 2850,
-            "executable": true,
-            "liveExecutable": false,
-            "executionMode": "SHADOW_ONLY",
-            "validationErrors": [],
-            "rejectionReason": null,
-            "tickSize": 0.05,
-            "entryPrice": 390.25,
-            "targetPrice": 398.15,
-            "runnerTargetPrice": 409.75,
-            "stopLossPrice": 386.3,
-            "riskReward": 2,
-            "targetPct": 2.02,
-            "stopLossPct": 1.01,
-            "contractNotional": 1112212.5,
-            "estMarginRequired": 244686.75,
-            "marginPct": 0.22,
-            "marginSource": "CONSERVATIVE_ESTIMATE",
-            "maxRiskInr": 11257.5,
-            "orderType": "LIMIT",
-            "timeInForce": "DAY"
-          }
-        }
-      ],
-      "convictionPct": 27.23,
-      "expectedWeeklyPct": 0.094,
-      "expectedFromPricePct": 0.118,
-      "expectedFromCarryPct": -0.024,
-      "sizeMultiplier": 0.542,
-      "chartPattern": {
-        "pattern": "DESCENDING_TRIANGLE",
-        "bias": "BEARISH",
-        "confidence": 0.8,
-        "breakdownLevel": 402.9,
-        "targetPrice": 376.48,
-        "invalidationPrice": 416.35,
-        "confirmed": true
-      },
-      "advancedQuant": {
-        "hurst": 0.563,
-        "er": 0.104,
-        "vpin": 0.192,
-        "toxicityTone": "LOW",
-        "metaProb": 0.666,
-        "metaDecision": "TAKE",
-        "qualityRating": "HIGH_CONVICTION",
-        "kellyFraction": 0.05
-      },
-      "eightPillars": {
-        "pillar1_fundamentals": {
-          "balanceSheetScore": 0.4243,
-          "earningsVeto": null,
-          "status": "PASS"
-        },
-        "pillar2_technicals": {
-          "momentumReturnPct": 4.79,
-          "trendEfficiency": 0.104,
-          "atrPct": 1.68,
-          "status": "PASS"
-        },
-        "pillar3_chartPattern": {
-          "pattern": "DESCENDING_TRIANGLE",
-          "targetPrice": 376.48,
-          "confirmed": true
-        },
-        "pillar4_candlesticks": {
-          "pattern": "strong close near high",
-          "empiricalWinRatePct": 47.34,
-          "directionScore": 0.2593
-        },
-        "pillar5_quantMath": {
-          "hurst": 0.563,
-          "regime": "Persistent Trend",
-          "avwap": null,
-          "ouHalfLifeSessions": 11.6
-        },
-        "pillar6_statistics": {
-          "wilsonLowerBoundPct": 47.74,
-          "tStatistic": 2.36,
-          "kellyAllocationPct": 0.05
-        },
-        "pillar7_microstructure": {
-          "vpin": 0.192,
-          "toxicityTone": "LOW",
-          "toxicOrderFlow": false
-        },
-        "pillar8_machineLearning": {
-          "boostedTreeForecastPct": 0.2006,
-          "metaProbability": 0.666,
-          "metaDecision": "TAKE",
-          "qualityRating": "HIGH_CONVICTION"
-        }
-      },
-      "bookOut": "Hold open legs continuously across weekends with Monday reference rebase; exit strictly on 2% target, 2% stop-loss, or mandatory 3-day monthly futures expiry roll window",
-      "reasons": [
-        "Rungs 2 cleared in-sample t≥1.89 (OOS week: 0.036%)",
-        "Realised weekly edge: 0.036% average out-of-sample week over 79 weeks",
-        "Trend alignment: 12-month move 4.786%, 0.24 per unit of risk",
-        "Model expectation: boosted trees expect 0.2006% this week",
-        "Model skill: out-of-sample information coefficient 0.1054",
-        "Carry: futures at a premium of 0.062%, worth -0.024% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.4243"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.018,
-          "contribution": 0.4,
-          "note": "0.036% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "rung 2 hits its 2% target at least 47.74% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.4936,
-          "contribution": 7.4,
-          "note": "12-month move 4.786%, 0.24 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0.1003,
-          "contribution": 1.6,
-          "note": "boosted trees expect 0.2006% this week"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 1,
-          "contribution": 7,
-          "note": "out-of-sample information coefficient 0.1054"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "composite score -35 versus a long ladder"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.44,
-          "contribution": 5.28,
-          "note": "futures at a premium of 0.062%, worth -0.024% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 0.9243,
-          "contribution": 5.55,
-          "note": "balance-sheet score 0.4243"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-03-10",
-        "modelValidation": {
-          "weeks": 166,
-          "actedWeeks": 113,
-          "informationCoefficient": 0.1054,
-          "rSquared": -0.1443,
-          "meanAbsoluteErrorPct": 0.291,
-          "actedAverageWeeklyPct": 0.033,
-          "actedWinRatePct": 30.97,
-          "allWeeksAverageWeeklyPct": 0.008
-        },
-        "modelTrustworthy": true,
-        "trend": {
-          "returnPct": 4.786,
-          "scaled": 0.2404,
-          "annualisedVolatilityPct": 19.91
-        },
-        "topFeatures": [
-          {
-            "feature": "return63Pct",
-            "sharePct": 9.12
-          },
-          {
-            "feature": "return21Pct",
-            "sharePct": 8.39
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 8.03
-          },
-          {
-            "feature": "rsi14",
-            "sharePct": 8.03
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 7.66
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 7.3
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 7.12
-          },
-          {
-            "feature": "volRatio2163",
-            "sharePct": 6.75
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.4243,
-          "nextEarningsDate": "2026-10-29",
-          "metrics": {
-            "profitMargin": 0.21403,
-            "returnOnEquity": null,
-            "returnOnAssets": null,
-            "operatingMargin": 0.22135,
-            "debtToEquity": 0.273,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 654600000,
-            "totalCash": 85720301568,
-            "revenueGrowth": 0.249,
-            "earningsGrowth": 0.083,
-            "forwardPE": 35.83078,
-            "enterpriseValue": 2870840131584,
-            "beta": 0.284,
-            "floatShares": 3488821344,
-            "sharesOutstanding": 7309778829
-          }
-        }
-      },
-      "symbolBars": 1240,
-      "inJournal": false
-    },
-    {
-      "symbol": "ABB",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-09-07",
-      "anchor": 7389,
-      "sessionsElapsed": 4,
-      "levels": [
-        3
-      ],
-      "entries": [
-        {
-          "level": 3,
-          "entry": 6954.47,
-          "target": 7140.85,
-          "runnerTarget": 7364.78,
-          "runnerTargetPct": 5.9,
-          "target1Price": 7140.85,
-          "target1Pct": 2.68,
-          "target2Price": 7364.78,
-          "target2Pct": 5.9,
-          "target3MacroPrice": 8352.32,
-          "target3Pct": 20.1,
-          "holdingDaysT1": 1,
-          "holdingDaysT2": 11,
-          "holdingDaysT3": "Continuous Hold (Roll at Monthly Expiry - 3d)",
-          "stagedExecutionPlan": "T1: Bank 50% @ ₹7140.85 (1–3d), slide SL to Breakeven (₹6954.47). T2: Bank 25% @ ₹7364.78 (11d). T3: Trail 25% for Macro Runner @ ₹8352.32.",
-          "stopLoss": 6861.28,
-          "riskReward": 2,
-          "targetPct": 2.68,
-          "stopLossPct": 1.34,
-          "stepFromAnchorPct": 6,
-          "historicalFills": 24,
-          "hitRatePct": 83.33,
-          "hitRateLowerPct": 64.15,
-          "averageNetPct": 1.348,
-          "medianSessionsHeld": 1,
-          "orderIntent": {
-            "symbol": "ABB",
-            "side": "long",
-            "brokerSide": "BUY",
-            "clientOrderId": "K2_2F9FFB350E920C62DD2B",
-            "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T16:22:54.734Z",
-            "weekKey": "2026-09-07",
-            "level": 3,
-            "sector": null,
-            "contractSymbol": "ABB26SEPFUT",
-            "instrumentId": "68414",
-            "segment": "NSE_FO",
-            "instrumentType": "STOCK_FUTURE",
-            "finInstrmTp": "STF",
-            "expiry": "2026-09-29",
-            "lotSize": 125,
-            "lots": 1,
-            "quantity": 125,
-            "executable": true,
-            "liveExecutable": false,
-            "executionMode": "SHADOW_ONLY",
-            "validationErrors": [],
-            "rejectionReason": null,
-            "tickSize": 0.05,
-            "entryPrice": 6954.45,
-            "targetPrice": 7140.85,
-            "runnerTargetPrice": 7364.8,
-            "stopLossPrice": 6861.3,
-            "riskReward": 2,
-            "targetPct": 2.68,
-            "stopLossPct": 1.34,
-            "contractNotional": 869306.25,
-            "estMarginRequired": 191247.38,
-            "marginPct": 0.22,
-            "marginSource": "CONSERVATIVE_ESTIMATE",
-            "maxRiskInr": 11643.75,
-            "orderType": "LIMIT",
-            "timeInForce": "DAY"
-          }
-        }
-      ],
-      "convictionPct": 36.8,
-      "expectedWeeklyPct": 0.041,
-      "expectedFromPricePct": 0.071,
-      "expectedFromCarryPct": -0.03,
-      "sizeMultiplier": 0.644,
-      "chartPattern": {
-        "pattern": "DOUBLE_BOTTOM",
-        "bias": "BULLISH",
-        "confidence": 0.65,
-        "neckline": 7699,
-        "trough1": 7391.5,
-        "trough2": 7258,
-        "targetPrice": 8140,
-        "invalidationPrice": 7149.13,
-        "confirmed": false
-      },
-      "advancedQuant": {
-        "hurst": 0.58,
-        "er": 0.313,
-        "vpin": 0.207,
-        "toxicityTone": "LOW",
-        "metaProb": 0.703,
-        "metaDecision": "TAKE",
-        "qualityRating": "HIGH_CONVICTION",
-        "kellyFraction": 0.05
-      },
-      "eightPillars": {
-        "pillar1_fundamentals": {
-          "balanceSheetScore": 0.9411,
-          "earningsVeto": null,
-          "status": "PASS"
-        },
-        "pillar2_technicals": {
-          "momentumReturnPct": 44,
-          "trendEfficiency": 0.313,
-          "atrPct": 2.23,
-          "status": "PASS"
-        },
-        "pillar3_chartPattern": {
-          "pattern": "DOUBLE_BOTTOM",
-          "targetPrice": 8140,
-          "confirmed": false
-        },
-        "pillar4_candlesticks": {
-          "pattern": "hammer-like rejection",
-          "empiricalWinRatePct": 46.55,
-          "directionScore": 0.3958
-        },
-        "pillar5_quantMath": {
-          "hurst": 0.58,
-          "regime": "Persistent Trend",
-          "avwap": null,
-          "ouHalfLifeSessions": 10.7
-        },
-        "pillar6_statistics": {
-          "wilsonLowerBoundPct": 64.15,
-          "tStatistic": 4.81,
-          "kellyAllocationPct": 0.05
-        },
-        "pillar7_microstructure": {
-          "vpin": 0.207,
-          "toxicityTone": "LOW",
-          "toxicOrderFlow": false
-        },
-        "pillar8_machineLearning": {
-          "boostedTreeForecastPct": 0.1213,
-          "metaProbability": 0.703,
-          "metaDecision": "TAKE",
-          "qualityRating": "HIGH_CONVICTION"
-        }
-      },
-      "bookOut": "Hold open legs continuously across weekends with Monday reference rebase; exit strictly on 2% target, 2% stop-loss, or mandatory 3-day monthly futures expiry roll window",
-      "reasons": [
-        "Rungs 3 cleared in-sample t≥1.89 (OOS week: 0.021%)",
-        "Realised weekly edge: 0.021% average out-of-sample week over 79 weeks",
-        "Target hit reliability: rung 3 hits its 2% target at least 64.15% of the time with 95% confidence",
-        "Trend alignment: 12-month move 43.996%, 1.69 per unit of risk",
-        "Model expectation: boosted trees expect 0.1213% this week",
-        "Model skill: out-of-sample information coefficient 0.0279",
-        "Carry: futures at a premium of 0.077%, worth -0.03% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.9411"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.0105,
-          "contribution": 0.23,
-          "note": "0.021% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0.4717,
-          "contribution": 7.55,
-          "note": "rung 3 hits its 2% target at least 64.15% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 1,
-          "contribution": 15,
-          "note": "12-month move 43.996%, 1.69 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0.0607,
-          "contribution": 0.97,
-          "note": "boosted trees expect 0.1213% this week"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 0.279,
-          "contribution": 1.95,
-          "note": "out-of-sample information coefficient 0.0279"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "composite score -15 versus a long ladder"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.425,
-          "contribution": 5.1,
-          "note": "futures at a premium of 0.077%, worth -0.03% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 1,
-          "contribution": 6,
-          "note": "balance-sheet score 0.9411"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-03-10",
-        "modelValidation": {
-          "weeks": 166,
-          "actedWeeks": 105,
-          "informationCoefficient": 0.0279,
-          "rSquared": -0.3451,
-          "meanAbsoluteErrorPct": 0.308,
-          "actedAverageWeeklyPct": 0.01,
-          "actedWinRatePct": 26.65,
-          "allWeeksAverageWeeklyPct": -0.001
-        },
-        "modelTrustworthy": true,
-        "trend": {
-          "returnPct": 43.996,
-          "scaled": 1.6908,
-          "annualisedVolatilityPct": 26.02
-        },
-        "topFeatures": [
-          {
-            "feature": "volRatio2163",
-            "sharePct": 11.25
-          },
-          {
-            "feature": "realisedVol21Pct",
-            "sharePct": 10.38
-          },
-          {
-            "feature": "return5Pct",
-            "sharePct": 10.03
-          },
-          {
-            "feature": "closeLocation",
-            "sharePct": 8.82
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 8.3
-          },
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 8.13
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 6.23
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 6.06
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.9411,
-          "nextEarningsDate": "2026-11-05",
-          "metrics": {
-            "profitMargin": 0.21349001,
-            "returnOnEquity": 0.19131,
-            "returnOnAssets": 0.07907,
-            "operatingMargin": 0.11459,
-            "debtToEquity": 1.547,
-            "currentRatio": 2.193,
-            "quickRatio": 1.691,
-            "totalDebt": 1445200000,
-            "totalCash": 73355198464,
-            "revenueGrowth": 0.121,
-            "earningsGrowth": 0.03,
-            "forwardPE": 69.35508,
-            "enterpriseValue": 1470143922176,
-            "beta": 0.483,
-            "floatShares": 51771377,
-            "sharesOutstanding": 211908375
-          }
-        }
-      },
-      "symbolBars": 1239,
-      "inJournal": false
-    },
-    {
-      "symbol": "BANKBARODA",
-      "action": "buy-ladder",
-      "side": "long",
-      "weekKey": "2026-09-07",
-      "anchor": 240,
-      "sessionsElapsed": 5,
-      "levels": [
-        3
-      ],
-      "entries": [
-        {
-          "level": 3,
-          "entry": 225.89,
-          "target": 230.59,
-          "runnerTarget": 237.18,
-          "runnerTargetPct": 5,
-          "target1Price": 230.59,
-          "target1Pct": 2.08,
-          "target2Price": 237.18,
-          "target2Pct": 5,
-          "target3MacroPrice": 261.13,
-          "target3Pct": 15.6,
-          "holdingDaysT1": 1,
-          "holdingDaysT2": 12,
-          "holdingDaysT3": "Continuous Hold (Roll at Monthly Expiry - 3d)",
-          "stagedExecutionPlan": "T1: Bank 50% @ ₹230.59 (1–3d), slide SL to Breakeven (₹225.89). T2: Bank 25% @ ₹237.18 (12d). T3: Trail 25% for Macro Runner @ ₹261.13.",
-          "stopLoss": 223.54,
-          "riskReward": 2,
-          "targetPct": 2.08,
-          "stopLossPct": 1.04,
-          "stepFromAnchorPct": 6,
-          "historicalFills": 26,
-          "hitRatePct": 65.38,
-          "hitRateLowerPct": 46.22,
-          "averageNetPct": 0.625,
-          "medianSessionsHeld": 1,
-          "orderIntent": {
-            "symbol": "BANKBARODA",
-            "side": "long",
-            "brokerSide": "BUY",
-            "clientOrderId": "K2_08F862AE0A5EF5F34330",
-            "strategyVersion": "continuous-futures-v2",
-            "decisionAt": "2026-09-14T16:23:04.443Z",
-            "weekKey": "2026-09-07",
-            "level": 3,
-            "sector": null,
-            "contractSymbol": "BANKBARODA26SEPFUT",
-            "instrumentId": "68444",
-            "segment": "NSE_FO",
-            "instrumentType": "STOCK_FUTURE",
-            "finInstrmTp": "STF",
-            "expiry": "2026-09-29",
-            "lotSize": 2925,
-            "lots": 1,
-            "quantity": 2925,
-            "executable": true,
-            "liveExecutable": false,
-            "executionMode": "SHADOW_ONLY",
-            "validationErrors": [],
-            "rejectionReason": null,
-            "tickSize": 0.01,
-            "entryPrice": 225.89,
-            "targetPrice": 230.59,
-            "runnerTargetPrice": 237.18,
-            "stopLossPrice": 223.54,
-            "riskReward": 2,
-            "targetPct": 2.08,
-            "stopLossPct": 1.04,
-            "contractNotional": 660728.25,
-            "estMarginRequired": 145360.22,
-            "marginPct": 0.22,
-            "marginSource": "CONSERVATIVE_ESTIMATE",
-            "maxRiskInr": 6873.75,
-            "orderType": "LIMIT",
-            "timeInForce": "DAY"
-          }
-        }
-      ],
-      "convictionPct": 19.01,
-      "expectedWeeklyPct": 0.038,
-      "expectedFromPricePct": 0.028,
-      "expectedFromCarryPct": 0.01,
-      "sizeMultiplier": 0.454,
-      "chartPattern": null,
-      "advancedQuant": {
-        "hurst": 0.576,
-        "er": 0.273,
-        "vpin": 0.139,
-        "toxicityTone": "LOW",
-        "metaProb": 0.632,
-        "metaDecision": "TAKE",
-        "qualityRating": "HIGH_CONVICTION",
-        "kellyFraction": 0.05
-      },
-      "eightPillars": {
-        "pillar1_fundamentals": {
-          "balanceSheetScore": 0.5948,
-          "earningsVeto": null,
-          "status": "PASS"
-        },
-        "pillar2_technicals": {
-          "momentumReturnPct": 3.29,
-          "trendEfficiency": 0.273,
-          "atrPct": 1.73,
-          "status": "PASS"
-        },
-        "pillar3_chartPattern": {
-          "pattern": null,
-          "targetPrice": null,
-          "confirmed": false
-        },
-        "pillar4_candlesticks": {
-          "pattern": "strong close near high",
-          "empiricalWinRatePct": 52.03,
-          "directionScore": 0.2963
-        },
-        "pillar5_quantMath": {
-          "hurst": 0.576,
-          "regime": "Persistent Trend",
-          "avwap": null,
-          "ouHalfLifeSessions": 12.4
-        },
-        "pillar6_statistics": {
-          "wilsonLowerBoundPct": 46.22,
-          "tStatistic": 1.7,
-          "kellyAllocationPct": 0.05
-        },
-        "pillar7_microstructure": {
-          "vpin": 0.139,
-          "toxicityTone": "LOW",
-          "toxicOrderFlow": false
-        },
-        "pillar8_machineLearning": {
-          "boostedTreeForecastPct": 0.1122,
-          "metaProbability": 0.632,
-          "metaDecision": "TAKE",
-          "qualityRating": "HIGH_CONVICTION"
-        }
-      },
-      "bookOut": "Hold open legs continuously across weekends with Monday reference rebase; exit strictly on 2% target, 2% stop-loss, or mandatory 3-day monthly futures expiry roll window",
-      "reasons": [
-        "Rungs 3 cleared in-sample t≥1.89 (OOS week: 0.028%)",
-        "Realised weekly edge: 0.028% average out-of-sample week over 79 weeks",
-        "Trend alignment: 12-month move 3.288%, 0.14 per unit of risk",
-        "Carry: futures at a flat of -0.025%, worth 0.01% to this side over the week",
-        "Balance-sheet asymmetry: balance-sheet score 0.5948"
-      ],
-      "vetoes": [],
-      "components": [
-        {
-          "name": "Realised weekly edge",
-          "weight": 22,
-          "score": 0.014,
-          "contribution": 0.31,
-          "note": "0.028% average out-of-sample week over 79 weeks"
-        },
-        {
-          "name": "Target hit reliability",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "rung 3 hits its 2% target at least 46.22% of the time with 95% confidence"
-        },
-        {
-          "name": "Trend alignment",
-          "weight": 15,
-          "score": 0.4267,
-          "contribution": 6.4,
-          "note": "12-month move 3.288%, 0.14 per unit of risk"
-        },
-        {
-          "name": "Model expectation",
-          "weight": 16,
-          "score": 0,
-          "contribution": 0,
-          "note": "model did not clear its out-of-sample gate"
-        },
-        {
-          "name": "Model skill",
-          "weight": 7,
-          "score": 0,
-          "contribution": 0,
-          "note": "out-of-sample information coefficient -0.0539"
-        },
-        {
-          "name": "Technical alignment",
-          "weight": 6,
-          "score": 0,
-          "contribution": 0,
-          "note": "composite score -35 versus a long ladder"
-        },
-        {
-          "name": "Carry",
-          "weight": 12,
-          "score": 0.525,
-          "contribution": 6.3,
-          "note": "futures at a flat of -0.025%, worth 0.01% to this side over the week"
-        },
-        {
-          "name": "Balance-sheet asymmetry",
-          "weight": 6,
-          "score": 1,
-          "contribution": 6,
-          "note": "balance-sheet score 0.5948"
-        }
-      ],
-      "evidence": {
-        "cycleWeeks": 261,
-        "cycleOutOfSampleFrom": "2025-03-10",
-        "modelValidation": {
-          "weeks": 166,
-          "actedWeeks": 83,
-          "informationCoefficient": -0.0539,
-          "rSquared": -0.2396,
-          "meanAbsoluteErrorPct": 0.3,
-          "actedAverageWeeklyPct": -0.011,
-          "actedWinRatePct": 32.47,
-          "allWeeksAverageWeeklyPct": -0.002
-        },
-        "modelTrustworthy": false,
-        "trend": {
-          "returnPct": 3.288,
-          "scaled": 0.14,
-          "annualisedVolatilityPct": 23.49
-        },
-        "topFeatures": [
-          {
-            "feature": "volumeRatio520",
-            "sharePct": 12.22
-          },
-          {
-            "feature": "gapFromWeekOpenPct",
-            "sharePct": 9.49
-          },
-          {
-            "feature": "return63Pct",
-            "sharePct": 9
-          },
-          {
-            "feature": "smaSpread2050Pct",
-            "sharePct": 7.72
-          },
-          {
-            "feature": "atr14Pct",
-            "sharePct": 7.07
-          },
-          {
-            "feature": "realisedVol21Pct",
-            "sharePct": 6.75
-          },
-          {
-            "feature": "rsi14",
-            "sharePct": 6.75
-          },
-          {
-            "feature": "bodyRatio",
-            "sharePct": 6.75
-          }
-        ],
-        "fundamentals": {
-          "balanceSheetScore": 0.5948,
-          "nextEarningsDate": "2026-10-30",
-          "metrics": {
-            "profitMargin": 0.27392,
-            "returnOnEquity": 0.113170005,
-            "returnOnAssets": 0.0093,
-            "operatingMargin": 0.45536998,
-            "debtToEquity": null,
-            "currentRatio": null,
-            "quickRatio": null,
-            "totalDebt": 1732858085376,
-            "totalCash": 506651410432,
-            "revenueGrowth": 0.18,
-            "earningsGrowth": -0.486,
-            "forwardPE": 5.5477033,
-            "enterpriseValue": 2472640249856,
-            "beta": 0.422,
-            "floatShares": 1853329361,
-            "sharesOutstanding": 5171362179
-          }
-        }
-      },
-      "symbolBars": 1240,
-      "inJournal": true
-    }
-  ],
+  "best": [],
   "rejected": [
     {
       "symbol": "360ONE",
-      "reason": "The model expects a -0.1638% week against this ladder"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
+    },
+    {
+      "symbol": "ABB",
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ABCAPITAL",
-      "reason": "The model expects a -0.0112% week against this ladder"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ADANIENSOL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ADANIENT",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ADANIGREEN",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ADANIPORTS",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ADANIPOWER",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ALKEM",
-      "reason": "The week is not expected to pay: 0.023% from price against -0.237% of carry"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "AMBER",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "AMBUJACEM",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ANGELONE",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "APLAPOLLO",
-      "reason": "The model expects a -0.0175% week against this ladder"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "APOLLOHOSP",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ASHOKLEY",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ASIANPAINT",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ASTRAL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ATHERENERG",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "AUBANK",
-      "reason": "The model expects a -0.3045% week against this ladder"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "AUROPHARMA",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "AXISBANK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BAJAJ-AUTO",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BAJAJFINSV",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BAJAJHLDNG",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BAJFINANCE",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BANDHANBNK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
+    },
+    {
+      "symbol": "BANKBARODA",
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BANKINDIA",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BDL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
+    },
+    {
+      "symbol": "BEL",
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BHARATFORG",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BHARTIARTL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BHEL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BIOCON",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BLUESTARCO",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BOSCHLTD",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BPCL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BRITANNIA",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "BSE",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CAMS",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CANBK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CDSL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CGPOWER",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CHOLAFIN",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CIPLA",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "COALINDIA",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "COCHINSHIP",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "COFORGE",
-      "reason": "ML model unvalidated for standalone trade generation: Model has weak out-of-sample skill (IC: 0.0448, R^2: -0.0201). Demoted to secondary advisory ranking filter; standalone trade generation forbidden."
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "COLPAL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CONCOR",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CROMPTON",
-      "reason": "The 12-month trend runs against this ladder (-27.386% over 252 sessions, -0.93 per unit of risk)"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "CUMMINSIND",
-      "reason": "The week is not expected to pay: 0.091% from price against -0.245% of carry"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "DABUR",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "DELHIVERY",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "DIVISLAB",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "DIXON",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "DLF",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "DMART",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "DRREDDY",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "EICHERMOT",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ETERNAL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "FEDERALBNK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "FORCEMOT",
-      "reason": "The model expects a -0.1474% week against this ladder"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "FORTIS",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "GAIL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "GLENMARK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "FO_BAN_STATUS_UNAVAILABLE"
     },
     {
       "symbol": "GMRAIRPORT",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "GODFRYPHLP",
-      "reason": "The 12-month trend runs against this ladder (-46.008% over 252 sessions, -1.49 per unit of risk)"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "GODREJCP",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "GODREJPROP",
-      "reason": "The 12-month trend runs against this ladder (-11.696% over 252 sessions, -0.35 per unit of risk)"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "GRASIM",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "GVT&D",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HAL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HAVELLS",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HCLTECH",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HDFCAMC",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HDFCBANK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HDFCLIFE",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HEROMOTOCO",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HINDALCO",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HINDPETRO",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HINDUNILVR",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HINDZINC",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "HYUNDAI",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ICICIBANK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ICICIGI",
-      "reason": "The 12-month trend runs against this ladder (-19.881% over 252 sessions, -0.68 per unit of risk)"
+      "reason": "The 12-month trend runs against this ladder (-22.5% over 252 sessions, -0.78 per unit of risk)"
     },
     {
       "symbol": "ICICIPRULI",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "IDEA",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "IDFCFIRSTB",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "IEX",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "INDHOTEL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "INDIANB",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "INDIGO",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "INDUSINDBK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "INDUSTOWER",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "INFY",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "INOXWIND",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "IOC",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "IREDA",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "IRFC",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "ITC",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "JINDALSTEL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "JIOFIN",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "JSWENERGY",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "JSWSTEEL",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "JUBLFOOD",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "KALYANKJIL",
-      "reason": "The model expects a -0.2037% week against this ladder"
+      "reason": "FO_BAN_STATUS_UNAVAILABLE"
     },
     {
       "symbol": "KAYNES",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "KEI",
-      "reason": "The 12-month trend runs against this ladder (12.287% over 252 sessions, 0.3 per unit of risk)"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "KFINTECH",
-      "reason": "The 12-month trend runs against this ladder (-18.255% over 252 sessions, -0.54 per unit of risk)"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "KOTAKBANK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "KPITTECH",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LAURUSLABS",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LICHSGFIN",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LICI",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LODHA",
-      "reason": "ML model unvalidated for standalone trade generation: Model has weak out-of-sample skill (IC: 0.0448, R^2: -0.0201). Demoted to secondary advisory ranking filter; standalone trade generation forbidden."
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LT",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LTF",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LTM",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     },
     {
       "symbol": "LUPIN",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
-    },
-    {
-      "symbol": "M&M",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
-    },
-    {
-      "symbol": "MAHABANK",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
-    },
-    {
-      "symbol": "MANAPPURAM",
-      "reason": "No ladder rung cleared its significance hurdle with positive in-sample expected return"
+      "reason": "Required point-in-time fundamentals unavailable: not supplied"
     }
   ],
   "performance": {
-    "totalSignals": 5,
+    "totalSignals": 2,
     "activeSignals": 0,
-    "pendingSignals": 3,
-    "resolvedSignals": 2,
+    "pendingSignals": 1,
+    "resolvedSignals": 0,
     "winCount": 0,
-    "lossCount": 2,
+    "lossCount": 0,
     "winRatePct": 0,
-    "profitFactor": 0,
+    "profitFactor": 1,
     "averageWinPct": 0,
-    "averageLossPct": 1.4,
-    "expectancyPct": -1.39,
-    "totalSimulatedPnlPct": -2.79
+    "averageLossPct": 0,
+    "expectancyPct": 0,
+    "totalSimulatedPnlPct": 0,
+    "unconfirmedSignalsExcluded": 2
   },
   "learning": {
     "ready": false,
