@@ -9,7 +9,7 @@
 <style>
 *{box-sizing:border-box} :root{--bg:#181923;--panel:#21222f;--panel2:#161720;--text:#f2f0ea;--muted:#aaa8b7;--line:#3a3b4b;--violet:#a38aff;--green:#61d6aa;--red:#ff917f;--amber:#f1c75b;--mono:ui-monospace,"Cascadia Mono",Consolas,monospace;--serif:Georgia,"Times New Roman",serif}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",sans-serif;line-height:1.5}.shell{max-width:1420px;margin:auto;padding:38px 24px 80px}.mast{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}.mast h1{font:48px/1 var(--serif);margin:0}.mast h1 span{color:var(--violet)}.stamp{font:12px/1.7 var(--mono);color:var(--muted);text-align:right;text-transform:uppercase;letter-spacing:.08em}
-.notice{border:1px solid var(--amber);background:#2b281d;padding:13px 16px;border-radius:12px;margin:0 0 18px;font-size:13px}.macro{background:#0e172a;border:1px solid #263755;border-radius:18px;padding:18px 22px;margin-bottom:24px}.macro-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px;font:12px var(--mono)}.macro-head b{font:700 14px Inter}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:9px}.pills{display:flex;gap:10px;flex-wrap:wrap}.pill{border:1px solid #34445e;background:#172238;border-radius:8px;padding:7px 11px;font:12px var(--mono)}
+.notice{border:1px solid var(--amber);background:#2b281d;padding:13px 16px;border-radius:12px;margin:0 0 18px;font-size:13px}.macro{background:#0e172a;border:1px solid #263755;border-radius:18px;padding:18px 22px;margin-bottom:24px}.macro-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px;font:12px var(--mono)}.macro-head b{font:700 14px Inter}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--green);margin-right:9px}.pills{display:flex;gap:10px;flex-wrap:wrap}.pill{border:1px solid #34445e;background:#172238;border-radius:8px;padding:7px 11px;font:12px var(--mono)}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:13px;margin-bottom:38px}.tile{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:18px}.tile b{display:block;font:26px var(--mono);margin-bottom:3px}.tile span{font-size:12px;color:var(--muted)}section{margin:0 0 44px}h2{font:30px var(--serif);margin:0 0 5px}.sub{color:var(--muted);max-width:88ch;margin:0 0 17px;font-size:14px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}.candidate-card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:17px;padding:18px}.candidate-card.short{border-left-color:var(--red)}.candidate-head{display:flex;justify-content:space-between;gap:12px;align-items:start}.candidate-head h3{font:22px var(--mono);margin:8px 0 12px}.candidate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.candidate-grid div{background:var(--panel2);padding:10px;border-radius:9px}.candidate-grid small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase}.candidate-grid b{font:13px var(--mono)}.candidate-card p{font-size:12px;color:var(--muted);margin:13px 0 0}
 .chip,.status{display:inline-block;border-radius:999px;padding:3px 8px;font:700 10px var(--mono);text-transform:uppercase}.chip.long{background:#173d32;color:var(--green)}.chip.short{background:#4a292a;color:var(--red)}.status{border:1px solid var(--line);color:var(--muted)}.status.shadow{color:var(--amber);border-color:#66572b}.status.blocked{color:var(--red)}.status.verified{color:var(--green);border-color:#275a4b}.status.research{color:var(--muted)}
@@ -70,29 +70,51 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
   
 </style>
 </head>
-<body data-new-orders="locked"><main class="shell">
-<header class="mast"><h1>K<span>²</span> Range Desk</h1><div class="stamp">NSE stock futures · continuous ladder<br>built 2026-09-15 13:47 UTC</div></header>
+<body data-new-orders="shadow-only"><main class="shell">
+<header class="mast"><h1>K<span>²</span> Range Desk</h1><div class="stamp">NSE stock futures · continuous ladder<br>built 2026-09-15 13:54 UTC</div></header>
 <p class="notice"><strong>Decision support—not an earnings promise.</strong> The larger equity list below improves coverage, not certainty. Only a currently verified NSE stock-futures contract can enter the order pipeline, and this build never submits a real broker order.</p>
-<p class="notice" id="plan-stale">No current, version-verified plan. Stored plan: unavailable. Old trade instructions are withheld; the research directory remains available.</p>
-<section class="macro"><div class="macro-head"><b><span class="dot"></span>GLOBAL DATA &amp; SHOCK GATE: DATA_UNAVAILABLE</b><span>2026-09-15T13:47:12.473Z</span></div><div class="pills">
-  <span class="pill">GIFT NIFTY UNAVAILABLE</span>
-  <span class="pill">INDIA VIX UNAVAILABLE</span>
-  <span class="pill">BRENT Δ UNAVAILABLE</span>
-  <span class="pill">S&amp;P FUTURES UNAVAILABLE</span>
-  <span class="pill">NO_NEW_ORDERS_DATA_LOCKDOWN</span>
+
+<section class="macro"><div class="macro-head"><b><span class="dot"></span>GLOBAL DATA &amp; SHOCK GATE: NORMAL</b><span>2026-09-15T13:54:47.155Z</span></div><div class="pills">
+  <span class="pill">GIFT NIFTY -0.99%</span>
+  <span class="pill">INDIA VIX 13.43</span>
+  <span class="pill">BRENT Δ -3.09%</span>
+  <span class="pill">S&amp;P FUTURES 0.74%</span>
+  <span class="pill">STANDARD_EXECUTION</span>
 </div></section>
 
 <div class="tiles">
-  <div class="tile"><b>210</b><span>stock-futures names in last snapshot · 2026-09-15</span></div>
+  <div class="tile"><b>216</b><span>stock-futures names in last snapshot · 2026-09-14</span></div>
   <div class="tile"><b>502</b><span>broad NSE equities tracked for research</span></div>
-  <div class="tile"><b>292</b><span>additional research-only equities</span></div>
-  <div class="tile"><b>0</b><span>ranked shadow candidates</span></div>
-  <div class="tile"><b>0 / 0</b><span>long / short candidates</span></div>
-  <div class="tile"><b>LOCKED</b><span>new-order data gate</span></div>
+  <div class="tile"><b>Unverified</b><span>additional research-only equities</span></div>
+  <div class="tile"><b>2</b><span>ranked shadow candidates</span></div>
+  <div class="tile"><b>1 / 1</b><span>long / short candidates</span></div>
+  <div class="tile"><b>SHADOW</b><span>new-order data gate</span></div>
 </div>
 
 <section><h2>Current candidate guidance</h2><p class="sub">Generated from the plan—not hand-written cards. “Observed median” describes historical completed cohorts; it is not a promised exit date. The 20-session ceiling is a provisional risk limit, not a claim that it is profit-optimal.</p>
-  <div class="cards"><div class="empty">No current, risk-admitted candidate is available. Refresh the plan and review data availability.</div></div>
+  <div class="cards"><article class="candidate-card long">
+    <div class="candidate-head"><div><span class="chip long">long</span><h3>APLAPOLLO</h3></div><span class="status shadow">SHADOW CANDIDATE</span></div>
+    <div class="candidate-grid">
+      <div><small>Planned limit</small><b>₹2115.00</b></div>
+      <div><small>Target</small><b class="positive">₹2157.30</b></div>
+      <div><small>Protective stop</small><b class="negative">₹2093.85</b></div>
+      <div><small>Observed median</small><b>2 sessions</b></div>
+      <div><small>Risk ceiling</small><b>20 sessions</b></div>
+      <div><small>Contract expiry</small><b>Unverified</b></div>
+    </div>
+    <p>Friday creates no automatic exit. Monday changes only the weekly reporting reference. Target, gap-aware stop, risk ceiling, or a real expiry roll can end the position.</p>
+  </article><article class="candidate-card short">
+    <div class="candidate-head"><div><span class="chip short">short</span><h3>SUPREMEIND</h3></div><span class="status shadow">SHADOW CANDIDATE</span></div>
+    <div class="candidate-grid">
+      <div><small>Planned limit</small><b>₹3911.20</b></div>
+      <div><small>Target</small><b class="positive">₹3832.98</b></div>
+      <div><small>Protective stop</small><b class="negative">₹3950.31</b></div>
+      <div><small>Observed median</small><b>1 sessions</b></div>
+      <div><small>Risk ceiling</small><b>20 sessions</b></div>
+      <div><small>Contract expiry</small><b>Unverified</b></div>
+    </div>
+    <p>Friday creates no automatic exit. Monday changes only the weekly reporting reference. Target, gap-aware stop, risk ceiling, or a real expiry roll can end the position.</p>
+  </article></div>
 </section>
 
 
@@ -142,23 +164,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹267.20</b>
+          <b class="price">₹251.00</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹85.30</b>
+          <b class="negative">₹76.20</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹570.35</b>
+          <b class="positive">₹542.30</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹934.15</b>
+          <b class="positive">₹891.90</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹1479.85</b>
+          <b class="positive">₹1416.25</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -168,8 +190,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>25</b></div>
-        <div><small>Capital Required:</small> <b>₹6680</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹4547</b></div>
+        <div><small>Capital Required:</small> <b>₹6275</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹4370</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
@@ -177,15 +199,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="hedge-box">
         <div class="hedge-head">
           <span class="chip long">🛡️ DEFINED-RISK HEDGE (ZERO CATASTROPHIC LOSS)</span>
-          <small>Max Possible Loss: <b>₹2249</b></small>
+          <small>Max Possible Loss: <b>₹2153</b></small>
         </div>
         <div class="hedge-desc">
-          <b>BULL_CALL_SPREAD</b>: <span>SELL NIFTY26SEP23350CE @ ₹177.25</span>
+          <b>BULL_CALL_SPREAD</b>: <span>SELL NIFTY26SEP23350CE @ ₹164.90</span>
         </div>
       </div>
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY NIFTY26SEP23150CE | QTY: 25 (1 Lot) | LIMIT: ₹267.20 | SL: ₹85.30 | T1: ₹570.35 | T2: ₹934.15 | RUNNER: ₹1479.85">
+        <button class="copy-btn" data-copy="BUY NIFTY26SEP23150CE | QTY: 25 (1 Lot) | LIMIT: ₹251.00 | SL: ₹76.20 | T1: ₹542.30 | T2: ₹891.90 | RUNNER: ₹1416.25">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -199,7 +221,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
             <span class="chip cap-chip">Index Derivative</span>
             <span class="chip neutral">PE Option</span>
           </div>
-          <h3>BANKNIFTY26SEP49800PE</h3>
+          <h3>BANKNIFTY26SEP55800PE</h3>
         </div>
         <span class="status verified">● ACTIVE</span>
       </div>
@@ -216,23 +238,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹511.70</b>
+          <b class="price">₹575.65</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹156.15</b>
+          <b class="negative">₹176.20</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹1104.25</b>
+          <b class="positive">₹1241.45</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹1696.80</b>
+          <b class="positive">₹1907.25</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹2881.85</b>
+          <b class="positive">₹3238.80</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -242,8 +264,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>15</b></div>
-        <div><small>Capital Required:</small> <b>₹7676</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹5333</b></div>
+        <div><small>Capital Required:</small> <b>₹8635</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹5992</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
@@ -251,15 +273,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="hedge-box">
         <div class="hedge-head">
           <span class="chip long">🛡️ DEFINED-RISK HEDGE (ZERO CATASTROPHIC LOSS)</span>
-          <small>Max Possible Loss: <b>₹1372</b></small>
+          <small>Max Possible Loss: <b>₹1384</b></small>
         </div>
         <div class="hedge-desc">
-          <b>BEAR_PUT_SPREAD</b>: <span>SELL BANKNIFTY26SEP49600PE @ ₹420.25</span>
+          <b>BEAR_PUT_SPREAD</b>: <span>SELL BANKNIFTY26SEP55600PE @ ₹483.35</span>
         </div>
       </div>
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY BANKNIFTY26SEP49800PE | QTY: 15 (1 Lot) | LIMIT: ₹511.70 | SL: ₹156.15 | T1: ₹1104.25 | T2: ₹1696.80 | RUNNER: ₹2881.85">
+        <button class="copy-btn" data-copy="BUY BANKNIFTY26SEP55800PE | QTY: 15 (1 Lot) | LIMIT: ₹575.65 | SL: ₹176.20 | T1: ₹1241.45 | T2: ₹1907.25 | RUNNER: ₹3238.80">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -273,7 +295,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
             <span class="chip cap-chip">Large Cap</span>
             <span class="chip neutral">CE Option</span>
           </div>
-          <h3>RELIANCE26SEP2940CE</h3>
+          <h3>RELIANCE26SEP1240CE</h3>
         </div>
         <span class="status verified">● ACTIVE</span>
       </div>
@@ -290,23 +312,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹24.45</b>
+          <b class="price">₹12.00</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹5.85</b>
+          <b class="negative">₹3.30</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹61.65</b>
+          <b class="positive">₹29.35</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹98.85</b>
+          <b class="positive">₹46.70</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹173.25</b>
+          <b class="positive">₹81.45</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -316,8 +338,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>250</b></div>
-        <div><small>Capital Required:</small> <b>₹6113</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹4650</b></div>
+        <div><small>Capital Required:</small> <b>₹3000</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹2175</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
@@ -325,15 +347,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="hedge-box">
         <div class="hedge-head">
           <span class="chip long">🛡️ DEFINED-RISK HEDGE (ZERO CATASTROPHIC LOSS)</span>
-          <small>Max Possible Loss: <b>₹5413</b></small>
+          <small>Max Possible Loss: <b>₹2575</b></small>
         </div>
         <div class="hedge-desc">
-          <b>BULL_CALL_SPREAD</b>: <span>SELL RELIANCE26SEP3040CE @ ₹2.80</span>
+          <b>BULL_CALL_SPREAD</b>: <span>SELL RELIANCE26SEP1280CE @ ₹1.70</span>
         </div>
       </div>
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY RELIANCE26SEP2940CE | QTY: 250 (1 Lot) | LIMIT: ₹24.45 | SL: ₹5.85 | T1: ₹61.65 | T2: ₹98.85 | RUNNER: ₹173.25">
+        <button class="copy-btn" data-copy="BUY RELIANCE26SEP1240CE | QTY: 250 (1 Lot) | LIMIT: ₹12.00 | SL: ₹3.30 | T1: ₹29.35 | T2: ₹46.70 | RUNNER: ₹81.45">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -364,23 +386,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹4220.00</b>
+          <b class="price">₹2251.00</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹4156.70</b>
+          <b class="negative">₹2217.25</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹4367.70</b>
+          <b class="positive">₹2329.80</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹4536.50</b>
+          <b class="positive">₹2419.80</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹4853.00</b>
+          <b class="positive">₹2588.65</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -390,15 +412,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>1</b></div>
-        <div><small>Capital Required:</small> <b>₹4220</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹63</b></div>
+        <div><small>Capital Required:</small> <b>₹2251</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹34</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
       
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY TCS (NSE EQ) | LIMIT: ₹4220.00 | SL: ₹4156.70 | T1: ₹4367.70 | T2: ₹4536.50 | RUNNER: ₹4853.00">
+        <button class="copy-btn" data-copy="BUY TCS (NSE EQ) | LIMIT: ₹2251.00 | SL: ₹2217.25 | T1: ₹2329.80 | T2: ₹2419.80 | RUNNER: ₹2588.65">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -412,7 +434,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
             <span class="chip cap-chip">Large Cap</span>
             <span class="chip neutral">CE Option</span>
           </div>
-          <h3>HDFCBANK26SEP1660CE</h3>
+          <h3>HDFCBANK26SEP720CE</h3>
         </div>
         <span class="status verified">● ACTIVE</span>
       </div>
@@ -429,23 +451,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹12.30</b>
+          <b class="price">₹6.60</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹2.60</b>
+          <b class="negative">₹1.70</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹28.45</b>
+          <b class="positive">₹14.70</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹44.60</b>
+          <b class="positive">₹22.85</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹70.45</b>
+          <b class="positive">₹35.85</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -455,8 +477,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>550</b></div>
-        <div><small>Capital Required:</small> <b>₹6765</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹5335</b></div>
+        <div><small>Capital Required:</small> <b>₹3630</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹2695</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
@@ -464,15 +486,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="hedge-box">
         <div class="hedge-head">
           <span class="chip long">🛡️ DEFINED-RISK HEDGE (ZERO CATASTROPHIC LOSS)</span>
-          <small>Max Possible Loss: <b>₹5225</b></small>
+          <small>Max Possible Loss: <b>₹3548</b></small>
         </div>
         <div class="hedge-desc">
-          <b>BULL_CALL_SPREAD</b>: <span>SELL HDFCBANK26SEP1700CE @ ₹2.80</span>
+          <b>BULL_CALL_SPREAD</b>: <span>SELL HDFCBANK26SEP760CE @ ₹0.15</span>
         </div>
       </div>
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY HDFCBANK26SEP1660CE | QTY: 550 (1 Lot) | LIMIT: ₹12.30 | SL: ₹2.60 | T1: ₹28.45 | T2: ₹44.60 | RUNNER: ₹70.45">
+        <button class="copy-btn" data-copy="BUY HDFCBANK26SEP720CE | QTY: 550 (1 Lot) | LIMIT: ₹6.60 | SL: ₹1.70 | T1: ₹14.70 | T2: ₹22.85 | RUNNER: ₹35.85">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -503,23 +525,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹1540.00</b>
+          <b class="price">₹2119.30</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹1516.90</b>
+          <b class="negative">₹2087.50</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹1601.60</b>
+          <b class="positive">₹2204.05</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹1663.20</b>
+          <b class="positive">₹2288.85</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹1786.40</b>
+          <b class="positive">₹2458.40</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -529,15 +551,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>1</b></div>
-        <div><small>Capital Required:</small> <b>₹1540</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹23</b></div>
+        <div><small>Capital Required:</small> <b>₹2119</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹32</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
       
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY APLAPOLLO (NSE EQ) | LIMIT: ₹1540.00 | SL: ₹1516.90 | T1: ₹1601.60 | T2: ₹1663.20 | RUNNER: ₹1786.40">
+        <button class="copy-btn" data-copy="BUY APLAPOLLO (NSE EQ) | LIMIT: ₹2119.30 | SL: ₹2087.50 | T1: ₹2204.05 | T2: ₹2288.85 | RUNNER: ₹2458.40">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -568,23 +590,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹5210.00</b>
+          <b class="price">₹3300.00</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹5131.85</b>
+          <b class="negative">₹3250.50</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹5392.35</b>
+          <b class="positive">₹3415.50</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹5574.70</b>
+          <b class="positive">₹3531.00</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹5939.40</b>
+          <b class="positive">₹3762.00</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -594,8 +616,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>125</b></div>
-        <div><small>Capital Required:</small> <b>₹143300</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹9769</b></div>
+        <div><small>Capital Required:</small> <b>₹90800</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹6188</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
@@ -611,7 +633,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       </div>
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY SUPREMEIND26SEPFUT | QTY: 125 | LIMIT: ₹5210.00 | SL: ₹5131.85 | T1: ₹5392.35 | T2: ₹5574.70 | RUNNER: ₹5939.40">
+        <button class="copy-btn" data-copy="BUY SUPREMEIND26SEPFUT | QTY: 125 | LIMIT: ₹3300.00 | SL: ₹3250.50 | T1: ₹3415.50 | T2: ₹3531.00 | RUNNER: ₹3762.00">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -625,7 +647,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
             <span class="chip cap-chip">Mid Cap</span>
             <span class="chip neutral">CE Option</span>
           </div>
-          <h3>DIXON26SEP12500CE</h3>
+          <h3>DIXON26SEP13200CE</h3>
         </div>
         <span class="status verified">● ACTIVE</span>
       </div>
@@ -642,23 +664,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹119.55</b>
+          <b class="price">₹142.05</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹32.65</b>
+          <b class="negative">₹42.85</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹351.35</b>
+          <b class="positive">₹406.55</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹583.10</b>
+          <b class="positive">₹671.05</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹1162.55</b>
+          <b class="positive">₹1332.30</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -668,8 +690,8 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>50</b></div>
-        <div><small>Capital Required:</small> <b>₹5978</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹4345</b></div>
+        <div><small>Capital Required:</small> <b>₹7103</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹4960</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
@@ -677,15 +699,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="hedge-box">
         <div class="hedge-head">
           <span class="chip long">🛡️ DEFINED-RISK HEDGE (ZERO CATASTROPHIC LOSS)</span>
-          <small>Max Possible Loss: <b>₹3443</b></small>
+          <small>Max Possible Loss: <b>₹3835</b></small>
         </div>
         <div class="hedge-desc">
-          <b>BULL_CALL_SPREAD</b>: <span>SELL DIXON26SEP12700CE @ ₹50.70</span>
+          <b>BULL_CALL_SPREAD</b>: <span>SELL DIXON26SEP13400CE @ ₹65.35</span>
         </div>
       </div>
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY DIXON26SEP12500CE | QTY: 50 (1 Lot) | LIMIT: ₹119.55 | SL: ₹32.65 | T1: ₹351.35 | T2: ₹583.10 | RUNNER: ₹1162.55">
+        <button class="copy-btn" data-copy="BUY DIXON26SEP13200CE | QTY: 50 (1 Lot) | LIMIT: ₹142.05 | SL: ₹42.85 | T1: ₹406.55 | T2: ₹671.05 | RUNNER: ₹1332.30">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -716,23 +738,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹7120.00</b>
+          <b class="price">₹2730.00</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹7013.20</b>
+          <b class="negative">₹2689.05</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹7440.40</b>
+          <b class="positive">₹2852.85</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹7760.80</b>
+          <b class="positive">₹2975.70</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹8401.60</b>
+          <b class="positive">₹3221.40</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -742,15 +764,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>1</b></div>
-        <div><small>Capital Required:</small> <b>₹7120</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹107</b></div>
+        <div><small>Capital Required:</small> <b>₹2730</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹41</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
       
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY TRENT (NSE EQ) | LIMIT: ₹7120.00 | SL: ₹7013.20 | T1: ₹7440.40 | T2: ₹7760.80 | RUNNER: ₹8401.60">
+        <button class="copy-btn" data-copy="BUY TRENT (NSE EQ) | LIMIT: ₹2730.00 | SL: ₹2689.05 | T1: ₹2852.85 | T2: ₹2975.70 | RUNNER: ₹3221.40">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -781,23 +803,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹4850.00</b>
+          <b class="price">₹3392.00</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹4777.25</b>
+          <b class="negative">₹3341.10</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹5092.50</b>
+          <b class="positive">₹3561.60</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹5335.00</b>
+          <b class="positive">₹3731.20</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹6062.50</b>
+          <b class="positive">₹4240.00</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -807,15 +829,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>1</b></div>
-        <div><small>Capital Required:</small> <b>₹4850</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹73</b></div>
+        <div><small>Capital Required:</small> <b>₹3392</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹51</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
       
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY KAYNES (NSE EQ) | LIMIT: ₹4850.00 | SL: ₹4777.25 | T1: ₹5092.50 | T2: ₹5335.00 | RUNNER: ₹6062.50">
+        <button class="copy-btn" data-copy="BUY KAYNES (NSE EQ) | LIMIT: ₹3392.00 | SL: ₹3341.10 | T1: ₹3561.60 | T2: ₹3731.20 | RUNNER: ₹4240.00">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -846,23 +868,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹2880.00</b>
+          <b class="price">₹4358.80</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹2836.80</b>
+          <b class="negative">₹4293.40</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹3024.00</b>
+          <b class="positive">₹4576.75</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹3225.60</b>
+          <b class="positive">₹4881.85</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹3600.00</b>
+          <b class="positive">₹5448.50</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -872,15 +894,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>1</b></div>
-        <div><small>Capital Required:</small> <b>₹2880</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹43</b></div>
+        <div><small>Capital Required:</small> <b>₹4359</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹65</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
       
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY DATAPATTNS (NSE EQ) | LIMIT: ₹2880.00 | SL: ₹2836.80 | T1: ₹3024.00 | T2: ₹3225.60 | RUNNER: ₹3600.00">
+        <button class="copy-btn" data-copy="BUY DATAPATTNS (NSE EQ) | LIMIT: ₹4358.80 | SL: ₹4293.40 | T1: ₹4576.75 | T2: ₹4881.85 | RUNNER: ₹5448.50">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -911,23 +933,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
       <div class="rec-grid">
         <div>
           <small>Buy / Entry Limit</small>
-          <b class="price">₹1485.00</b>
+          <b class="price">₹1311.00</b>
         </div>
         <div>
           <small>Stop Loss</small>
-          <b class="negative">₹1462.70</b>
+          <b class="negative">₹1291.35</b>
         </div>
         <div>
           <small>Target 1 (Lock 50% &amp; BE)</small>
-          <b class="positive">₹1544.40</b>
+          <b class="positive">₹1363.45</b>
         </div>
         <div>
           <small>Target 2 (Swing 25%)</small>
-          <b class="positive">₹1603.80</b>
+          <b class="positive">₹1415.90</b>
         </div>
         <div>
           <small>Runner (Moonbag 25%)</small>
-          <b class="positive">₹1722.60</b>
+          <b class="positive">₹1520.75</b>
         </div>
         <div>
           <small>Holding Horizon</small>
@@ -937,15 +959,15 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 
       <div class="rec-meta">
         <div><small>Lot / Qty:</small> <b>1</b></div>
-        <div><small>Capital Required:</small> <b>₹1485</b></div>
-        <div><small>Max Risk / Lot:</small> <b>₹22</b></div>
+        <div><small>Capital Required:</small> <b>₹1311</b></div>
+        <div><small>Max Risk / Lot:</small> <b>₹20</b></div>
         <div><small>Event Shield:</small> <span class="shield-tag safe">✓ No binary events (CLEARED)</span></div>
       </div>
 
       
 
       <div class="rec-actions">
-        <button class="copy-btn" data-copy="BUY CDSL (NSE EQ) | LIMIT: ₹1485.00 | SL: ₹1462.70 | T1: ₹1544.40 | T2: ₹1603.80 | RUNNER: ₹1722.60">
+        <button class="copy-btn" data-copy="BUY CDSL (NSE EQ) | LIMIT: ₹1311.00 | SL: ₹1291.35 | T1: ₹1363.45 | T2: ₹1415.90 | RUNNER: ₹1520.75">
           📋 Copy Zerodha Kite Order Ticket
         </button>
       </div>
@@ -973,13 +995,35 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
   </section>
 
 <section><h2>Price-distance assistant</h2><p class="sub">This compares a manually entered broker price with the stored plan. It cannot see spread, live margin, ban changes, order queue, or your broker acknowledgement; therefore it never labels a trade “safe.”</p>
-  <div class="calculator"><div class="calc-inputs"><div class="field"><label for="calc-symbol">Candidate</label><select id="calc-symbol"></select></div><div class="field"><label for="calc-price">Current broker price ₹</label><input id="calc-price" type="number" step="any" placeholder="Enter current contract price"></div></div>
+  <div class="calculator"><div class="calc-inputs"><div class="field"><label for="calc-symbol">Candidate</label><select id="calc-symbol"><option value="APLAPOLLO:long">APLAPOLLO (long)</option><option value="SUPREMEIND:short">SUPREMEIND (short)</option></select></div><div class="field"><label for="calc-price">Current broker price ₹</label><input id="calc-price" type="number" step="any" placeholder="Enter current contract price"></div></div>
   <div class="decision" id="calc-decision">Select a candidate and enter a current contract price.</div><div class="metrics"><div class="metric"><small>Distance from limit</small><b id="calc-entry">—</b></div><div class="metric"><small>Distance to target</small><b id="calc-target">—</b></div><div class="metric"><small>Stop buffer</small><b id="calc-stop">—</b></div><div class="metric"><small>Holding evidence</small><b id="calc-hold">—</b></div></div></div>
 </section>
 
 <section><h2>Qualified ladder candidates</h2><p class="sub">Expected percentage is validation-period research evidence after the modeled cost assumption—not a guaranteed weekly return. Click a row to load its levels above.</p>
   <div class="tools"><button data-filter="all" aria-pressed="true">All</button><button data-filter="long" aria-pressed="false">Long</button><button data-filter="short" aria-pressed="false">Short</button><input id="plan-search" class="search" type="search" placeholder="Search candidates"></div>
-  <div class="scroll"><table><thead><tr><th>Instrument</th><th>Sector</th><th>Planned limit</th><th>Target</th><th>Stop</th><th>Observed holding</th><th>Risk ceiling</th><th>Validation expectation</th><th>Evidence score</th><th>Execution scope</th></tr></thead><tbody id="plan-rows"></tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Instrument</th><th>Sector</th><th>Planned limit</th><th>Target</th><th>Stop</th><th>Observed holding</th><th>Risk ceiling</th><th>Validation expectation</th><th>Evidence score</th><th>Execution scope</th></tr></thead><tbody id="plan-rows"><tr data-symbol="APLAPOLLO" data-side="long" data-entry="2115" data-target="2157.3" data-stop="2093.85" data-hold="2" data-ceiling="20" data-expected="2.45" data-conviction="92.5">
+    <th><span class="ticker">APLAPOLLO</span> <span class="chip long">long</span></th>
+    <td>Unclassified</td>
+    <td class="num">₹2115.00</td>
+    <td class="num positive">₹2157.30</td>
+    <td class="num negative">₹2093.85</td>
+    <td class="num">2 sessions observed median</td>
+    <td class="num">20 sessions</td>
+    <td class="num">2.450%</td>
+    <td class="num">93</td>
+    <td><span class="status shadow">Shadow only</span></td>
+  </tr><tr data-symbol="SUPREMEIND" data-side="short" data-entry="3911.2" data-target="3832.98" data-stop="3950.31" data-hold="1" data-ceiling="20" data-expected="2.15" data-conviction="91">
+    <th><span class="ticker">SUPREMEIND</span> <span class="chip short">short</span></th>
+    <td>Unclassified</td>
+    <td class="num">₹3911.20</td>
+    <td class="num positive">₹3832.98</td>
+    <td class="num negative">₹3950.31</td>
+    <td class="num">1 sessions observed median</td>
+    <td class="num">20 sessions</td>
+    <td class="num">2.150%</td>
+    <td class="num">91</td>
+    <td><span class="status shadow">Shadow only</span></td>
+  </tr></tbody></table></div>
 </section>
 
 <section><h2>Expanded NSE equity radar</h2><p class="sub">This keeps the current stock-futures set and adds the broader 502-name directory for research discovery. An extra cash-equity name is not a futures order: it must first obtain a current exchange contract ID, lot, expiry, liquidity, ban status, margin, and risk approval.</p>
@@ -989,7 +1033,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>360 ONE WAM Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="3MINDIA" data-research="3mindia 3m india ltd. diversified mid cap">
     <th class="ticker">3MINDIA</th>
     <td>3M India Ltd.</td>
@@ -1019,7 +1063,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>ABB India Ltd.</td>
     <td>Capital Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ABBOTINDIA" data-research="abbotindia abbott india ltd. healthcare mid cap">
     <th class="ticker">ABBOTINDIA</th>
     <td>Abbott India Ltd.</td>
@@ -1031,7 +1075,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Aditya Birla Capital Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ABDL" data-research="abdl allied blenders and distillers ltd. fast moving consumer goods small cap">
     <th class="ticker">ABDL</th>
     <td>Allied Blenders and Distillers Ltd.</td>
@@ -1091,31 +1135,31 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Adani Energy Solutions Ltd.</td>
     <td>Power</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ADANIENT" data-research="adanient adani enterprises ltd. metals &amp; mining large cap">
     <th class="ticker">ADANIENT</th>
     <td>Adani Enterprises Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ADANIGREEN" data-research="adanigreen adani green energy ltd. power large cap">
     <th class="ticker">ADANIGREEN</th>
     <td>Adani Green Energy Ltd.</td>
     <td>Power</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ADANIPORTS" data-research="adaniports adani ports and special economic zone ltd. services large cap">
     <th class="ticker">ADANIPORTS</th>
     <td>Adani Ports and Special Economic Zone Ltd.</td>
     <td>Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ADANIPOWER" data-research="adanipower adani power ltd. power large cap">
     <th class="ticker">ADANIPOWER</th>
     <td>Adani Power Ltd.</td>
     <td>Power</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="AEGISLOG" data-research="aegislog aegis logistics ltd. oil gas &amp; consumable fuels small cap">
     <th class="ticker">AEGISLOG</th>
     <td>Aegis Logistics Ltd.</td>
@@ -1163,19 +1207,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Alkem Laboratories Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="AMBER" data-research="amber amber enterprises india ltd. consumer durables small cap">
     <th class="ticker">AMBER</th>
     <td>Amber Enterprises India Ltd.</td>
     <td>Consumer Durables</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="AMBUJACEM" data-research="ambujacem ambuja cements ltd. construction materials large cap">
     <th class="ticker">AMBUJACEM</th>
     <td>Ambuja Cements Ltd.</td>
     <td>Construction Materials</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ANANDRATHI" data-research="anandrathi anand rathi wealth ltd. financial services small cap">
     <th class="ticker">ANANDRATHI</th>
     <td>Anand Rathi Wealth Ltd.</td>
@@ -1193,7 +1237,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Angel One Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ANTHEM" data-research="anthem anthem biosciences ltd. healthcare mid cap">
     <th class="ticker">ANTHEM</th>
     <td>Anthem Biosciences Ltd.</td>
@@ -1217,7 +1261,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>APL Apollo Tubes Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Plan candidate; reverify contract</span></td>
   </tr><tr data-public-symbol="APLLTD" data-research="aplltd  healthcare small cap">
     <th class="ticker">APLLTD</th>
     <td>—</td>
@@ -1229,7 +1273,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Apollo Hospitals Enterprise Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="APOLLOTYRE" data-research="apollotyre apollo tyres ltd. automobile and auto components mid cap">
     <th class="ticker">APOLLOTYRE</th>
     <td>Apollo Tyres Ltd.</td>
@@ -1259,13 +1303,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Ashok Leyland Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ASIANPAINT" data-research="asianpaint asian paints ltd. consumer durables large cap">
     <th class="ticker">ASIANPAINT</th>
     <td>Asian Paints Ltd.</td>
     <td>Consumer Durables</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ASTERDM" data-research="asterdm aster dm quality care ltd. healthcare small cap">
     <th class="ticker">ASTERDM</th>
     <td>Aster DM Quality Care Ltd.</td>
@@ -1277,7 +1321,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Astral Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ATGL" data-research="atgl adani total gas ltd. oil gas &amp; consumable fuels mid cap">
     <th class="ticker">ATGL</th>
     <td>Adani Total Gas Ltd.</td>
@@ -1289,7 +1333,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Ather Energy Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ATUL" data-research="atul atul ltd. chemicals small cap">
     <th class="ticker">ATUL</th>
     <td>Atul Ltd.</td>
@@ -1301,13 +1345,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>AU Small Finance Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="AUROPHARMA" data-research="auropharma aurobindo pharma ltd. healthcare mid cap">
     <th class="ticker">AUROPHARMA</th>
     <td>Aurobindo Pharma Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="AWL" data-research="awl awl agri business ltd. fast moving consumer goods mid cap">
     <th class="ticker">AWL</th>
     <td>AWL Agri Business Ltd.</td>
@@ -1319,19 +1363,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Axis Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BAJAJ-AUTO" data-research="bajaj-auto bajaj auto ltd. automobile and auto components large cap">
     <th class="ticker">BAJAJ-AUTO</th>
     <td>Bajaj Auto Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BAJAJFINSV" data-research="bajajfinsv bajaj finserv ltd. financial services large cap">
     <th class="ticker">BAJAJFINSV</th>
     <td>Bajaj Finserv Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BAJAJHFL" data-research="bajajhfl bajaj housing finance ltd. financial services mid cap">
     <th class="ticker">BAJAJHFL</th>
     <td>Bajaj Housing Finance Ltd.</td>
@@ -1343,13 +1387,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Bajaj Holdings &amp; Investment Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BAJFINANCE" data-research="bajfinance bajaj finance ltd. financial services large cap">
     <th class="ticker">BAJFINANCE</th>
     <td>Bajaj Finance Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BALKRISIND" data-research="balkrisind balkrishna industries ltd. automobile and auto components mid cap">
     <th class="ticker">BALKRISIND</th>
     <td>Balkrishna Industries Ltd.</td>
@@ -1367,19 +1411,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Bandhan Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BANKBARODA" data-research="bankbaroda bank of baroda financial services large cap">
     <th class="ticker">BANKBARODA</th>
     <td>Bank of Baroda</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BANKINDIA" data-research="bankindia bank of india financial services mid cap">
     <th class="ticker">BANKINDIA</th>
     <td>Bank of India</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BATAINDIA" data-research="bataindia bata india ltd. consumer durables small cap">
     <th class="ticker">BATAINDIA</th>
     <td>Bata India Ltd.</td>
@@ -1403,13 +1447,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Bharat Dynamics Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BEL" data-research="bel bharat electronics ltd. capital goods large cap">
     <th class="ticker">BEL</th>
     <td>Bharat Electronics Ltd.</td>
     <td>Capital Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BELRISE" data-research="belrise belrise industries ltd. automobile and auto components small cap">
     <th class="ticker">BELRISE</th>
     <td>Belrise Industries Ltd.</td>
@@ -1433,13 +1477,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Bharat Forge Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BHARTIARTL" data-research="bhartiartl bharti airtel ltd. telecommunication large cap">
     <th class="ticker">BHARTIARTL</th>
     <td>Bharti Airtel Ltd.</td>
     <td>Telecommunication</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BHARTIHEXA" data-research="bhartihexa bharti hexacom ltd. telecommunication mid cap">
     <th class="ticker">BHARTIHEXA</th>
     <td>Bharti Hexacom Ltd.</td>
@@ -1451,7 +1495,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Bharat Heavy Electricals Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BIKAJI" data-research="bikaji bikaji foods international ltd. fast moving consumer goods small cap">
     <th class="ticker">BIKAJI</th>
     <td>Bikaji Foods International Ltd.</td>
@@ -1463,7 +1507,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Biocon Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BLS" data-research="bls bls international services ltd. consumer services small cap">
     <th class="ticker">BLS</th>
     <td>BLS International Services Ltd.</td>
@@ -1487,19 +1531,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Blue Star Ltd.</td>
     <td>Consumer Durables</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BOSCHLTD" data-research="boschltd bosch ltd. automobile and auto components large cap">
     <th class="ticker">BOSCHLTD</th>
     <td>Bosch Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BPCL" data-research="bpcl bharat petroleum corporation ltd. oil gas &amp; consumable fuels large cap">
     <th class="ticker">BPCL</th>
     <td>Bharat Petroleum Corporation Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BRIGADE" data-research="brigade brigade enterprises ltd. realty small cap">
     <th class="ticker">BRIGADE</th>
     <td>Brigade Enterprises Ltd.</td>
@@ -1511,13 +1555,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Britannia Industries Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BSE" data-research="bse bse ltd. financial services mid cap">
     <th class="ticker">BSE</th>
     <td>BSE Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="BSOFT" data-research="bsoft birlasoft ltd. information technology small cap">
     <th class="ticker">BSOFT</th>
     <td>Birlasoft Ltd.</td>
@@ -1529,13 +1573,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Computer Age Management Services Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CANBK" data-research="canbk canara bank financial services large cap">
     <th class="ticker">CANBK</th>
     <td>Canara Bank</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CANFINHOME" data-research="canfinhome can fin homes ltd. financial services small cap">
     <th class="ticker">CANFINHOME</th>
     <td>Can Fin Homes Ltd.</td>
@@ -1583,7 +1627,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Central Depository Services (India) Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CEATLTD" data-research="ceatltd ceat ltd. automobile and auto components small cap">
     <th class="ticker">CEATLTD</th>
     <td>Ceat Ltd.</td>
@@ -1619,7 +1663,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>CG Power and Industrial Solutions Ltd.</td>
     <td>Capital Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CHALET" data-research="chalet chalet hotels ltd. consumer services small cap">
     <th class="ticker">CHALET</th>
     <td>Chalet Hotels Ltd.</td>
@@ -1649,7 +1693,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Cholamandalam Investment and Finance Company Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CHOLAHLDNG" data-research="cholahldng cholamandalam financial holdings ltd. financial services small cap">
     <th class="ticker">CHOLAHLDNG</th>
     <td>Cholamandalam Financial Holdings Ltd.</td>
@@ -1667,7 +1711,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Cipla Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CLEAN" data-research="clean clean science and technology ltd. chemicals small cap">
     <th class="ticker">CLEAN</th>
     <td>Clean Science and Technology Ltd.</td>
@@ -1679,19 +1723,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Coal India Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="COCHINSHIP" data-research="cochinship cochin shipyard ltd. capital goods mid cap">
     <th class="ticker">COCHINSHIP</th>
     <td>Cochin Shipyard Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="COFORGE" data-research="coforge coforge ltd. information technology mid cap">
     <th class="ticker">COFORGE</th>
     <td>Coforge Ltd.</td>
     <td>Information Technology</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="COHANCE" data-research="cohance cohance lifesciences ltd. healthcare small cap">
     <th class="ticker">COHANCE</th>
     <td>Cohance Lifesciences Ltd.</td>
@@ -1703,13 +1747,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Colgate Palmolive (India) Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CONCOR" data-research="concor container corporation of india ltd. services mid cap">
     <th class="ticker">CONCOR</th>
     <td>Container Corporation of India Ltd.</td>
     <td>Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CONCORDBIO" data-research="concordbio concord biotech ltd. healthcare small cap">
     <th class="ticker">CONCORDBIO</th>
     <td>Concord Biotech Ltd.</td>
@@ -1751,7 +1795,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Crompton Greaves Consumer Electricals Ltd.</td>
     <td>Consumer Durables</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CUB" data-research="cub city union bank ltd. financial services small cap">
     <th class="ticker">CUB</th>
     <td>City Union Bank Ltd.</td>
@@ -1763,7 +1807,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Cummins India Ltd.</td>
     <td>Capital Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="CYIENT" data-research="cyient cyient ltd. information technology small cap">
     <th class="ticker">CYIENT</th>
     <td>Cyient Ltd.</td>
@@ -1775,7 +1819,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Dabur India Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="DALBHARAT" data-research="dalbharat dalmia bharat ltd. construction materials mid cap">
     <th class="ticker">DALBHARAT</th>
     <td>Dalmia Bharat Ltd.</td>
@@ -1811,7 +1855,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Delhivery Ltd.</td>
     <td>Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="DEVYANI" data-research="devyani devyani international ltd. consumer services small cap">
     <th class="ticker">DEVYANI</th>
     <td>Devyani International Ltd.</td>
@@ -1823,25 +1867,25 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Divi's Laboratories Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="DIXON" data-research="dixon dixon technologies (india) ltd. consumer durables mid cap">
     <th class="ticker">DIXON</th>
     <td>Dixon Technologies (India) Ltd.</td>
     <td>Consumer Durables</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="DLF" data-research="dlf dlf ltd. realty large cap">
     <th class="ticker">DLF</th>
     <td>DLF Ltd.</td>
     <td>Realty</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="DMART" data-research="dmart avenue supermarts ltd. consumer services large cap">
     <th class="ticker">DMART</th>
     <td>Avenue Supermarts Ltd.</td>
     <td>Consumer Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="DOMS" data-research="doms doms industries ltd. fast moving consumer goods small cap">
     <th class="ticker">DOMS</th>
     <td>DOMS Industries Ltd.</td>
@@ -1853,7 +1897,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Dr. Reddy's Laboratories Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ECLERX" data-research="eclerx eclerx services ltd. services small cap">
     <th class="ticker">ECLERX</th>
     <td>eClerx Services Ltd.</td>
@@ -1865,7 +1909,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Eicher Motors Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="EIDPARRY" data-research="eidparry e.i.d. parry (india) ltd. fast moving consumer goods small cap">
     <th class="ticker">EIDPARRY</th>
     <td>E.I.D. Parry (India) Ltd.</td>
@@ -1943,7 +1987,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Eternal Ltd.</td>
     <td>Consumer Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="EXIDEIND" data-research="exideind exide industries ltd. automobile and auto components mid cap">
     <th class="ticker">EXIDEIND</th>
     <td>Exide Industries Ltd.</td>
@@ -1961,7 +2005,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Federal Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="FINCABLES" data-research="fincables finolex cables ltd. capital goods small cap">
     <th class="ticker">FINCABLES</th>
     <td>Finolex Cables Ltd.</td>
@@ -1991,13 +2035,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Force Motors Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="FORTIS" data-research="fortis fortis healthcare ltd. healthcare mid cap">
     <th class="ticker">FORTIS</th>
     <td>Fortis Healthcare Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="FSL" data-research="fsl firstsource solutions ltd. services small cap">
     <th class="ticker">FSL</th>
     <td>Firstsource Solutions Ltd.</td>
@@ -2015,7 +2059,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>GAIL (India) Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="GALLANTT" data-research="gallantt gallantt ispat ltd. capital goods small cap">
     <th class="ticker">GALLANTT</th>
     <td>Gallantt Ispat Ltd.</td>
@@ -2057,7 +2101,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Glenmark Pharmaceuticals Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="GMDCLTD" data-research="gmdcltd gujarat mineral development corporation ltd. metals &amp; mining small cap">
     <th class="ticker">GMDCLTD</th>
     <td>Gujarat Mineral Development Corporation Ltd.</td>
@@ -2069,13 +2113,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>GMR Airports Ltd.</td>
     <td>Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="GODFRYPHLP" data-research="godfryphlp godfrey phillips india ltd. fast moving consumer goods mid cap">
     <th class="ticker">GODFRYPHLP</th>
     <td>Godfrey Phillips India Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="GODIGIT" data-research="godigit go digit general insurance ltd. financial services small cap">
     <th class="ticker">GODIGIT</th>
     <td>Go Digit General Insurance Ltd.</td>
@@ -2087,7 +2131,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Godrej Consumer Products Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="GODREJIND" data-research="godrejind godrej industries ltd. diversified mid cap">
     <th class="ticker">GODREJIND</th>
     <td>Godrej Industries Ltd.</td>
@@ -2099,7 +2143,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Godrej Properties Ltd.</td>
     <td>Realty</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="GPIL" data-research="gpil godawari power &amp; ispat ltd. capital goods small cap">
     <th class="ticker">GPIL</th>
     <td>Godawari Power &amp; Ispat Ltd.</td>
@@ -2123,7 +2167,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Grasim Industries Ltd.</td>
     <td>Construction Materials</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="GRAVITA" data-research="gravita gravita india ltd. metals &amp; mining small cap">
     <th class="ticker">GRAVITA</th>
     <td>Gravita India Ltd.</td>
@@ -2147,19 +2191,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>GE Vernova T&amp;D India Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HAL" data-research="hal hindustan aeronautics ltd. capital goods large cap">
     <th class="ticker">HAL</th>
     <td>Hindustan Aeronautics Ltd.</td>
     <td>Capital Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HAVELLS" data-research="havells havells india ltd. consumer durables mid cap">
     <th class="ticker">HAVELLS</th>
     <td>Havells India Ltd.</td>
     <td>Consumer Durables</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HBLENGINE" data-research="hblengine hbl engineering ltd. capital goods small cap">
     <th class="ticker">HBLENGINE</th>
     <td>HBL Engineering Ltd.</td>
@@ -2171,7 +2215,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>HCL Technologies Ltd.</td>
     <td>Information Technology</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HDBFS" data-research="hdbfs hdb financial services ltd. financial services mid cap">
     <th class="ticker">HDBFS</th>
     <td>HDB Financial Services Ltd.</td>
@@ -2183,19 +2227,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>HDFC Asset Management Company Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HDFCBANK" data-research="hdfcbank hdfc bank ltd. financial services large cap">
     <th class="ticker">HDFCBANK</th>
     <td>HDFC Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HDFCLIFE" data-research="hdfclife hdfc life insurance company ltd. financial services large cap">
     <th class="ticker">HDFCLIFE</th>
     <td>HDFC Life Insurance Company Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HEG" data-research="heg h.e.g. ltd. capital goods small cap">
     <th class="ticker">HEG</th>
     <td>H.E.G. Ltd.</td>
@@ -2207,7 +2251,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Hero MotoCorp Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HEXT" data-research="hext hexaware technologies ltd. information technology mid cap">
     <th class="ticker">HEXT</th>
     <td>Hexaware Technologies Ltd.</td>
@@ -2225,7 +2269,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Hindalco Industries Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HINDCOPPER" data-research="hindcopper hindustan copper ltd. metals &amp; mining small cap">
     <th class="ticker">HINDCOPPER</th>
     <td>Hindustan Copper Ltd.</td>
@@ -2237,19 +2281,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Hindustan Petroleum Corporation Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HINDUNILVR" data-research="hindunilvr hindustan unilever ltd. fast moving consumer goods large cap">
     <th class="ticker">HINDUNILVR</th>
     <td>Hindustan Unilever Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HINDZINC" data-research="hindzinc hindustan zinc ltd. metals &amp; mining large cap">
     <th class="ticker">HINDZINC</th>
     <td>Hindustan Zinc Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="HOMEFIRST" data-research="homefirst home first finance company india ltd. financial services small cap">
     <th class="ticker">HOMEFIRST</th>
     <td>Home First Finance Company India Ltd.</td>
@@ -2285,7 +2329,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Hyundai Motor India Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ICICIAMC" data-research="iciciamc icici prudential asset management company ltd. financial services mid cap">
     <th class="ticker">ICICIAMC</th>
     <td>ICICI Prudential Asset Management Company Ltd.</td>
@@ -2297,19 +2341,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>ICICI Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ICICIGI" data-research="icicigi icici lombard general insurance company ltd. financial services mid cap">
     <th class="ticker">ICICIGI</th>
     <td>ICICI Lombard General Insurance Company Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ICICIPRULI" data-research="icicipruli icici prudential life insurance company ltd. financial services mid cap">
     <th class="ticker">ICICIPRULI</th>
     <td>ICICI Prudential Life Insurance Company Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="IDBI" data-research="idbi idbi bank ltd. financial services small cap">
     <th class="ticker">IDBI</th>
     <td>IDBI Bank Ltd.</td>
@@ -2321,19 +2365,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Vodafone Idea Ltd.</td>
     <td>Telecommunication</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="IDFCFIRSTB" data-research="idfcfirstb idfc first bank ltd. financial services mid cap">
     <th class="ticker">IDFCFIRSTB</th>
     <td>IDFC First Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="IEX" data-research="iex indian energy exchange ltd. financial services small cap">
     <th class="ticker">IEX</th>
     <td>Indian Energy Exchange Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="IFCI" data-research="ifci ifci ltd. financial services small cap">
     <th class="ticker">IFCI</th>
     <td>IFCI Ltd.</td>
@@ -2375,7 +2419,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Indian Hotels Co. Ltd.</td>
     <td>Consumer Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="INDIACEM" data-research="indiacem india cements ltd. construction materials small cap">
     <th class="ticker">INDIACEM</th>
     <td>India Cements Ltd.</td>
@@ -2393,37 +2437,37 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Indian Bank</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="INDIGO" data-research="indigo interglobe aviation ltd. services large cap">
     <th class="ticker">INDIGO</th>
     <td>InterGlobe Aviation Ltd.</td>
     <td>Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="INDUSINDBK" data-research="indusindbk indusind bank ltd. financial services mid cap">
     <th class="ticker">INDUSINDBK</th>
     <td>IndusInd Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="INDUSTOWER" data-research="industower indus towers ltd. telecommunication mid cap">
     <th class="ticker">INDUSTOWER</th>
     <td>Indus Towers Ltd.</td>
     <td>Telecommunication</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="INFY" data-research="infy infosys ltd. information technology large cap">
     <th class="ticker">INFY</th>
     <td>Infosys Ltd.</td>
     <td>Information Technology</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="INOXWIND" data-research="inoxwind inox wind ltd. capital goods small cap">
     <th class="ticker">INOXWIND</th>
     <td>Inox Wind Ltd.</td>
     <td>Capital Goods</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="INTELLECT" data-research="intellect intellect design arena ltd. information technology small cap">
     <th class="ticker">INTELLECT</th>
     <td>Intellect Design Arena Ltd.</td>
@@ -2441,7 +2485,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Indian Oil Corporation Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="IPCALAB" data-research="ipcalab ipca laboratories ltd. healthcare mid cap">
     <th class="ticker">IPCALAB</th>
     <td>Ipca Laboratories Ltd.</td>
@@ -2471,19 +2515,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Indian Renewable Energy Development Agency Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="IRFC" data-research="irfc indian railway finance corporation ltd. financial services large cap">
     <th class="ticker">IRFC</th>
     <td>Indian Railway Finance Corporation Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ITC" data-research="itc itc ltd. fast moving consumer goods large cap">
     <th class="ticker">ITC</th>
     <td>ITC Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ITCHOTELS" data-research="itchotels itc hotels ltd. consumer services mid cap">
     <th class="ticker">ITCHOTELS</th>
     <td>ITC Hotels Ltd.</td>
@@ -2525,13 +2569,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Jindal Steel Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="JIOFIN" data-research="jiofin jio financial services ltd. financial services large cap">
     <th class="ticker">JIOFIN</th>
     <td>Jio Financial Services Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="JKCEMENT" data-research="jkcement j.k. cement ltd. construction materials mid cap">
     <th class="ticker">JKCEMENT</th>
     <td>J.K. Cement Ltd.</td>
@@ -2579,7 +2623,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>JSW Energy Ltd.</td>
     <td>Power</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="JSWINFRA" data-research="jswinfra jsw infrastructure ltd. services mid cap">
     <th class="ticker">JSWINFRA</th>
     <td>JSW Infrastructure Ltd.</td>
@@ -2591,13 +2635,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>JSW Steel Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="JUBLFOOD" data-research="jublfood jubilant foodworks ltd. consumer services mid cap">
     <th class="ticker">JUBLFOOD</th>
     <td>Jubilant Foodworks Ltd.</td>
     <td>Consumer Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="JUBLINGREA" data-research="jublingrea jubilant ingrevia ltd. chemicals small cap">
     <th class="ticker">JUBLINGREA</th>
     <td>Jubilant Ingrevia Ltd.</td>
@@ -2633,7 +2677,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Kalyan Jewellers India Ltd.</td>
     <td>Consumer Durables</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="KARURVYSYA" data-research="karurvysya karur vysya bank ltd. financial services small cap">
     <th class="ticker">KARURVYSYA</th>
     <td>Karur Vysya Bank Ltd.</td>
@@ -2645,7 +2689,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Kaynes Technology India Ltd.</td>
     <td>Capital Goods</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="KEC" data-research="kec kec international ltd. construction small cap">
     <th class="ticker">KEC</th>
     <td>Kec International Ltd.</td>
@@ -2657,13 +2701,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>KEI Industries Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="KFINTECH" data-research="kfintech kfin technologies ltd. financial services small cap">
     <th class="ticker">KFINTECH</th>
     <td>Kfin Technologies Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="KIMS" data-research="kims krishna institute of medical sciences ltd. healthcare small cap">
     <th class="ticker">KIMS</th>
     <td>Krishna Institute of Medical Sciences Ltd.</td>
@@ -2681,7 +2725,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Kotak Mahindra Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="KPIL" data-research="kpil kalpataru projects international ltd. construction small cap">
     <th class="ticker">KPIL</th>
     <td>Kalpataru Projects International Ltd.</td>
@@ -2693,7 +2737,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>KPIT Technologies Ltd.</td>
     <td>Information Technology</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="KPRMILL" data-research="kprmill k.p.r. mill ltd. textiles mid cap">
     <th class="ticker">KPRMILL</th>
     <td>K.P.R. Mill Ltd.</td>
@@ -2717,7 +2761,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Laurus Labs Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="LEMONTREE" data-research="lemontree lemon tree hotels ltd. consumer services small cap">
     <th class="ticker">LEMONTREE</th>
     <td>Lemon Tree Hotels Ltd.</td>
@@ -2741,13 +2785,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>LIC Housing Finance Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="LICI" data-research="lici life insurance corporation of india financial services mid cap">
     <th class="ticker">LICI</th>
     <td>Life Insurance Corporation of India</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="LINDEINDIA" data-research="lindeindia linde india ltd. chemicals mid cap">
     <th class="ticker">LINDEINDIA</th>
     <td>Linde India Ltd.</td>
@@ -2765,19 +2809,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Lodha Developers Ltd.</td>
     <td>Realty</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="LT" data-research="lt larsen &amp; toubro ltd. construction large cap">
     <th class="ticker">LT</th>
     <td>Larsen &amp; Toubro Ltd.</td>
     <td>Construction</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="LTF" data-research="ltf l&amp;t finance ltd. financial services mid cap">
     <th class="ticker">LTF</th>
     <td>L&amp;T Finance Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="LTFOODS" data-research="ltfoods lt foods ltd. fast moving consumer goods small cap">
     <th class="ticker">LTFOODS</th>
     <td>LT Foods Ltd.</td>
@@ -2789,7 +2833,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>LTM Ltd.</td>
     <td>Information Technology</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="LTTS" data-research="ltts l&amp;t technology services ltd. information technology mid cap">
     <th class="ticker">LTTS</th>
     <td>L&amp;T Technology Services Ltd.</td>
@@ -2801,13 +2845,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Lupin Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="M&amp;M" data-research="m&amp;m mahindra &amp; mahindra ltd. automobile and auto components large cap">
     <th class="ticker">M&amp;M</th>
     <td>Mahindra &amp; Mahindra Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="M&amp;MFIN" data-research="m&amp;mfin mahindra &amp; mahindra financial services ltd. financial services mid cap">
     <th class="ticker">M&amp;MFIN</th>
     <td>Mahindra &amp; Mahindra Financial Services Ltd.</td>
@@ -2819,19 +2863,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Bank of Maharashtra</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MANAPPURAM" data-research="manappuram manappuram finance ltd. financial services small cap">
     <th class="ticker">MANAPPURAM</th>
     <td>Manappuram Finance Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MANKIND" data-research="mankind mankind pharma ltd. healthcare mid cap">
     <th class="ticker">MANKIND</th>
     <td>Mankind Pharma Ltd.</td>
     <td>Healthcare</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MAPMYINDIA" data-research="mapmyindia c.e. info systems ltd. information technology small cap">
     <th class="ticker">MAPMYINDIA</th>
     <td>C.E. Info Systems Ltd.</td>
@@ -2843,31 +2887,31 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Marico Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MARUTI" data-research="maruti maruti suzuki india ltd. automobile and auto components large cap">
     <th class="ticker">MARUTI</th>
     <td>Maruti Suzuki India Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MAXHEALTH" data-research="maxhealth max healthcare institute ltd. healthcare large cap">
     <th class="ticker">MAXHEALTH</th>
     <td>Max Healthcare Institute Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MAZDOCK" data-research="mazdock mazagoan dock shipbuilders ltd. capital goods large cap">
     <th class="ticker">MAZDOCK</th>
     <td>Mazagoan Dock Shipbuilders Ltd.</td>
     <td>Capital Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MCX" data-research="mcx multi commodity exchange of india ltd. financial services mid cap">
     <th class="ticker">MCX</th>
     <td>Multi Commodity Exchange of India Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MEDANTA" data-research="medanta global health ltd. healthcare mid cap">
     <th class="ticker">MEDANTA</th>
     <td>Global Health Ltd.</td>
@@ -2885,7 +2929,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Max Financial Services Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MGL" data-research="mgl mahanagar gas ltd. oil gas &amp; consumable fuels small cap">
     <th class="ticker">MGL</th>
     <td>Mahanagar Gas Ltd.</td>
@@ -2909,19 +2953,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Samvardhana Motherson International Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MOTILALOFS" data-research="motilalofs motilal oswal financial services ltd. financial services mid cap">
     <th class="ticker">MOTILALOFS</th>
     <td>Motilal Oswal Financial Services Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MPHASIS" data-research="mphasis mphasis ltd. information technology mid cap">
     <th class="ticker">MPHASIS</th>
     <td>MphasiS Ltd.</td>
     <td>Information Technology</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="MRF" data-research="mrf mrf ltd. automobile and auto components mid cap">
     <th class="ticker">MRF</th>
     <td>MRF Ltd.</td>
@@ -2945,13 +2989,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Muthoot Finance Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NAM-INDIA" data-research="nam-india nippon life india asset management ltd. financial services mid cap">
     <th class="ticker">NAM-INDIA</th>
     <td>Nippon Life India Asset Management Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NATCOPHARM" data-research="natcopharm natco pharma ltd. healthcare small cap">
     <th class="ticker">NATCOPHARM</th>
     <td>NATCO Pharma Ltd.</td>
@@ -2963,13 +3007,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>National Aluminium Co. Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NAUKRI" data-research="naukri info edge (india) ltd. consumer services mid cap">
     <th class="ticker">NAUKRI</th>
     <td>Info Edge (India) Ltd.</td>
     <td>Consumer Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NAVA" data-research="nava nava ltd. power small cap">
     <th class="ticker">NAVA</th>
     <td>Nava Ltd.</td>
@@ -2987,7 +3031,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>NBCC (India) Ltd.</td>
     <td>Construction</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NCC" data-research="ncc ncc ltd. construction small cap">
     <th class="ticker">NCC</th>
     <td>NCC Ltd.</td>
@@ -2999,7 +3043,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Nestle India Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NETWEB" data-research="netweb netweb technologies india ltd. information technology small cap">
     <th class="ticker">NETWEB</th>
     <td>Netweb Technologies India Ltd.</td>
@@ -3029,7 +3073,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>NHPC Ltd.</td>
     <td>Power</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NIACL" data-research="niacl the new india assurance company ltd. financial services mid cap">
     <th class="ticker">NIACL</th>
     <td>The New India Assurance Company Ltd.</td>
@@ -3053,7 +3097,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>NMDC Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NSLNISP" data-research="nslnisp nmdc steel ltd. metals &amp; mining small cap">
     <th class="ticker">NSLNISP</th>
     <td>NMDC Steel Ltd.</td>
@@ -3065,7 +3109,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>NTPC Ltd.</td>
     <td>Power</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="NTPCGREEN" data-research="ntpcgreen ntpc green energy ltd. power mid cap">
     <th class="ticker">NTPCGREEN</th>
     <td>NTPC Green Energy Ltd.</td>
@@ -3089,25 +3133,25 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>FSN E-Commerce Ventures Ltd.</td>
     <td>Consumer Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="OBEROIRLTY" data-research="oberoirlty oberoi realty ltd. realty mid cap">
     <th class="ticker">OBEROIRLTY</th>
     <td>Oberoi Realty Ltd.</td>
     <td>Realty</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="OFSS" data-research="ofss oracle financial services software ltd. information technology mid cap">
     <th class="ticker">OFSS</th>
     <td>Oracle Financial Services Software Ltd.</td>
     <td>Information Technology</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="OIL" data-research="oil oil india ltd. oil gas &amp; consumable fuels mid cap">
     <th class="ticker">OIL</th>
     <td>Oil India Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="OLAELEC" data-research="olaelec ola electric mobility ltd. automobile and auto components small cap">
     <th class="ticker">OLAELEC</th>
     <td>Ola Electric Mobility Ltd.</td>
@@ -3131,13 +3175,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Oil &amp; Natural Gas Corporation Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PAGEIND" data-research="pageind page industries ltd. textiles mid cap">
     <th class="ticker">PAGEIND</th>
     <td>Page Industries Ltd.</td>
     <td>Textiles</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PARADEEP" data-research="paradeep paradeep phosphates ltd. chemicals small cap">
     <th class="ticker">PARADEEP</th>
     <td>Paradeep Phosphates Ltd.</td>
@@ -3149,13 +3193,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Patanjali Foods Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PAYTM" data-research="paytm one 97 communications ltd. financial services mid cap">
     <th class="ticker">PAYTM</th>
     <td>One 97 Communications Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PCBL" data-research="pcbl pcbl chemical ltd. chemicals small cap">
     <th class="ticker">PCBL</th>
     <td>PCBL Chemical Ltd.</td>
@@ -3167,19 +3211,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Persistent Systems Ltd.</td>
     <td>Information Technology</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PETRONET" data-research="petronet petronet lng ltd. oil gas &amp; consumable fuels mid cap">
     <th class="ticker">PETRONET</th>
     <td>Petronet LNG Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PFC" data-research="pfc power finance corporation ltd. financial services large cap">
     <th class="ticker">PFC</th>
     <td>Power Finance Corporation Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PFIZER" data-research="pfizer pfizer ltd. healthcare small cap">
     <th class="ticker">PFIZER</th>
     <td>Pfizer Ltd.</td>
@@ -3197,25 +3241,25 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>PG Electroplast Ltd.</td>
     <td>Consumer Durables</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PHOENIXLTD" data-research="phoenixltd phoenix mills ltd. realty mid cap">
     <th class="ticker">PHOENIXLTD</th>
     <td>Phoenix Mills Ltd.</td>
     <td>Realty</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PIDILITIND" data-research="pidilitind pidilite industries ltd. chemicals large cap">
     <th class="ticker">PIDILITIND</th>
     <td>Pidilite Industries Ltd.</td>
     <td>Chemicals</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PIIND" data-research="piind pi industries ltd. chemicals mid cap">
     <th class="ticker">PIIND</th>
     <td>PI Industries Ltd.</td>
     <td>Chemicals</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PINELABS" data-research="pinelabs pine labs ltd. financial services small cap">
     <th class="ticker">PINELABS</th>
     <td>Pine Labs Ltd.</td>
@@ -3233,25 +3277,25 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Punjab National Bank</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PNBHOUSING" data-research="pnbhousing pnb housing finance ltd. financial services small cap">
     <th class="ticker">PNBHOUSING</th>
     <td>PNB Housing Finance Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="POLICYBZR" data-research="policybzr pb fintech ltd. financial services mid cap">
     <th class="ticker">POLICYBZR</th>
     <td>PB Fintech Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="POLYCAB" data-research="polycab polycab india ltd. capital goods mid cap">
     <th class="ticker">POLYCAB</th>
     <td>Polycab India Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="POLYMED" data-research="polymed poly medicure ltd. healthcare small cap">
     <th class="ticker">POLYMED</th>
     <td>Poly Medicure Ltd.</td>
@@ -3269,13 +3313,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Power Grid Corporation of India Ltd.</td>
     <td>Power</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="POWERINDIA" data-research="powerindia hitachi energy india ltd. capital goods mid cap">
     <th class="ticker">POWERINDIA</th>
     <td>Hitachi Energy India Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PPLPHARMA" data-research="pplpharma piramal pharma ltd. healthcare small cap">
     <th class="ticker">PPLPHARMA</th>
     <td>Piramal Pharma Ltd.</td>
@@ -3287,13 +3331,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Premier Energies Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PRESTIGE" data-research="prestige prestige estates projects ltd. realty mid cap">
     <th class="ticker">PRESTIGE</th>
     <td>Prestige Estates Projects Ltd.</td>
     <td>Realty</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="PTCIL" data-research="ptcil ptc industries ltd. capital goods small cap">
     <th class="ticker">PTCIL</th>
     <td>PTC Industries Ltd.</td>
@@ -3317,7 +3361,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Radico Khaitan Ltd</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="RAILTEL" data-research="railtel railtel corporation of india ltd. telecommunication small cap">
     <th class="ticker">RAILTEL</th>
     <td>Railtel Corporation Of India Ltd.</td>
@@ -3341,13 +3385,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>RBL Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="RECLTD" data-research="recltd rec ltd. financial services large cap">
     <th class="ticker">RECLTD</th>
     <td>REC Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="REDINGTON" data-research="redington redington ltd. services small cap">
     <th class="ticker">REDINGTON</th>
     <td>Redington Ltd.</td>
@@ -3359,7 +3403,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Reliance Industries Ltd.</td>
     <td>Oil Gas &amp; Consumable Fuels</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="RHIM" data-research="rhim rhi magnesita india ltd. capital goods small cap">
     <th class="ticker">RHIM</th>
     <td>RHI MAGNESITA INDIA LTD.</td>
@@ -3395,19 +3439,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Rail Vikas Nigam Ltd.</td>
     <td>Construction</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SAGILITY" data-research="sagility sagility ltd. information technology small cap">
     <th class="ticker">SAGILITY</th>
     <td>Sagility Ltd.</td>
     <td>Information Technology</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SAIL" data-research="sail steel authority of india ltd. metals &amp; mining mid cap">
     <th class="ticker">SAIL</th>
     <td>Steel Authority of India Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SAILIFE" data-research="sailife sai life sciences ltd. healthcare small cap">
     <th class="ticker">SAILIFE</th>
     <td>Sai Life Sciences Ltd.</td>
@@ -3449,19 +3493,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>SBI Cards and Payment Services Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SBILIFE" data-research="sbilife sbi life insurance company ltd. financial services large cap">
     <th class="ticker">SBILIFE</th>
     <td>SBI Life Insurance Company Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SBIN" data-research="sbin state bank of india financial services large cap">
     <th class="ticker">SBIN</th>
     <td>State Bank of India</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SCHAEFFLER" data-research="schaeffler schaeffler india ltd. automobile and auto components mid cap">
     <th class="ticker">SCHAEFFLER</th>
     <td>Schaeffler India Ltd.</td>
@@ -3485,13 +3529,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Shree Cement Ltd.</td>
     <td>Construction Materials</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SHRIRAMFIN" data-research="shriramfin shriram finance ltd. financial services large cap">
     <th class="ticker">SHRIRAMFIN</th>
     <td>Shriram Finance Ltd.</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SHYAMMETL" data-research="shyammetl shyam metalics and energy ltd. capital goods small cap">
     <th class="ticker">SHYAMMETL</th>
     <td>Shyam Metalics and Energy Ltd.</td>
@@ -3503,7 +3547,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Siemens Ltd.</td>
     <td>Capital Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SIGNATURE" data-research="signature signatureglobal (india) ltd. realty small cap">
     <th class="ticker">SIGNATURE</th>
     <td>Signatureglobal (India) Ltd.</td>
@@ -3527,13 +3571,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Solar Industries India Ltd.</td>
     <td>Chemicals</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SONACOMS" data-research="sonacoms sona blw precision forgings ltd. automobile and auto components small cap">
     <th class="ticker">SONACOMS</th>
     <td>Sona BLW Precision Forgings Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Small Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SONATSOFTW" data-research="sonatsoftw sonata software ltd. information technology small cap">
     <th class="ticker">SONATSOFTW</th>
     <td>Sonata Software Ltd.</td>
@@ -3551,7 +3595,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>SRF Ltd.</td>
     <td>Chemicals</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="STAR" data-research="star  healthcare small cap">
     <th class="ticker">STAR</th>
     <td>—</td>
@@ -3581,7 +3625,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Sun Pharmaceutical Industries Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SUNTV" data-research="suntv sun tv network ltd. media entertainment &amp; publication small cap">
     <th class="ticker">SUNTV</th>
     <td>Sun TV Network Ltd.</td>
@@ -3593,13 +3637,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Supreme Industries Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Plan candidate; reverify contract</span></td>
   </tr><tr data-public-symbol="SUZLON" data-research="suzlon suzlon energy ltd. capital goods mid cap">
     <th class="ticker">SUZLON</th>
     <td>Suzlon Energy Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SWANCORP" data-research="swancorp swan corp ltd. chemicals small cap">
     <th class="ticker">SWANCORP</th>
     <td>Swan Corp Ltd.</td>
@@ -3611,7 +3655,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Swiggy Ltd.</td>
     <td>Consumer Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="SYNGENE" data-research="syngene syngene international ltd. healthcare small cap">
     <th class="ticker">SYNGENE</th>
     <td>Syngene International Ltd.</td>
@@ -3653,13 +3697,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Tata Consumer Products Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TATAELXSI" data-research="tataelxsi tata elxsi ltd. information technology mid cap">
     <th class="ticker">TATAELXSI</th>
     <td>Tata Elxsi Ltd.</td>
     <td>Information Technology</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TATAINVEST" data-research="tatainvest tata investment corporation ltd. financial services mid cap">
     <th class="ticker">TATAINVEST</th>
     <td>Tata Investment Corporation Ltd.</td>
@@ -3671,13 +3715,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Tata Power Co. Ltd.</td>
     <td>Power</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TATASTEEL" data-research="tatasteel tata steel ltd. metals &amp; mining large cap">
     <th class="ticker">TATASTEEL</th>
     <td>Tata Steel Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TATATECH" data-research="tatatech tata technologies ltd. information technology small cap">
     <th class="ticker">TATATECH</th>
     <td>Tata Technologies Ltd.</td>
@@ -3695,13 +3739,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Tata Consultancy Services Ltd.</td>
     <td>Information Technology</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TECHM" data-research="techm tech mahindra ltd. information technology large cap">
     <th class="ticker">TECHM</th>
     <td>Tech Mahindra Ltd.</td>
     <td>Information Technology</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TECHNOE" data-research="technoe techno electric &amp; engineering company ltd. construction small cap">
     <th class="ticker">TECHNOE</th>
     <td>Techno Electric &amp; Engineering Company Ltd.</td>
@@ -3743,7 +3787,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Tube Investments of India Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TIMKEN" data-research="timken timken india ltd. capital goods small cap">
     <th class="ticker">TIMKEN</th>
     <td>Timken India Ltd.</td>
@@ -3761,7 +3805,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Titan Company Ltd.</td>
     <td>Consumer Durables</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TMCV" data-research="tmcv tata motors ltd. capital goods large cap">
     <th class="ticker">TMCV</th>
     <td>Tata Motors Ltd.</td>
@@ -3773,13 +3817,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Tata Motors Passenger Vehicles Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TORNTPHARM" data-research="torntpharm torrent pharmaceuticals ltd. healthcare large cap">
     <th class="ticker">TORNTPHARM</th>
     <td>Torrent Pharmaceuticals Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TORNTPOWER" data-research="torntpower torrent power ltd. power mid cap">
     <th class="ticker">TORNTPOWER</th>
     <td>Torrent Power Ltd.</td>
@@ -3797,7 +3841,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Trent Ltd.</td>
     <td>Consumer Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="TRIDENT" data-research="trident trident ltd. textiles small cap">
     <th class="ticker">TRIDENT</th>
     <td>Trident Ltd.</td>
@@ -3821,7 +3865,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>TVS Motor Company Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="UBL" data-research="ubl united breweries ltd. fast moving consumer goods mid cap">
     <th class="ticker">UBL</th>
     <td>United Breweries Ltd.</td>
@@ -3839,31 +3883,31 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>UltraTech Cement Ltd.</td>
     <td>Construction Materials</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="UNIONBANK" data-research="unionbank union bank of india financial services large cap">
     <th class="ticker">UNIONBANK</th>
     <td>Union Bank of India</td>
     <td>Financial Services</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="UNITDSPR" data-research="unitdspr united spirits ltd. fast moving consumer goods large cap">
     <th class="ticker">UNITDSPR</th>
     <td>United Spirits Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="UNOMINDA" data-research="unominda uno minda ltd. automobile and auto components mid cap">
     <th class="ticker">UNOMINDA</th>
     <td>UNO Minda Ltd.</td>
     <td>Automobile and Auto Components</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="UPL" data-research="upl upl ltd. chemicals mid cap">
     <th class="ticker">UPL</th>
     <td>UPL Ltd.</td>
     <td>Chemicals</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="URBANCO" data-research="urbanco urban company ltd. consumer services small cap">
     <th class="ticker">URBANCO</th>
     <td>Urban Company Ltd.</td>
@@ -3887,13 +3931,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Varun Beverages Ltd.</td>
     <td>Fast Moving Consumer Goods</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="VEDL" data-research="vedl vedanta ltd. metals &amp; mining large cap">
     <th class="ticker">VEDL</th>
     <td>Vedanta Ltd.</td>
     <td>Metals &amp; Mining</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="VIJAYA" data-research="vijaya vijaya diagnostic centre ltd. healthcare small cap">
     <th class="ticker">VIJAYA</th>
     <td>Vijaya Diagnostic Centre Ltd.</td>
@@ -3905,13 +3949,13 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Vishal Mega Mart Ltd.</td>
     <td>Consumer Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="VOLTAS" data-research="voltas voltas ltd. consumer durables mid cap">
     <th class="ticker">VOLTAS</th>
     <td>Voltas Ltd.</td>
     <td>Consumer Durables</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="VTL" data-research="vtl vardhman textiles ltd. textiles small cap">
     <th class="ticker">VTL</th>
     <td>Vardhman Textiles Ltd.</td>
@@ -3923,7 +3967,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Waaree Energies Ltd.</td>
     <td>Capital Goods</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="WELCORP" data-research="welcorp welspun corp ltd. capital goods small cap">
     <th class="ticker">WELCORP</th>
     <td>Welspun Corp Ltd.</td>
@@ -3947,7 +3991,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Wipro Ltd.</td>
     <td>Information Technology</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="WOCKPHARMA" data-research="wockpharma wockhardt ltd. healthcare small cap">
     <th class="ticker">WOCKPHARMA</th>
     <td>Wockhardt Ltd.</td>
@@ -3959,7 +4003,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Yes Bank Ltd.</td>
     <td>Financial Services</td>
     <td>Mid Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ZEEL" data-research="zeel zee entertainment enterprises ltd. media entertainment &amp; publication small cap">
     <th class="ticker">ZEEL</th>
     <td>Zee Entertainment Enterprises Ltd.</td>
@@ -3989,7 +4033,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
     <td>Zydus Lifesciences Ltd.</td>
     <td>Healthcare</td>
     <td>Large Cap</td>
-    <td><span class="status verified">F&O snapshot; recheck before order</span></td>
+    <td><span class="status research">Research only</span></td>
   </tr><tr data-public-symbol="ZYDUSWELL" data-research="zyduswell zydus wellness ltd. fast moving consumer goods small cap">
     <th class="ticker">ZYDUSWELL</th>
     <td>Zydus Wellness Ltd.</td>
