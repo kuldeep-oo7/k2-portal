@@ -42,10 +42,10 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
 </style>
 </head>
 <body data-new-orders="locked"><main class="shell">
-<header class="mast"><h1>K<span>²</span> Range Desk</h1><div class="stamp">NSE stock futures · continuous ladder<br>built 2026-09-17 06:53 UTC</div></header>
+<header class="mast"><h1>K<span>²</span> Range Desk</h1><div class="stamp">NSE stock futures · continuous ladder<br>built 2026-09-17 07:05 UTC</div></header>
 <p class="notice"><strong>Decision support—not an earnings promise.</strong> The larger equity list below improves coverage, not certainty. Only a currently verified NSE stock-futures contract can enter the order pipeline, and this build never submits a real broker order.</p>
-<p class="notice" id="plan-stale">No current, version-verified plan. Stored plan: 2026-09-14. Old trade instructions are withheld; the research directory remains available.</p>
-<section class="macro"><div class="macro-head"><b><span class="dot"></span>GLOBAL DATA &amp; SHOCK GATE: DATA_UNAVAILABLE</b><span>2026-09-17T06:53:28.030Z</span></div><div class="pills">
+
+<section class="macro"><div class="macro-head"><b><span class="dot"></span>GLOBAL DATA &amp; SHOCK GATE: DATA_UNAVAILABLE</b><span>2026-09-17T07:05:22.866Z</span></div><div class="pills">
   <span class="pill">GIFT NIFTY UNAVAILABLE</span>
   <span class="pill">INDIA VIX UNAVAILABLE</span>
   <span class="pill">BRENT Δ UNAVAILABLE</span>
@@ -57,13 +57,46 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
   <div class="tile"><b>210</b><span>stock-futures names in last snapshot · 2026-09-16</span></div>
   <div class="tile"><b>502</b><span>broad NSE equities tracked for research</span></div>
   <div class="tile"><b>292</b><span>additional research-only equities</span></div>
-  <div class="tile"><b>0</b><span>ranked shadow candidates</span></div>
-  <div class="tile"><b>0 / 0</b><span>long / short candidates</span></div>
+  <div class="tile"><b>3</b><span>ranked shadow candidates</span></div>
+  <div class="tile"><b>3 / 0</b><span>long / short candidates</span></div>
   <div class="tile"><b>LOCKED</b><span>new-order data gate</span></div>
 </div>
 
 <section><h2>Research levels &amp; holding horizons</h2><p class="sub">No Friday forced liquidation. Monday resets only the reporting reference, not the original entry or lifetime profit. Holding time is uncertain; exits depend on risk rules and verified contract expiry. Partial exits must use whole lots.</p>
-  <div class="cards"><div class="empty">No current, risk-admitted candidate is available. Refresh the plan and review data availability.</div></div>
+  <div class="cards"><article class="candidate-card long">
+    <div class="candidate-head"><div><span class="chip long">long</span><h3>BEL</h3></div><span class="status shadow">SHADOW CANDIDATE</span></div>
+    <div class="candidate-grid">
+      <div><small>Planned limit</small><b>₹390.25</b></div>
+      <div><small>Target</small><b class="positive">₹398.15</b></div>
+      <div><small>Protective stop</small><b class="negative">₹386.30</b></div>
+      <div><small>Observed median</small><b>1 sessions</b></div>
+      <div><small>Risk ceiling</small><b>20 sessions</b></div>
+      <div><small>Contract expiry</small><b>2026-09-29</b></div>
+    </div>
+    <p>Friday creates no automatic exit. Monday changes only the weekly reporting reference. Target, gap-aware stop, risk ceiling, or a real expiry roll can end the position.</p>
+  </article><article class="candidate-card long">
+    <div class="candidate-head"><div><span class="chip long">long</span><h3>ABB</h3></div><span class="status shadow">SHADOW CANDIDATE</span></div>
+    <div class="candidate-grid">
+      <div><small>Planned limit</small><b>₹6954.45</b></div>
+      <div><small>Target</small><b class="positive">₹7140.85</b></div>
+      <div><small>Protective stop</small><b class="negative">₹6861.30</b></div>
+      <div><small>Observed median</small><b>1 sessions</b></div>
+      <div><small>Risk ceiling</small><b>20 sessions</b></div>
+      <div><small>Contract expiry</small><b>2026-09-29</b></div>
+    </div>
+    <p>Friday creates no automatic exit. Monday changes only the weekly reporting reference. Target, gap-aware stop, risk ceiling, or a real expiry roll can end the position.</p>
+  </article><article class="candidate-card long">
+    <div class="candidate-head"><div><span class="chip long">long</span><h3>BANKBARODA</h3></div><span class="status shadow">SHADOW CANDIDATE</span></div>
+    <div class="candidate-grid">
+      <div><small>Planned limit</small><b>₹225.89</b></div>
+      <div><small>Target</small><b class="positive">₹230.59</b></div>
+      <div><small>Protective stop</small><b class="negative">₹223.54</b></div>
+      <div><small>Observed median</small><b>1 sessions</b></div>
+      <div><small>Risk ceiling</small><b>20 sessions</b></div>
+      <div><small>Contract expiry</small><b>2026-09-29</b></div>
+    </div>
+    <p>Friday creates no automatic exit. Monday changes only the weekly reporting reference. Target, gap-aware stop, risk ceiling, or a real expiry roll can end the position.</p>
+  </article></div>
 </section>
 
 
@@ -457,13 +490,46 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
   
 
 <section><h2>Price-distance assistant</h2><p class="sub">This compares a manually entered broker price with the stored plan. It cannot see spread, live margin, ban changes, order queue, or your broker acknowledgement; therefore it never labels a trade “safe.”</p>
-  <div class="calculator"><div class="calc-inputs"><div class="field"><label for="calc-symbol">Candidate</label><select id="calc-symbol"></select></div><div class="field"><label for="calc-price">Current broker price ₹</label><input id="calc-price" type="number" step="any" placeholder="Enter current contract price"></div></div>
+  <div class="calculator"><div class="calc-inputs"><div class="field"><label for="calc-symbol">Candidate</label><select id="calc-symbol"><option value="BEL:long">BEL (long)</option><option value="ABB:long">ABB (long)</option><option value="BANKBARODA:long">BANKBARODA (long)</option></select></div><div class="field"><label for="calc-price">Current broker price ₹</label><input id="calc-price" type="number" step="any" placeholder="Enter current contract price"></div></div>
   <div class="decision" id="calc-decision">Select a candidate and enter a current contract price.</div><div class="metrics"><div class="metric"><small>Distance from limit</small><b id="calc-entry">—</b></div><div class="metric"><small>Distance to target</small><b id="calc-target">—</b></div><div class="metric"><small>Stop buffer</small><b id="calc-stop">—</b></div><div class="metric"><small>Holding evidence</small><b id="calc-hold">—</b></div></div></div>
 </section>
 
 <section><h2>Qualified ladder candidates</h2><p class="sub">Continuous holding horizons with staged targets (T1: 1–3d, T2: 5–12d, T3: Macro Roll). Click a row to load its levels above.</p>
   <div class="tools"><button data-filter="all" aria-pressed="true">All</button><button data-filter="long" aria-pressed="false">Long</button><button data-filter="short" aria-pressed="false">Short</button><input id="plan-search" class="search" type="search" placeholder="Search candidates"></div>
-  <div class="scroll"><table><thead><tr><th>Instrument</th><th>Sector</th><th>Planned limit</th><th>Target</th><th>Stop</th><th>Holding Horizon</th><th>Risk ceiling</th><th>Expected Gain</th><th>Evidence score</th><th>Execution scope</th></tr></thead><tbody id="plan-rows"></tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Instrument</th><th>Sector</th><th>Planned limit</th><th>Target</th><th>Stop</th><th>Holding Horizon</th><th>Risk ceiling</th><th>Expected Gain</th><th>Evidence score</th><th>Execution scope</th></tr></thead><tbody id="plan-rows"><tr data-symbol="BEL" data-side="long" data-entry="390.25" data-target="398.15" data-stop="386.3" data-hold="1" data-ceiling="20" data-expected="0.094" data-conviction="27.23">
+    <th><span class="ticker">BEL</span> <span class="chip long">long</span></th>
+    <td>Unclassified</td>
+    <td class="num">₹390.25</td>
+    <td class="num positive">₹398.15</td>
+    <td class="num negative">₹386.30</td>
+    <td class="num">1 observed sessions</td>
+    <td class="num">20 sessions</td>
+    <td class="num">0.09%</td>
+    <td class="num">27 · uncalibrated score</td>
+    <td><span class="status shadow">Shadow only</span></td>
+  </tr><tr data-symbol="ABB" data-side="long" data-entry="6954.45" data-target="7140.85" data-stop="6861.3" data-hold="1" data-ceiling="20" data-expected="0.041" data-conviction="36.8">
+    <th><span class="ticker">ABB</span> <span class="chip long">long</span></th>
+    <td>Unclassified</td>
+    <td class="num">₹6954.45</td>
+    <td class="num positive">₹7140.85</td>
+    <td class="num negative">₹6861.30</td>
+    <td class="num">1 observed sessions</td>
+    <td class="num">20 sessions</td>
+    <td class="num">0.04%</td>
+    <td class="num">37 · uncalibrated score</td>
+    <td><span class="status shadow">Shadow only</span></td>
+  </tr><tr data-symbol="BANKBARODA" data-side="long" data-entry="225.89" data-target="230.59" data-stop="223.54" data-hold="1" data-ceiling="20" data-expected="0.038" data-conviction="19.01">
+    <th><span class="ticker">BANKBARODA</span> <span class="chip long">long</span></th>
+    <td>Unclassified</td>
+    <td class="num">₹225.89</td>
+    <td class="num positive">₹230.59</td>
+    <td class="num negative">₹223.54</td>
+    <td class="num">1 observed sessions</td>
+    <td class="num">20 sessions</td>
+    <td class="num">0.04%</td>
+    <td class="num">19 · uncalibrated score</td>
+    <td><span class="status shadow">Shadow only</span></td>
+  </tr></tbody></table></div>
 </section>
 
 <section><h2>Expanded NSE equity radar</h2><p class="sub">This keeps the current stock-futures set and adds the broader 502-name directory for research discovery. An extra cash-equity name is not a futures order: it must first obtain a current exchange contract ID, lot, expiry, liquidity, ban status, margin, and risk approval.</p>
