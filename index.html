@@ -9,7 +9,7 @@
 <style>
 *{box-sizing:border-box} :root{--bg:#181923;--panel:#21222f;--panel2:#161720;--text:#f2f0ea;--muted:#aaa8b7;--line:#3a3b4b;--violet:#a38aff;--green:#61d6aa;--red:#ff917f;--amber:#f1c75b;--mono:ui-monospace,"Cascadia Mono",Consolas,monospace;--serif:Georgia,"Times New Roman",serif}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",sans-serif;line-height:1.5}.shell{max-width:1420px;margin:auto;padding:38px 24px 80px}.mast{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}.mast h1{font:48px/1 var(--serif);margin:0}.mast h1 span{color:var(--violet)}.stamp{font:12px/1.7 var(--mono);color:var(--muted);text-align:right;text-transform:uppercase;letter-spacing:.08em}
-.notice{border:1px solid var(--amber);background:#2b281d;padding:13px 16px;border-radius:12px;margin:0 0 18px;font-size:13px}.macro{background:#0e172a;border:1px solid #263755;border-radius:18px;padding:18px 22px;margin-bottom:24px}.macro-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px;font:12px var(--mono)}.macro-head b{font:700 14px Inter}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin-right:9px}.pills{display:flex;gap:10px;flex-wrap:wrap}.pill{border:1px solid #34445e;background:#172238;border-radius:8px;padding:7px 11px;font:12px var(--mono)}
+.notice{border:1px solid var(--amber);background:#2b281d;padding:13px 16px;border-radius:12px;margin:0 0 18px;font-size:13px}.macro{background:#0e172a;border:1px solid #263755;border-radius:18px;padding:18px 22px;margin-bottom:24px}.macro-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px;font:12px var(--mono)}.macro-head b{font:700 14px Inter}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--green);margin-right:9px}.pills{display:flex;gap:10px;flex-wrap:wrap}.pill{border:1px solid #34445e;background:#172238;border-radius:8px;padding:7px 11px;font:12px var(--mono)}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:13px;margin-bottom:38px}.tile{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:18px}.tile b{display:block;font:26px var(--mono);margin-bottom:3px}.tile span{font-size:12px;color:var(--muted)}section{margin:0 0 44px}h2{font:30px var(--serif);margin:0 0 5px}.sub{color:var(--muted);max-width:88ch;margin:0 0 17px;font-size:14px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}.candidate-card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:17px;padding:18px}.candidate-card.short{border-left-color:var(--red)}.candidate-head{display:flex;justify-content:space-between;gap:12px;align-items:start}.candidate-head h3{font:22px var(--mono);margin:8px 0 12px}.candidate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.candidate-grid div{background:var(--panel2);padding:10px;border-radius:9px}.candidate-grid small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase}.candidate-grid b{font:13px var(--mono)}.candidate-card p{font-size:12px;color:var(--muted);margin:13px 0 0}
 .chip,.status{display:inline-block;border-radius:999px;padding:3px 8px;font:700 10px var(--mono);text-transform:uppercase}.chip.long{background:#173d32;color:var(--green)}.chip.short{background:#4a292a;color:var(--red)}.status{border:1px solid var(--line);color:var(--muted)}.status.shadow{color:var(--amber);border-color:#66572b}.status.blocked{color:var(--red)}.status.verified{color:var(--green);border-color:#275a4b}.status.research{color:var(--muted)}
@@ -41,16 +41,16 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
   
 </style>
 </head>
-<body data-new-orders="locked"><main class="shell">
-<header class="mast"><h1>K<span>²</span> Range Desk</h1><div class="stamp">NSE stock futures · continuous ladder<br>built 2026-09-17 07:05 UTC</div></header>
+<body data-new-orders="shadow-only"><main class="shell">
+<header class="mast"><h1>K<span>²</span> Range Desk</h1><div class="stamp">NSE stock futures · continuous ladder<br>built 2026-09-17 07:42 UTC</div></header>
 <p class="notice"><strong>Decision support—not an earnings promise.</strong> The larger equity list below improves coverage, not certainty. Only a currently verified NSE stock-futures contract can enter the order pipeline, and this build never submits a real broker order.</p>
 
-<section class="macro"><div class="macro-head"><b><span class="dot"></span>GLOBAL DATA &amp; SHOCK GATE: DATA_UNAVAILABLE</b><span>2026-09-17T07:05:22.866Z</span></div><div class="pills">
-  <span class="pill">GIFT NIFTY UNAVAILABLE</span>
-  <span class="pill">INDIA VIX UNAVAILABLE</span>
-  <span class="pill">BRENT Δ UNAVAILABLE</span>
-  <span class="pill">S&amp;P FUTURES UNAVAILABLE</span>
-  <span class="pill">NO_NEW_ORDERS_DATA_LOCKDOWN</span>
+<section class="macro"><div class="macro-head"><b><span class="dot"></span>GLOBAL DATA &amp; SHOCK GATE: NORMAL</b><span>2026-09-17T07:42:05.166Z</span></div><div class="pills">
+  <span class="pill">GIFT NIFTY 0.41%</span>
+  <span class="pill">INDIA VIX 12.33</span>
+  <span class="pill">BRENT Δ -1.59%</span>
+  <span class="pill">S&amp;P FUTURES 0.81%</span>
+  <span class="pill">STANDARD_EXECUTION</span>
 </div></section>
 
 <div class="tiles">
@@ -59,7 +59,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI
   <div class="tile"><b>292</b><span>additional research-only equities</span></div>
   <div class="tile"><b>3</b><span>ranked shadow candidates</span></div>
   <div class="tile"><b>3 / 0</b><span>long / short candidates</span></div>
-  <div class="tile"><b>LOCKED</b><span>new-order data gate</span></div>
+  <div class="tile"><b>SHADOW</b><span>new-order data gate</span></div>
 </div>
 
 <section><h2>Research levels &amp; holding horizons</h2><p class="sub">No Friday forced liquidation. Monday resets only the reporting reference, not the original entry or lifetime profit. Holding time is uncertain; exits depend on risk rules and verified contract expiry. Partial exits must use whole lots.</p>
